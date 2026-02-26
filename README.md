@@ -65,6 +65,21 @@ Qwen 2.5 7B handles both decomposition AND extraction — no gold labels at any 
 
 Auto-decomposition gap: **7.0% EM** at scale. Per-hop retrieval: 96% gold paragraph found.
 
+### Cross-Benchmark: HotpotQA (n=50)
+
+| Config | EM | Relaxed EM | F1 |
+|--------|------|------------|------|
+| Single pass | 56.0% | 68.0% | 0.641 |
+| Embed retrieval (no decomp) | **60.0%** | **72.0%** | **0.702** |
+| Auto decomp + Qwen | 38.0% | 48.0% | 0.474 |
+
+**Decomposition hurts on HotpotQA** (-18% vs single-pass). The technique is most valuable on *hard* compositional questions (MuSiQue) where single-pass fails. When single-pass already works well (HotpotQA: 56%), decomposition introduces unnecessary error.
+
+| Question Type | n | Single Pass | Embed | Auto Decomp |
+|---------------|---|-------------|-------|-------------|
+| Bridge | 36 | 50.0% | 55.6% | 30.6% |
+| Comparison | 14 | 71.4% | 71.4% | 57.1% |
+
 ### Initial Results (n=30)
 
 | Config | Decomp | Extract | EM | Relaxed EM | F1 |
@@ -98,11 +113,13 @@ Screened 100 hypotheses across 6 categories (prompt engineering, retrieval, mode
 
 Results across multiple benchmarks (prevents gaming any single dataset):
 
-| Benchmark | Hops | Single Pass EM | Phi-3 Embed EM | Qwen Embed EM | Oracle EM |
-|-----------|------|----------------|----------------|---------------|-----------|
+| Benchmark | Hops | Single Pass | Embed (no decomp) | Auto Decomp | Oracle |
+|-----------|------|-------------|--------------------|--------------|---------|
 | TriviaQA | 1 | **70.0%** | N/A | N/A | N/A |
-| HotpotQA | 2 | 36.7% | **43.3%** | - | **50.0%** |
-| MuSiQue | 2 | 3.3% | 36.7% | **56.7%** | **63.3%** |
+| HotpotQA | 2 | 56.0% | **60.0%** | 38.0% | 50.0% |
+| MuSiQue | 2 | 16.0% | N/A | **42.0%** | **49.0%** |
+
+**Key pattern**: Decomposition helps most on hard compositional questions (MuSiQue: +26%) but hurts on easier multi-hop (HotpotQA: -18%). The technique is most valuable exactly where it's most needed.
 
 ## Published Comparisons (MuSiQue)
 
@@ -124,9 +141,10 @@ Results across multiple benchmarks (prevents gaming any single dataset):
 1. **System architecture > model size**: 16% → 42% EM (n=100) from system-level decomposition
 2. **Matches published SOTA at 25x smaller**: 42.0% vs StepChain's 43.9%, fully autonomous 7B model
 3. **Auto-decomposition works**: 7% gap vs gold at scale (0% at n=30, questions get harder)
-4. **Extractor quality matters most**: Phi-3→Qwen 7B gave +20% EM (biggest single improvement)
-5. **Retrieval is solved at sample scale**: BGE embeddings find gold paragraphs 96% of the time
-6. **Phi-3 can't decompose**: 6.7% EM (v3), but Qwen 7B decomposes effectively
+4. **Decomposition is task-dependent**: +26% on MuSiQue (hard), -18% on HotpotQA (easier)
+5. **Extractor quality matters most**: Phi-3→Qwen 7B gave +20% EM (biggest single improvement)
+6. **Retrieval is solved at sample scale**: BGE embeddings find gold paragraphs 96% of the time
+7. **Phi-3 can't decompose**: 6.7% EM (v3), but Qwen 7B decomposes effectively
 
 ### What Doesn't Work
 
@@ -153,6 +171,9 @@ ollama pull qwen2.5:7b    # for best results
 ```bash
 # v5 fully autonomous pipeline (the main result, ~10 min)
 python experiments/v5_auto_decomposition.py --limit 30
+
+# v5 HotpotQA cross-benchmark validation (~3 min)
+python experiments/v5_hotpotqa_auto_decomp.py --limit 50
 
 # v4 hypothesis battery (100 hypotheses, ~20 min)
 python experiments/hypothesis_battery.py --limit 15 --output results/hypothesis_battery.json

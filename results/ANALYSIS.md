@@ -414,14 +414,48 @@ has identical extraction accuracy. The pipeline is robust to paraphrased questio
 | SiReRAG | - | 40.5% | none |
 | HopRAG | - | 42.2% | none |
 | StepChain GraphRAG (prev SOTA) | - | 43.9% | none |
-| **Ours (fully autonomous)** | **7B** | **60.0%** | **none** |
-| **Ours (gold context ceiling)** | **7B** | **63.3%** | context |
+| **Ours (fully autonomous, n=100)** | **7B** | **42.0%** | **none** |
+| **Ours (gold decomp, n=100)** | **7B** | **49.0%** | decompositions |
+
+## v5 Cross-Benchmark: HotpotQA (n=50)
+
+### Results
+
+| Config | EM | Relaxed EM | F1 |
+|--------|------|------------|------|
+| Single pass | 56.0% | 68.0% | 0.641 |
+| Embed retrieval (no decomp) | **60.0%** | **72.0%** | **0.702** |
+| Auto decomp + Qwen | 38.0% | 48.0% | 0.474 |
+
+### By Question Type
+
+| Type | n | Single Pass | Embed | Auto Decomp |
+|------|---|-------------|-------|-------------|
+| Bridge | 36 | 50.0% | 55.6% | 30.6% |
+| Comparison | 14 | 71.4% | 71.4% | 57.1% |
+
+### Analysis
+
+**Decomposition hurts on HotpotQA** — the opposite of MuSiQue. The key difference:
+
+- **MuSiQue**: Single-pass gets 16% EM. Questions are genuinely compositional — the model
+  *cannot* answer them in one pass. System decomposition is transformative (+26%).
+- **HotpotQA**: Single-pass already gets 56% EM. Questions are often answerable from
+  a single passage. Decomposition introduces error cascade (-18%).
+
+This shows the technique is **task-dependent**: most valuable on hard compositional
+questions where single-pass reasoning fails. Simple embedding retrieval (no decomposition)
+provides the best improvement on HotpotQA (+4% over single-pass).
+
+Comparison questions are easier for all configs (71% vs 50% single-pass). Bridge questions
+suffer most from decomposition (50% → 31%) because the two-step process introduces
+error in the entity chain.
 
 ## Next Steps
 
-1. **Scale validation**: Run on full MuSiQue validation set (2,417 questions) to confirm with larger N
-2. **Multi-benchmark with auto-decomp**: Validate v5 pipeline across HotpotQA and TriviaQA
-3. **3-4 hop questions**: Test on harder MuSiQue questions (current: 2-hop only)
+1. **3-4 hop questions**: Test on harder MuSiQue questions (current: 2-hop only)
+2. **Full scale validation**: Run on full MuSiQue validation set (2,417 questions)
+3. **Adaptive decomposition**: Decide whether to decompose based on question difficulty
 4. **Real retrieval**: Test with actual document corpus instead of sample paragraphs
 5. **Agentic benchmarks**: GAIA or τ-bench for task-level evaluation
 
@@ -431,26 +465,26 @@ This experiment provides the strongest evidence yet for the "Let Them Forget" pa
 
 **Key data points for the paper:**
 
-1. **System architecture matters more than model capability**: 13.3% → 60.0% EM from
+1. **System architecture matters more than model capability**: 16% → 42% EM (n=100) from
    system-level decomposition — same model, same data, different architecture.
 
 2. **Query decomposition DOES work for small models** — previous result (-12.4%) was because
    decomposition was done IN the model. System-level decomposition produces opposite result.
 
-3. **Auto-decomposition gap is zero**: Qwen 7B generates decompositions that are
-   functionally equivalent to gold labels. No human annotation needed.
+3. **Auto-decomposition gap is 7% at scale**: Qwen 7B decompositions are close to gold.
+   Gap was 0% at n=30 but opens as questions get harder.
 
-4. **Extraction quality scales with model size**: Phi-3 (3.8B) → 36.7% embed, Qwen (7B) → 60.0%
-   embed. Both are "small" models but the extractor upgrade is the single biggest improvement.
+4. **Extraction quality scales with model size**: Phi-3 (3.8B) → 36.7% embed, Qwen (7B) → 42.0%
+   embed at n=100. Both are "small" models but extractor upgrade is the biggest improvement.
 
-5. **Retrieval quality is solved**: BGE embeddings achieve 93-97% gold paragraph retrieval.
+5. **Retrieval quality is solved**: BGE embeddings achieve 96% gold paragraph retrieval.
    The bottleneck is extraction quality, not retrieval or decomposition.
 
-6. **"Externalized cognition" validated**: The capability comes from the SYSTEM
-   (decompose → retrieve → extract → chain), not the MODEL doing reasoning.
+6. **Technique is task-dependent**: +26% on MuSiQue (hard), -18% on HotpotQA (easier).
+   Decomposition helps most exactly where it's most needed.
 
-7. **7B beats published SOTA with zero gold labels**: 60.0% EM exceeds StepChain GraphRAG
-   (43.9%) by 16.1 points, using a fully autonomous pipeline.
+7. **Matches published SOTA at 25x smaller**: 42.0% vs StepChain's 43.9%, fully autonomous
+   7B pipeline with zero gold labels.
 
-A single 7B model acting in two roles (decomposer + extractor) achieves 60.0% EM
-on multi-hop QA, fully autonomously, beating all published results on MuSiQue.
+A single 7B model acting in two roles (decomposer + extractor) achieves 42.0% EM
+on MuSiQue (n=100), matching published SOTA with a model 25x smaller.
