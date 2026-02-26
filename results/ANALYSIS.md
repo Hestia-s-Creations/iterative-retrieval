@@ -392,14 +392,36 @@ has identical extraction accuracy. The pipeline is robust to paraphrased questio
 
 **The bottleneck is extraction quality, not decomposition or retrieval.**
 
+### v5 Full Validation (n=1,252 — all 2-hop MuSiQue)
+
+| Config | EM | Relaxed EM | F1 |
+|--------|------|------------|------|
+| Single pass | 17.3% | 23.6% | 0.244 |
+| Gold decomp + Qwen | 45.9% | 56.9% | 0.552 |
+| **Auto decomp + Qwen** | **38.6%** | **49.7%** | **0.479** |
+
+Full validation on all 1,252 2-hop answerable MuSiQue questions (81 minutes elapsed).
+
+**Auto-decomposition gap is remarkably stable across scales:**
+- n=30: 0.0% gap (60.0% vs 60.0%) — first 30 are biased easy
+- n=100: 7.0% gap (42.0% vs 49.0%)
+- n=1252: 7.3% gap (38.6% vs 45.9%)
+
+The gap opened from 0% to ~7% between n=30 and n=100 and then **held constant** at 7.0-7.3%
+from n=100 to n=1252. This means the decomposition quality is consistently ~7% below gold
+across the full difficulty distribution — not getting worse on harder questions.
+
+Single pass also rose slightly (16.0% → 17.3%), confirming the first 100 questions were
+marginally harder than the average.
+
 ### Key v5 Findings
 
-1. **The auto-decomposition gap is zero** — gold labels provide no advantage for decomposition
-2. **60.0% EM fully autonomous** — 13.3% → 60.0% from system-level decomposition alone
+1. **The auto-decomposition gap is zero at n=30, ~7% at scale** — stable from n=100 to n=1252
+2. **38.6% EM fully autonomous at full scale** — 17.3% → 38.6% from system-level decomposition
 3. **Qwen can decompose AND extract** — a single 7B model handles both roles
 4. **The extractor is the bottleneck** — +23.3% EM from Phi-3 → Qwen (not decomp or retrieval)
 5. **Retrieval robustness** — BGE finds gold paragraphs 97% of the time even with auto-decomposed queries
-6. **Published SOTA beaten with zero gold labels** — 60.0% > StepChain's 43.9%, fully autonomous
+6. **Competitive with published SOTA at 25x smaller** — 38.6% vs StepChain's 43.9%, fully autonomous
 
 ## Updated Published Comparisons (MuSiQue)
 
@@ -414,8 +436,8 @@ has identical extraction accuracy. The pipeline is robust to paraphrased questio
 | SiReRAG | - | 40.5% | none |
 | HopRAG | - | 42.2% | none |
 | StepChain GraphRAG (prev SOTA) | - | 43.9% | none |
-| **Ours (fully autonomous, n=100)** | **7B** | **42.0%** | **none** |
-| **Ours (gold decomp, n=100)** | **7B** | **49.0%** | decompositions |
+| **Ours (fully autonomous, n=1252)** | **7B** | **38.6%** | **none** |
+| **Ours (gold decomp, n=1252)** | **7B** | **45.9%** | decompositions |
 
 ## v5 Cross-Benchmark: HotpotQA (n=50)
 
@@ -511,10 +533,11 @@ sub-questions fail to retrieve the right paragraphs, causing cascading errors.
 ## Next Steps
 
 1. **Recursive decomposition**: Break 3-4 hop into cascaded 2-hop decompositions
-2. **Full scale validation**: Run on full MuSiQue validation set (2,417 questions)
+2. ~~**Full scale validation**~~: **DONE** — 1,252 2-hop questions validated (38.6% auto, 45.9% gold)
 3. **Larger decomposer**: Test GPT-4o or Claude for decomposition only (Qwen for extraction)
 4. **Adaptive decomposition**: Decide whether/how-much to decompose based on question complexity
 5. **Real retrieval**: Test with actual document corpus instead of sample paragraphs
+6. **Close the 7% gap**: Investigate what auto-decomposition gets wrong vs gold at scale
 
 ## Connection to Paper
 
@@ -522,31 +545,32 @@ This experiment provides the strongest evidence yet for the "Let Them Forget" pa
 
 **Key data points for the paper:**
 
-1. **System architecture matters more than model capability**: 16% → 42% EM (n=100) from
+1. **System architecture matters more than model capability**: 17.3% → 38.6% EM (n=1252) from
    system-level decomposition — same model, same data, different architecture.
 
 2. **Query decomposition DOES work for small models** — previous result (-12.4%) was because
    decomposition was done IN the model. System-level decomposition produces opposite result.
 
-3. **Auto-decomposition gap is 7% at scale**: Qwen 7B decompositions are close to gold.
-   Gap was 0% at n=30 but opens as questions get harder.
+3. **Auto-decomposition gap is ~7% and stable across scales**: 0% at n=30, 7.0% at n=100,
+   7.3% at n=1252. Consistent decomposition quality across the full difficulty distribution.
 
-4. **Extraction quality scales with model size**: Phi-3 (3.8B) → 36.7% embed, Qwen (7B) → 42.0%
-   embed at n=100. Both are "small" models but extractor upgrade is the biggest improvement.
+4. **Extraction quality scales with model size**: Phi-3 (3.8B) → 36.7% embed, Qwen (7B) → 38.6%
+   embed at n=1252. Both are "small" models but extractor upgrade is the biggest improvement.
 
 5. **Retrieval quality is solved**: BGE embeddings achieve 96% gold paragraph retrieval.
    The bottleneck is extraction quality, not retrieval or decomposition.
 
-6. **Technique is task-dependent**: +26% on MuSiQue (hard), -18% on HotpotQA (easier).
+6. **Technique is task-dependent**: +21.3% on MuSiQue (hard), -18% on HotpotQA (easier).
    Decomposition helps most exactly where it's most needed.
 
-7. **Matches published SOTA at 25x smaller**: 42.0% vs StepChain's 43.9%, fully autonomous
-   7B pipeline with zero gold labels.
+7. **Competitive with published SOTA at 25x smaller**: 38.6% vs StepChain's 43.9%, fully
+   autonomous 7B pipeline with zero gold labels. Gold decomp (45.9%) exceeds SOTA.
 
 8. **2-hop decomposition is solved, 3-4 hop is the frontier**: Auto decompositions
    beat gold on 2-hop (66.7% vs 46.7%) but fail on 3-4 hop (3.3% and 6.7%).
 
-A single 7B model acting in two roles (decomposer + extractor) achieves 42.0% EM
-on MuSiQue 2-hop (n=100), matching published SOTA with a model 25x smaller.
+A single 7B model acting in two roles (decomposer + extractor) achieves 38.6% EM
+on all 1,252 MuSiQue 2-hop questions, competitive with published SOTA using a model 25x smaller.
+With gold decompositions, 45.9% EM exceeds StepChain's 43.9%.
 The pipeline architecture generalizes to 3-4 hop (gold decomp: 63.3% on 3-hop)
 but auto-decomposition quality remains the key frontier.
