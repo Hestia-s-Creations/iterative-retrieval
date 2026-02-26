@@ -1,0 +1,2512 @@
+{
+  "baseline_v2": {
+    "description": "Phi-3 baseline 4-shot top-3 (v2 reference)",
+    "em": 30.0,
+    "relaxed_em": 40.0,
+    "f1": 0.3714285714285714,
+    "latency_ms": 700.2267440160116,
+    "errors": 0,
+    "n_samples": 30,
+    "per_question": [
+      {
+        "question": "Who is the spouse of the Green performer?",
+        "prediction": "Miquette Giraudy",
+        "answer": "Miquette Giraudy",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who founded the company that distributed the film UHF?",
+        "prediction": "context does not provide this information",
+        "answer": "Mike Medavoy",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "prediction": "None",
+        "answer": "Tamaulipas",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where is Ulrich Walter's employer headquartered?",
+        "prediction": "John Deere World Headquarters",
+        "answer": "Cologne",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Which company owns the manufacturer of Learjet 60?",
+        "prediction": "GenCorp",
+        "answer": "Bombardier Inc.",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the child of Caroline LeRoy's spouse?",
+        "prediction": "Daniel Fletcher Webster Jr",
+        "answer": "Fletcher Webster",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.6666666666666666
+      },
+      {
+        "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "prediction": "Louis XIV of France",
+        "answer": "Marie de' Medici",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is the goal of the group that European Movement Germany is a member of?",
+        "prediction": "To promote European integration",
+        "answer": "European integration",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.6666666666666666
+      },
+      {
+        "question": "What company succeeded the owner of Empire Sports Network?",
+        "prediction": "Empire Sports Network",
+        "answer": "Time Warner Cable",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What province shares a border with the province where Lago District is located?",
+        "prediction": "- Komi Republic in the north",
+        "answer": "Cabo Delgado Province",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "prediction": "Serie A",
+        "answer": "Lega Pro Prima Divisione",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is a notable work written by the author of The Timothy files?",
+        "prediction": "Anderson Tapes",
+        "answer": "Anderson Tapes",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "In which borough was Callum McManaman born?",
+        "prediction": "Merseyside",
+        "answer": "Knowsley",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What other county does the county where Imperial is located share a border with?",
+        "prediction": "Crockett County and Sheffield",
+        "answer": "Crockett County",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.6666666666666666
+      },
+      {
+        "question": "In what county is William W. Blair's birthplace located?",
+        "prediction": "Holley",
+        "answer": "Orleans County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What award did the author of The Red Tree receive?",
+        "prediction": "Academy Award for Best Animated Short Film",
+        "answer": "Academy Award for Best Animated Short Film",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Where was Tyler MacDuff's child educated?",
+        "prediction": "Columbia University majoring in chemistry",
+        "answer": "Blair High School",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the spouse of the Rabbit Hole's producer?",
+        "prediction": "Aaron Eckhart",
+        "answer": "Keith Urban",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the child of Sigrid Eskilsdotter's child?",
+        "prediction": "Svante Turesson Bielke' end children are not mentioned in this context",
+        "answer": "Svante Stensson Sture",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.14285714285714288
+      },
+      {
+        "question": "In which county is Kimbrough Memorial Stadium located?",
+        "prediction": "Randall County, Texas",
+        "answer": "Randall County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What record label is the performer of Almost Made Ya signed to?",
+        "prediction": "Roxy Recordings",
+        "answer": "Derrty Entertainment",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where was the author of Hannibal and Scipio educated at?",
+        "prediction": "Exeter College",
+        "answer": "Exeter College",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "prediction": "Charles County",
+        "answer": "Charles County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of the Victim of Romance performer?",
+        "prediction": "Chynna Phillips",
+        "answer": "Chynna Phillips",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What county was Tim Dubois born in?",
+        "prediction": "Minsk Region",
+        "answer": "McDonald County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What record label did the person who is part of The Bruce Lee Band start?",
+        "prediction": "Asian Man Records",
+        "answer": "Asian Man Records",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is another notable work made by the author of Miss Sara Sampson?",
+        "prediction": "Emilia Galotti",
+        "answer": "Emilia Galotti",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What instrument is played by the person from The Blackout All-Stars?",
+        "prediction": "Guitar",
+        "answer": "conga",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is the seat of the county where Van Hook Township is located?",
+        "prediction": "Beckwith, Ontario",
+        "answer": "Stanley",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "prediction": "Edward Stillingfleet",
+        "answer": "Sir Francis Baring, 1st Baronet",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      }
+    ]
+  },
+  "H75_qwen_8shot": {
+    "description": "Qwen 7B + 8-shot + top-3 (BEST autonomous)",
+    "em": 56.666666666666664,
+    "relaxed_em": 66.66666666666666,
+    "f1": 0.6548148148148148,
+    "latency_ms": 1072.3703145980835,
+    "errors": 0,
+    "n_samples": 30,
+    "per_question": [
+      {
+        "question": "Who is the spouse of the Green performer?",
+        "prediction": "Miquette Giraudy",
+        "answer": "Miquette Giraudy",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who founded the company that distributed the film UHF?",
+        "prediction": "Jeff Bezos",
+        "answer": "Mike Medavoy",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "prediction": "Norfolk Island",
+        "answer": "Tamaulipas",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where is Ulrich Walter's employer headquartered?",
+        "prediction": "Not provided in context",
+        "answer": "Cologne",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Which company owns the manufacturer of Learjet 60?",
+        "prediction": "Bombardier Inc",
+        "answer": "Bombardier Inc.",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of Caroline LeRoy's spouse?",
+        "prediction": "Fletcher Webster",
+        "answer": "Fletcher Webster",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "prediction": "Anne of Austria",
+        "answer": "Marie de' Medici",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is the goal of the group that European Movement Germany is a member of?",
+        "prediction": "promoting European integration, and disseminating information about it",
+        "answer": "European integration",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.4
+      },
+      {
+        "question": "What company succeeded the owner of Empire Sports Network?",
+        "prediction": "Windjammer Communications",
+        "answer": "Time Warner Cable",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What province shares a border with the province where Lago District is located?",
+        "prediction": "Cabo Delgado Province",
+        "answer": "Cabo Delgado Province",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "prediction": "Lega Pro Prima Divisione",
+        "answer": "Lega Pro Prima Divisione",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is a notable work written by the author of The Timothy files?",
+        "prediction": "Anderson Tapes",
+        "answer": "Anderson Tapes",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "In which borough was Callum McManaman born?",
+        "prediction": "Knowsley",
+        "answer": "Knowsley",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What other county does the county where Imperial is located share a border with?",
+        "prediction": "Texas",
+        "answer": "Crockett County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In what county is William W. Blair's birthplace located?",
+        "prediction": "McDonald County",
+        "answer": "Orleans County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.5
+      },
+      {
+        "question": "What award did the author of The Red Tree receive?",
+        "prediction": "Academy Award for Best Animated Short Film",
+        "answer": "Academy Award for Best Animated Short Film",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Where was Tyler MacDuff's child educated?",
+        "prediction": "Blair International Baccalaureate School in Pasadena",
+        "answer": "Blair High School",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.4444444444444444
+      },
+      {
+        "question": "Who is the spouse of the Rabbit Hole's producer?",
+        "prediction": "Rabbit Ears Productions is not married or have a spouse. The question seems to be based on a misunderstanding or misinterpretation of the context provided",
+        "answer": "Keith Urban",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the child of Sigrid Eskilsdotter's child?",
+        "prediction": "Sigrid Eskilsdotter (Ban\u00e9r)",
+        "answer": "Svante Stensson Sture",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In which county is Kimbrough Memorial Stadium located?",
+        "prediction": "Randall County",
+        "answer": "Randall County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What record label is the performer of Almost Made Ya signed to?",
+        "prediction": "Derrty Entertainment",
+        "answer": "Derrty Entertainment",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Where was the author of Hannibal and Scipio educated at?",
+        "prediction": "Exeter College, Oxford",
+        "answer": "Exeter College",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.8
+      },
+      {
+        "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "prediction": "Charles County",
+        "answer": "Charles County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of the Victim of Romance performer?",
+        "prediction": "Michelle Phillips' daughter is Chynna Phillips",
+        "answer": "Chynna Phillips",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.5
+      },
+      {
+        "question": "What county was Tim Dubois born in?",
+        "prediction": "McDonald County",
+        "answer": "McDonald County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What record label did the person who is part of The Bruce Lee Band start?",
+        "prediction": "Asian Man Records",
+        "answer": "Asian Man Records",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is another notable work made by the author of Miss Sara Sampson?",
+        "prediction": "Emilia Galotti",
+        "answer": "Emilia Galotti",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What instrument is played by the person from The Blackout All-Stars?",
+        "prediction": "conga",
+        "answer": "conga",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is the seat of the county where Van Hook Township is located?",
+        "prediction": "Stanley",
+        "answer": "Stanley",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "prediction": "Sir Francis Baring, 1st Baronet",
+        "answer": "Sir Francis Baring, 1st Baronet",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      }
+    ]
+  },
+  "H82_qwen_8shot_top2": {
+    "description": "Qwen 7B + 8-shot + top-2",
+    "em": 43.333333333333336,
+    "relaxed_em": 53.333333333333336,
+    "f1": 0.5379365079365079,
+    "latency_ms": 777.7633984883627,
+    "errors": 0,
+    "n_samples": 30,
+    "per_question": [
+      {
+        "question": "Who is the spouse of the Green performer?",
+        "prediction": "None",
+        "answer": "Miquette Giraudy",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who founded the company that distributed the film UHF?",
+        "prediction": "None",
+        "answer": "Mike Medavoy",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "prediction": "Minsk Region",
+        "answer": "Tamaulipas",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where is Ulrich Walter's employer headquartered?",
+        "prediction": "Not provided in context",
+        "answer": "Cologne",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Which company owns the manufacturer of Learjet 60?",
+        "prediction": "Bombardier Inc",
+        "answer": "Bombardier Inc.",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of Caroline LeRoy's spouse?",
+        "prediction": "Fletcher Webster",
+        "answer": "Fletcher Webster",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "prediction": "Marie de' Medici",
+        "answer": "Marie de' Medici",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is the goal of the group that European Movement Germany is a member of?",
+        "prediction": "promoting European integration, and disseminating information about it",
+        "answer": "European integration",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.4
+      },
+      {
+        "question": "What company succeeded the owner of Empire Sports Network?",
+        "prediction": "Windjammer Communications",
+        "answer": "Time Warner Cable",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What province shares a border with the province where Lago District is located?",
+        "prediction": "Cabo Delgado Province and Niassa Province",
+        "answer": "Cabo Delgado Province",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.6666666666666666
+      },
+      {
+        "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "prediction": "Lega Pro Prima Divisione",
+        "answer": "Lega Pro Prima Divisione",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is a notable work written by the author of The Timothy files?",
+        "prediction": "Anderson Tapes",
+        "answer": "Anderson Tapes",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "In which borough was Callum McManaman born?",
+        "prediction": "Knowsley",
+        "answer": "Knowsley",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What other county does the county where Imperial is located share a border with?",
+        "prediction": "Texas",
+        "answer": "Crockett County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In what county is William W. Blair's birthplace located?",
+        "prediction": "Murray",
+        "answer": "Orleans County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What award did the author of The Red Tree receive?",
+        "prediction": "Red Ochre Award",
+        "answer": "Academy Award for Best Animated Short Film",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.2
+      },
+      {
+        "question": "Where was Tyler MacDuff's child educated?",
+        "prediction": "Blair International Baccalaureate School",
+        "answer": "Blair High School",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.5714285714285715
+      },
+      {
+        "question": "Who is the spouse of the Rabbit Hole's producer?",
+        "prediction": "Nicole Kidman",
+        "answer": "Keith Urban",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the child of Sigrid Eskilsdotter's child?",
+        "prediction": "Sigrid Eskilsdotter (Ban\u00e9r)",
+        "answer": "Svante Stensson Sture",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In which county is Kimbrough Memorial Stadium located?",
+        "prediction": "Canyon County",
+        "answer": "Randall County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.5
+      },
+      {
+        "question": "What record label is the performer of Almost Made Ya signed to?",
+        "prediction": "Derrty Entertainment",
+        "answer": "Derrty Entertainment",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Where was the author of Hannibal and Scipio educated at?",
+        "prediction": "Exeter College, Oxford",
+        "answer": "Exeter College",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.8
+      },
+      {
+        "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "prediction": "Charles County",
+        "answer": "Charles County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of the Victim of Romance performer?",
+        "prediction": "Chynna Phillips",
+        "answer": "Chynna Phillips",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What county was Tim Dubois born in?",
+        "prediction": "McDonald County",
+        "answer": "McDonald County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What record label did the person who is part of The Bruce Lee Band start?",
+        "prediction": "Not applicable",
+        "answer": "Asian Man Records",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is another notable work made by the author of Miss Sara Sampson?",
+        "prediction": "Miss Sara Sampson",
+        "answer": "Emilia Galotti",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What instrument is played by the person from The Blackout All-Stars?",
+        "prediction": "conga",
+        "answer": "conga",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is the seat of the county where Van Hook Township is located?",
+        "prediction": "Stanley",
+        "answer": "Stanley",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "prediction": "Sir Francis Baring, 1st Baronet",
+        "answer": "Sir Francis Baring, 1st Baronet",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      }
+    ]
+  },
+  "H92_qwen_neg_top2_greedy_pp": {
+    "description": "Qwen 7B + negative + top-2 + greedy + postprocess",
+    "em": 50.0,
+    "relaxed_em": 66.66666666666666,
+    "f1": 0.6237445887445887,
+    "latency_ms": 801.8027702967325,
+    "errors": 0,
+    "n_samples": 30,
+    "per_question": [
+      {
+        "question": "Who is the spouse of the Green performer?",
+        "prediction": "No one mentioned",
+        "answer": "Miquette Giraudy",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who founded the company that distributed the film UHF?",
+        "prediction": "Marketwired was founded in 1993. The founder is not specified in the given context",
+        "answer": "Mike Medavoy",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "prediction": "Nuevo Laredo",
+        "answer": "Tamaulipas",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where is Ulrich Walter's employer headquartered?",
+        "prediction": "Not specified in the context provided",
+        "answer": "Cologne",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Which company owns the manufacturer of Learjet 60?",
+        "prediction": "Bombardier Inc",
+        "answer": "Bombardier Inc.",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of Caroline LeRoy's spouse?",
+        "prediction": "Fletcher Webster",
+        "answer": "Fletcher Webster",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "prediction": "Marie de' Medici",
+        "answer": "Marie de' Medici",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is the goal of the group that European Movement Germany is a member of?",
+        "prediction": "Promoting European integration",
+        "answer": "European integration",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.8
+      },
+      {
+        "question": "What company succeeded the owner of Empire Sports Network?",
+        "prediction": "Empire Sports Network",
+        "answer": "Time Warner Cable",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What province shares a border with the province where Lago District is located?",
+        "prediction": "Cabo Delgado Province",
+        "answer": "Cabo Delgado Province",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "prediction": "Lega Pro Prima Divisione",
+        "answer": "Lega Pro Prima Divisione",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is a notable work written by the author of The Timothy files?",
+        "prediction": "Anderson Tapes",
+        "answer": "Anderson Tapes",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "In which borough was Callum McManaman born?",
+        "prediction": "Knowsley",
+        "answer": "Knowsley",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What other county does the county where Imperial is located share a border with?",
+        "prediction": "Texas",
+        "answer": "Crockett County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In what county is William W. Blair's birthplace located?",
+        "prediction": "Orleans County",
+        "answer": "Orleans County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What award did the author of The Red Tree receive?",
+        "prediction": "question does not provide enough context to determine if Shaun Tan received the Red Ochre Award",
+        "answer": "Academy Award for Best Animated Short Film",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.09090909090909091
+      },
+      {
+        "question": "Where was Tyler MacDuff's child educated?",
+        "prediction": "Blair International Baccalaureate School",
+        "answer": "Blair High School",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.5714285714285715
+      },
+      {
+        "question": "Who is the spouse of the Rabbit Hole's producer?",
+        "prediction": "Nicole Kidman",
+        "answer": "Keith Urban",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the child of Sigrid Eskilsdotter's child?",
+        "prediction": "Sigrid Eskilsdotter",
+        "answer": "Svante Stensson Sture",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In which county is Kimbrough Memorial Stadium located?",
+        "prediction": "Texas",
+        "answer": "Randall County",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.5
+      },
+      {
+        "question": "What record label is the performer of Almost Made Ya signed to?",
+        "prediction": "Derrty Entertainment",
+        "answer": "Derrty Entertainment",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Where was the author of Hannibal and Scipio educated at?",
+        "prediction": "Exeter College",
+        "answer": "Exeter College",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "prediction": "Maryland",
+        "answer": "Charles County",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.5
+      },
+      {
+        "question": "Who is the child of the Victim of Romance performer?",
+        "prediction": "Chynna Phillips",
+        "answer": "Chynna Phillips",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What county was Tim Dubois born in?",
+        "prediction": "Missouri",
+        "answer": "McDonald County",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.5
+      },
+      {
+        "question": "What record label did the person who is part of The Bruce Lee Band start?",
+        "prediction": "Asian Man Records",
+        "answer": "Asian Man Records",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is another notable work made by the author of Miss Sara Sampson?",
+        "prediction": "Emilia Galotti",
+        "answer": "Emilia Galotti",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What instrument is played by the person from The Blackout All-Stars?",
+        "prediction": "conga",
+        "answer": "conga",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is the seat of the county where Van Hook Township is located?",
+        "prediction": "Stanley",
+        "answer": "Stanley",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "prediction": "Sir Francis Baring",
+        "answer": "Sir Francis Baring, 1st Baronet",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.7499999999999999
+      }
+    ]
+  },
+  "H21_phi3_top1": {
+    "description": "Phi-3 + top-1 (less noise)",
+    "em": 23.333333333333332,
+    "relaxed_em": 33.33333333333333,
+    "f1": 0.3317508417508418,
+    "latency_ms": 588.751482963562,
+    "errors": 0,
+    "n_samples": 30,
+    "per_question": [
+      {
+        "question": "Who is the spouse of the Green performer?",
+        "prediction": "context does not provide information about who Joni Mitchell'selkuspouse is",
+        "answer": "Miquette Giraudy",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who founded the company that distributed the film UHF?",
+        "prediction": "Mike Medavoy",
+        "answer": "Mike Medavoy",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "prediction": "None of the above as no specific country's federal structure regarding municipalities and states was described to infer from",
+        "answer": "Tamaulipas",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where is Ulrich Walter's employer headquartered?",
+        "prediction": "Germany",
+        "answer": "Cologne",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Which company owns the manufacturer of Learjet 60?",
+        "prediction": "Bombardier Inc",
+        "answer": "Bombardier Inc.",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of Caroline LeRoy's spouse?",
+        "prediction": "Fletcher Webster",
+        "answer": "Fletcher Webster",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "prediction": "Marie de' Medici",
+        "answer": "Marie de' Medici",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is the goal of the group that European Movement Germany is a member of?",
+        "prediction": "To promote European integration and disseminate information about it",
+        "answer": "European integration",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.3636363636363636
+      },
+      {
+        "question": "What company succeeded the owner of Empire Sports Network?",
+        "prediction": "Windjammer Cable",
+        "answer": "Time Warner Cable",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.4
+      },
+      {
+        "question": "What province shares a border with the province where Lago District is located?",
+        "prediction": "Niassa Reserve",
+        "answer": "Cabo Delgado Province",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "prediction": "Serie C/B",
+        "answer": "Lega Pro Prima Divisione",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is a notable work written by the author of The Timothy files?",
+        "prediction": "Timothy Files",
+        "answer": "Anderson Tapes",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In which borough was Callum McManaman born?",
+        "prediction": "Merseyside",
+        "answer": "Knowsley",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What other county does the county where Imperial is located share a border with?",
+        "prediction": "Imperial",
+        "answer": "Crockett County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In what county is William W. Blair's birthplace located?",
+        "prediction": "Orleans County",
+        "answer": "Orleans County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What award did the author of The Red Tree receive?",
+        "prediction": "Red Tree (Shaun Tan) won an Astrid Lindgren Memorial Award in 2013",
+        "answer": "Academy Award for Best Animated Short Film",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.1111111111111111
+      },
+      {
+        "question": "Where was Tyler MacDuff's child educated?",
+        "prediction": "Blair International Baccalaureate School in Pasadena",
+        "answer": "Blair High School",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.4444444444444444
+      },
+      {
+        "question": "Who is the spouse of the Rabbit Hole's producer?",
+        "prediction": "Aaron Eckhart",
+        "answer": "Keith Urban",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the child of Sigrid Eskilsdotter's child?",
+        "prediction": "King Gustav Vasa of Sweden",
+        "answer": "Svante Stensson Sture",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In which county is Kimbrough Memorial Stadium located?",
+        "prediction": "Randall County",
+        "answer": "Randall County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What record label is the performer of Almost Made Ya signed to?",
+        "prediction": "Universal Records",
+        "answer": "Derrty Entertainment",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where was the author of Hannibal and Scipio educated at?",
+        "prediction": "Exeter College, Oxford",
+        "answer": "Exeter College",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.8
+      },
+      {
+        "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "prediction": "Charles County",
+        "answer": "Charles County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of the Victim of Romance performer?",
+        "prediction": "Not applicable",
+        "answer": "Chynna Phillips",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What county was Tim Dubois born in?",
+        "prediction": "Fayetteville\u2013Springdale\u2013Rogers, AR-MO Metropolitan Statistical Area",
+        "answer": "McDonald County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What record label did the person who is part of The Bruce Lee Band start?",
+        "prediction": "Go Down Records",
+        "answer": "Asian Man Records",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.3333333333333333
+      },
+      {
+        "question": "What is another notable work made by the author of Miss Sara Sampson?",
+        "prediction": "Miss Sara Sampson",
+        "answer": "Emilia Galotti",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What instrument is played by the person from The Blackout All-Stars?",
+        "prediction": "Chapman Stick",
+        "answer": "conga",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is the seat of the county where Van Hook Township is located?",
+        "prediction": "Stanley, North Dakota",
+        "answer": "Stanley",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.5
+      },
+      {
+        "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "prediction": "Not specified in the context provided. The text does not provide information about",
+        "answer": "Sir Francis Baring, 1st Baronet",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      }
+    ]
+  },
+  "H11_phi3_quote": {
+    "description": "Phi-3 + quote-based prompt",
+    "em": 13.333333333333334,
+    "relaxed_em": 33.33333333333333,
+    "f1": 0.23664933106109576,
+    "latency_ms": 763.3593002955118,
+    "errors": 0,
+    "n_samples": 30,
+    "per_question": [
+      {
+        "question": "Who is the spouse of the Green performer?",
+        "prediction": "Miquette Giraudy",
+        "answer": "Miquette Giraudy",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who founded the company that distributed the film UHF?",
+        "prediction": "context does not provide information on who founded Marketwired or whether it distributes UHF (Ultra High Frequency). Therefore",
+        "answer": "Mike Medavoy",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "prediction": "text does not provide information about the ownership of Ciudad Deportiva",
+        "answer": "Tamaulipas",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where is Ulrich Walter's employer headquartered?",
+        "prediction": "provided text does not specify where the headquarters of the entity employing Ulrich Walter are located",
+        "answer": "Cologne",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Which company owns the manufacturer of Learjet 60?",
+        "prediction": "Bombardier Inc",
+        "answer": "Bombardier Inc.",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of Caroline LeRoy's spouse?",
+        "prediction": "Daniel Fletcher Webster was the son of renowned politician Daniel Webster and Grace Fletcher Webster",
+        "answer": "Fletcher Webster",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.25
+      },
+      {
+        "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "prediction": "Marie de' Medici",
+        "answer": "Marie de' Medici",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is the goal of the group that European Movement Germany is a member of?",
+        "prediction": "goal of European Movement International is \"promoting European integration",
+        "answer": "European integration",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.3636363636363636
+      },
+      {
+        "question": "What company succeeded the owner of Empire Sports Network?",
+        "prediction": "context does not provide information on what succeeded Adelphia Communications Corporation",
+        "answer": "Time Warner Cable",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What province shares a border with the province where Lago District is located?",
+        "prediction": "Lake Nyasa on the west, Lichinga on the south, Sanga District on the east",
+        "answer": "Cabo Delgado Province",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "prediction": "context does not provide specific information about the current league that Benevento Calcio is playing in beyond stating they are home to Carmelo Imb",
+        "answer": "Lega Pro Prima Divisione",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is a notable work written by the author of The Timothy files?",
+        "prediction": "Timothy Files",
+        "answer": "Anderson Tapes",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In which borough was Callum McManaman born?",
+        "prediction": "context does not provide specific information about an administrative region for being born in Whiston",
+        "answer": "Knowsley",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What other county does the county where Imperial is located share a border with?",
+        "prediction": "Crockett County and Mexico",
+        "answer": "Crockett County",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.6666666666666666
+      },
+      {
+        "question": "In what county is William W. Blair's birthplace located?",
+        "prediction": "Minsk Region or Minsk Voblas\u0107 or Minsk Oblast (, \"Minskaja vob\u0142as\u0107\" ; , \"Minsk",
+        "answer": "Orleans County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What award did the author of The Red Tree receive?",
+        "prediction": "No specific award mentioned for The Red Tree in the provided context",
+        "answer": "Academy Award for Best Animated Short Film",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.23529411764705882
+      },
+      {
+        "question": "Where was Tyler MacDuff's child educated?",
+        "prediction": "context does not provide specific information about where David Gardiner Tyler received his education",
+        "answer": "Blair High School",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the spouse of the Rabbit Hole's producer?",
+        "prediction": "Aaron Eckhart",
+        "answer": "Keith Urban",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the child of Sigrid Eskilsdotter's child?",
+        "prediction": "context does not provide information about any children of Svante Turesson Bielke",
+        "answer": "Svante Stensson Sture",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.13333333333333333
+      },
+      {
+        "question": "In which county is Kimbrough Memorial Stadium located?",
+        "prediction": "Canyon Independent School District",
+        "answer": "Randall County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What record label is the performer of Almost Made Ya signed to?",
+        "prediction": "context does not provide specific information about the record label LeToya Luckett",
+        "answer": "Derrty Entertainment",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where was the author of Hannibal and Scipio educated at?",
+        "prediction": "Thomas Nabbes was educated at Exeter College, Oxford in 1621",
+        "answer": "Exeter College",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.33333333333333337
+      },
+      {
+        "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "prediction": "Hughesville, Charles County, Maryland, United States",
+        "answer": "Charles County",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.6666666666666666
+      },
+      {
+        "question": "Who is the child of the Victim of Romance performer?",
+        "prediction": "Chynna Phillips",
+        "answer": "Chynna Phillips",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What county was Tim Dubois born in?",
+        "prediction": "Minsk Region or Minsk Voblas\u0107 or Minsk Oblast (, \"Minskaja vob\u0142as\u0107\" ; , \"Minsk",
+        "answer": "McDonald County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What record label did the person who is part of The Bruce Lee Band start?",
+        "prediction": "context does not provide specific information about Less Than Jake's record label affiliation",
+        "answer": "Asian Man Records",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is another notable work made by the author of Miss Sara Sampson?",
+        "prediction": "Emilia Galotti is a play in five acts by Gotthold Ephraim Lessing",
+        "answer": "Emilia Galotti",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.3076923076923077
+      },
+      {
+        "question": "What instrument is played by the person from The Blackout All-Stars?",
+        "prediction": "context does not provide specific information about",
+        "answer": "conga",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is the seat of the county where Van Hook Township is located?",
+        "prediction": "context does not provide information on the capital of Mountrail County",
+        "answer": "Stanley",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "prediction": "Henry Bingham Baring was the son of Lieutenant-General Charles Baring",
+        "answer": "Sir Francis Baring, 1st Baronet",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.14285714285714285
+      }
+    ]
+  },
+  "H30_phi3_plain_context": {
+    "description": "Phi-3 + plain context (no titles)",
+    "em": 30.0,
+    "relaxed_em": 43.333333333333336,
+    "f1": 0.37872201872201866,
+    "latency_ms": 654.3668031692505,
+    "errors": 0,
+    "n_samples": 30,
+    "per_question": [
+      {
+        "question": "Who is the spouse of the Green performer?",
+        "prediction": "Miquette Giraudy",
+        "answer": "Miquette Giraudy",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who founded the company that distributed the film UHF?",
+        "prediction": "context does not provide this information",
+        "answer": "Mike Medavoy",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "prediction": "None",
+        "answer": "Tamaulipas",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where is Ulrich Walter's employer headquartered?",
+        "prediction": "Colorado Springs, Colorado",
+        "answer": "Cologne",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Which company owns the manufacturer of Learjet 60?",
+        "prediction": "GenCorp",
+        "answer": "Bombardier Inc.",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the child of Caroline LeRoy's spouse?",
+        "prediction": "Daniel Fletcher Webster Jr. (1846\u20131907) and Caroline LeRoy Webster (September 28",
+        "answer": "Fletcher Webster",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.3076923076923077
+      },
+      {
+        "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "prediction": "Anne of Austria",
+        "answer": "Marie de' Medici",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is the goal of the group that European Movement Germany is a member of?",
+        "prediction": "To promote European integration",
+        "answer": "European integration",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.6666666666666666
+      },
+      {
+        "question": "What company succeeded the owner of Empire Sports Network?",
+        "prediction": "Empire Sports Network was an American regional sports network owned by Adelphia Communications Corporation before it ceased operations in March 2005 due to the company",
+        "answer": "Time Warner Cable",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What province shares a border with the province where Lago District is located?",
+        "prediction": "- Komi Republic in the north",
+        "answer": "Cabo Delgado Province",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "prediction": "Serie A",
+        "answer": "Lega Pro Prima Divisione",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is a notable work written by the author of The Timothy files?",
+        "prediction": "Anderson Tapes",
+        "answer": "Anderson Tapes",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "In which borough was Callum McManaman born?",
+        "prediction": "Merseyside",
+        "answer": "Knowsley",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What other county does the county where Imperial is located share a border with?",
+        "prediction": "Crockett County and Indian Ford (Lancaster Crossing)",
+        "answer": "Crockett County",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.4444444444444445
+      },
+      {
+        "question": "In what county is William W. Blair's birthplace located?",
+        "prediction": "Orleans County",
+        "answer": "Orleans County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What award did the author of The Red Tree receive?",
+        "prediction": "Academy Award for Best Animated Short Film",
+        "answer": "Academy Award for Best Animated Short Film",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Where was Tyler MacDuff's child educated?",
+        "prediction": "Columbia University majoring in chemistry",
+        "answer": "Blair High School",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the spouse of the Rabbit Hole's producer?",
+        "prediction": "Not specified in the context provided",
+        "answer": "Keith Urban",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the child of Sigrid Eskilsdotter's child?",
+        "prediction": "Svante Turesson Bielke' end children are not mentioned in this context",
+        "answer": "Svante Stensson Sture",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.14285714285714288
+      },
+      {
+        "question": "In which county is Kimbrough Memorial Stadium located?",
+        "prediction": "Belarus",
+        "answer": "Randall County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What record label is the performer of Almost Made Ya signed to?",
+        "prediction": "Roxy Recordings",
+        "answer": "Derrty Entertainment",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where was the author of Hannibal and Scipio educated at?",
+        "prediction": "Exeter College, Oxford",
+        "answer": "Exeter College",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.8
+      },
+      {
+        "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "prediction": "Charles County",
+        "answer": "Charles County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of the Victim of Romance performer?",
+        "prediction": "Chynna Phillips",
+        "answer": "Chynna Phillips",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What county was Tim Dubois born in?",
+        "prediction": "Minsk Region or Minsk Voblas\u0107 or Minsk Oblast (",
+        "answer": "McDonald County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What record label did the person who is part of The Bruce Lee Band start?",
+        "prediction": "Asian Man Records",
+        "answer": "Asian Man Records",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is another notable work made by the author of Miss Sara Sampson?",
+        "prediction": "Emilia Galotti",
+        "answer": "Emilia Galotti",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What instrument is played by the person from The Blackout All-Stars?",
+        "prediction": "Guitar",
+        "answer": "conga",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is the seat of the county where Van Hook Township is located?",
+        "prediction": "Stanley",
+        "answer": "Stanley",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "prediction": "Edward Stillingfleet",
+        "answer": "Sir Francis Baring, 1st Baronet",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      }
+    ]
+  },
+  "H87_phi3_neg_top1_greedy_pp": {
+    "description": "Phi-3 + negative + top-1 + temp=0.01 + postprocess",
+    "em": 33.33333333333333,
+    "relaxed_em": 36.666666666666664,
+    "f1": 0.4168253968253968,
+    "latency_ms": 484.3414545059204,
+    "errors": 0,
+    "n_samples": 30,
+    "per_question": [
+      {
+        "question": "Who is the spouse of the Green performer?",
+        "prediction": "Jim Mattison",
+        "answer": "Miquette Giraudy",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who founded the company that distributed the film UHF?",
+        "prediction": "Mike Medavoy",
+        "answer": "Mike Medavoy",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "prediction": "Blossom Films",
+        "answer": "Tamaulipas",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where is Ulrich Walter's employer headquartered?",
+        "prediction": "Germany",
+        "answer": "Cologne",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Which company owns the manufacturer of Learjet 60?",
+        "prediction": "Bombardier Inc",
+        "answer": "Bombardier Inc.",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of Caroline LeRoy's spouse?",
+        "prediction": "Fletcher Webster",
+        "answer": "Fletcher Webster",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "prediction": "Marie de' Medici",
+        "answer": "Marie de' Medici",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is the goal of the group that European Movement Germany is a member of?",
+        "prediction": "To promote European integration in Germany",
+        "answer": "European integration",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.5
+      },
+      {
+        "question": "What company succeeded the owner of Empire Sports Network?",
+        "prediction": "Windjammer Cable",
+        "answer": "Time Warner Cable",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.4
+      },
+      {
+        "question": "What province shares a border with the province where Lago District is located?",
+        "prediction": "Cabo Delgado Province",
+        "answer": "Cabo Delgado Province",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "prediction": "Serie C",
+        "answer": "Lega Pro Prima Divisione",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is a notable work written by the author of The Timothy files?",
+        "prediction": "Timothy Files",
+        "answer": "Anderson Tapes",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In which borough was Callum McManaman born?",
+        "prediction": "Merseyside",
+        "answer": "Knowsley",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What other county does the county where Imperial is located share a border with?",
+        "prediction": "Imperial is bordered",
+        "answer": "Crockett County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In what county is William W. Blair's birthplace located?",
+        "prediction": "Orleans County",
+        "answer": "Orleans County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What award did the author of The Red Tree receive?",
+        "prediction": "A CBE",
+        "answer": "Academy Award for Best Animated Short Film",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where was Tyler MacDuff's child educated?",
+        "prediction": "Blair International Baccalaureate School",
+        "answer": "Blair High School",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.5714285714285715
+      },
+      {
+        "question": "Who is the spouse of the Rabbit Hole's producer?",
+        "prediction": "Nicole Kidman",
+        "answer": "Keith Urban",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the child of Sigrid Eskilsdotter's child?",
+        "prediction": "King Gustav Vasa",
+        "answer": "Svante Stensson Sture",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In which county is Kimbrough Memorial Stadium located?",
+        "prediction": "Canyon County",
+        "answer": "Randall County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.5
+      },
+      {
+        "question": "What record label is the performer of Almost Made Ya signed to?",
+        "prediction": "Jive Records",
+        "answer": "Derrty Entertainment",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where was the author of Hannibal and Scipio educated at?",
+        "prediction": "Exeter College",
+        "answer": "Exeter College",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "prediction": "Charles County",
+        "answer": "Charles County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of the Victim of Romance performer?",
+        "prediction": "Michelle Phillips has a daughter named Lili Rose Delaunay",
+        "answer": "Chynna Phillips",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.2
+      },
+      {
+        "question": "What county was Tim Dubois born in?",
+        "prediction": "McDonald County",
+        "answer": "McDonald County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What record label did the person who is part of The Bruce Lee Band start?",
+        "prediction": "Go Down Records",
+        "answer": "Asian Man Records",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.3333333333333333
+      },
+      {
+        "question": "What is another notable work made by the author of Miss Sara Sampson?",
+        "prediction": "Miss Sara Sampson",
+        "answer": "Emilia Galotti",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What instrument is played by the person from The Blackout All-Stars?",
+        "prediction": "Chapman Stick",
+        "answer": "conga",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What is the seat of the county where Van Hook Township is located?",
+        "prediction": "Stanley",
+        "answer": "Stanley",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "prediction": "Not specified in context",
+        "answer": "Sir Francis Baring, 1st Baronet",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      }
+    ]
+  },
+  "oracle_phi3_gold": {
+    "description": "Phi-3 + gold context (oracle reference)",
+    "em": 56.666666666666664,
+    "relaxed_em": 73.33333333333333,
+    "f1": 0.6843434343434344,
+    "latency_ms": 240.78400135040283,
+    "errors": 0,
+    "n_samples": 30,
+    "per_question": [
+      {
+        "question": "Who is the spouse of the Green performer?",
+        "prediction": "Miquette Giraudy",
+        "answer": "Miquette Giraudy",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who founded the company that distributed the film UHF?",
+        "prediction": "Mike Medavoy",
+        "answer": "Mike Medavoy",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "prediction": "provided context does not contain information about the ownership of Ciudad Deportiva",
+        "answer": "Tamaulipas",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where is Ulrich Walter's employer headquartered?",
+        "prediction": "Cologne, Germany",
+        "answer": "Cologne",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.6666666666666666
+      },
+      {
+        "question": "Which company owns the manufacturer of Learjet 60?",
+        "prediction": "Bombardier Inc",
+        "answer": "Bombardier Inc.",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of Caroline LeRoy's spouse?",
+        "prediction": "Fletcher Webster",
+        "answer": "Fletcher Webster",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "prediction": "Marie de' Medici",
+        "answer": "Marie de' Medici",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is the goal of the group that European Movement Germany is a member of?",
+        "prediction": "To promote European integration and disseminate information about it",
+        "answer": "European integration",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.3636363636363636
+      },
+      {
+        "question": "What company succeeded the owner of Empire Sports Network?",
+        "prediction": "Windjammer Cable",
+        "answer": "Time Warner Cable",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.4
+      },
+      {
+        "question": "What province shares a border with the province where Lago District is located?",
+        "prediction": "Cabo Delgado Province",
+        "answer": "Cabo Delgado Province",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "prediction": "Lega Pro Prima Divisione",
+        "answer": "Lega Pro Prima Divisione",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is a notable work written by the author of The Timothy files?",
+        "prediction": "Anderson Tapes",
+        "answer": "Anderson Tapes",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "In which borough was Callum McManaman born?",
+        "prediction": "Merseyside",
+        "answer": "Knowsley",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What other county does the county where Imperial is located share a border with?",
+        "prediction": "Imperial City Park and RV Resort CDP",
+        "answer": "Crockett County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "In what county is William W. Blair's birthplace located?",
+        "prediction": "Orleans County",
+        "answer": "Orleans County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What award did the author of The Red Tree receive?",
+        "prediction": "Academy Award for Best Animated Short Film",
+        "answer": "Academy Award for Best Animated Short Film",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Where was Tyler MacDuff's child educated?",
+        "prediction": "Blair High School",
+        "answer": "Blair High School",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the spouse of the Rabbit Hole's producer?",
+        "prediction": "Not specified in context",
+        "answer": "Keith Urban",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the child of Sigrid Eskilsdotter's child?",
+        "prediction": "Sigrid Sture",
+        "answer": "Svante Stensson Sture",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.4
+      },
+      {
+        "question": "In which county is Kimbrough Memorial Stadium located?",
+        "prediction": "Randall County, Texas",
+        "answer": "Randall County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What record label is the performer of Almost Made Ya signed to?",
+        "prediction": "Universal Records",
+        "answer": "Derrty Entertainment",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Where was the author of Hannibal and Scipio educated at?",
+        "prediction": "Exeter College, Oxford",
+        "answer": "Exeter College",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.8
+      },
+      {
+        "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "prediction": "Charles County",
+        "answer": "Charles County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of the Victim of Romance performer?",
+        "prediction": "Chynna Phillips",
+        "answer": "Chynna Phillips",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What county was Tim Dubois born in?",
+        "prediction": "Fayetteville\u2013Springdale\u2013Rogers, AR-MO Metropolitan Statistical Area",
+        "answer": "McDonald County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What record label did the person who is part of The Bruce Lee Band start?",
+        "prediction": "Asian Man Records",
+        "answer": "Asian Man Records",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is another notable work made by the author of Miss Sara Sampson?",
+        "prediction": "Emilia Galotti",
+        "answer": "Emilia Galotti",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What instrument is played by the person from The Blackout All-Stars?",
+        "prediction": "Tony Pabon plays conga",
+        "answer": "conga",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.4
+      },
+      {
+        "question": "What is the seat of the county where Van Hook Township is located?",
+        "prediction": "Stanley, North Dakota",
+        "answer": "Stanley",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.5
+      },
+      {
+        "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "prediction": "Sir Francis Baring, 1st Baronet",
+        "answer": "Sir Francis Baring, 1st Baronet",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      }
+    ]
+  },
+  "oracle_qwen_gold": {
+    "description": "Qwen 7B + gold context (oracle reference)",
+    "em": 63.33333333333333,
+    "relaxed_em": 83.33333333333334,
+    "f1": 0.7783068783068783,
+    "latency_ms": 586.3787253697714,
+    "errors": 0,
+    "n_samples": 30,
+    "per_question": [
+      {
+        "question": "Who is the spouse of the Green performer?",
+        "prediction": "Miquette Giraudy",
+        "answer": "Miquette Giraudy",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who founded the company that distributed the film UHF?",
+        "prediction": "Mike Medavoy",
+        "answer": "Mike Medavoy",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "prediction": "Tamaulipas",
+        "answer": "Tamaulipas",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Where is Ulrich Walter's employer headquartered?",
+        "prediction": "Cologne, Germany",
+        "answer": "Cologne",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.6666666666666666
+      },
+      {
+        "question": "Which company owns the manufacturer of Learjet 60?",
+        "prediction": "Bombardier Inc",
+        "answer": "Bombardier Inc.",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of Caroline LeRoy's spouse?",
+        "prediction": "Fletcher Webster",
+        "answer": "Fletcher Webster",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "prediction": "Marie de' Medici",
+        "answer": "Marie de' Medici",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is the goal of the group that European Movement Germany is a member of?",
+        "prediction": "promoting European integration, and disseminating information about it",
+        "answer": "European integration",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.4
+      },
+      {
+        "question": "What company succeeded the owner of Empire Sports Network?",
+        "prediction": "Windjammer Cable",
+        "answer": "Time Warner Cable",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.4
+      },
+      {
+        "question": "What province shares a border with the province where Lago District is located?",
+        "prediction": "Cabo Delgado Province and Niassa Province",
+        "answer": "Cabo Delgado Province",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.6666666666666666
+      },
+      {
+        "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "prediction": "Lega Pro Prima Divisione",
+        "answer": "Lega Pro Prima Divisione",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is a notable work written by the author of The Timothy files?",
+        "prediction": "Anderson Tapes",
+        "answer": "Anderson Tapes",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "In which borough was Callum McManaman born?",
+        "prediction": "Knowsley",
+        "answer": "Knowsley",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What other county does the county where Imperial is located share a border with?",
+        "prediction": "Crockett County",
+        "answer": "Crockett County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "In what county is William W. Blair's birthplace located?",
+        "prediction": "Rochester Metropolitan Statistical Area",
+        "answer": "Orleans County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What award did the author of The Red Tree receive?",
+        "prediction": "Academy Award",
+        "answer": "Academy Award for Best Animated Short Film",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.4444444444444445
+      },
+      {
+        "question": "Where was Tyler MacDuff's child educated?",
+        "prediction": "not enough information",
+        "answer": "Blair High School",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "Who is the spouse of the Rabbit Hole's producer?",
+        "prediction": "Keith Urban",
+        "answer": "Keith Urban",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of Sigrid Eskilsdotter's child?",
+        "prediction": "Sigrid Sture",
+        "answer": "Svante Stensson Sture",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.4
+      },
+      {
+        "question": "In which county is Kimbrough Memorial Stadium located?",
+        "prediction": "Randall County",
+        "answer": "Randall County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What record label is the performer of Almost Made Ya signed to?",
+        "prediction": "Derrty Entertainment and Universal Records",
+        "answer": "Derrty Entertainment",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.5714285714285715
+      },
+      {
+        "question": "Where was the author of Hannibal and Scipio educated at?",
+        "prediction": "Exeter College, Oxford",
+        "answer": "Exeter College",
+        "em": false,
+        "relaxed_em": true,
+        "f1": 0.8
+      },
+      {
+        "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "prediction": "Charles County",
+        "answer": "Charles County",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the child of the Victim of Romance performer?",
+        "prediction": "Chynna Phillips",
+        "answer": "Chynna Phillips",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What county was Tim Dubois born in?",
+        "prediction": "Fayetteville\u2013Springdale\u2013Rogers, AR-MO Metropolitan Statistical Area",
+        "answer": "McDonald County",
+        "em": false,
+        "relaxed_em": false,
+        "f1": 0.0
+      },
+      {
+        "question": "What record label did the person who is part of The Bruce Lee Band start?",
+        "prediction": "Asian Man Records",
+        "answer": "Asian Man Records",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is another notable work made by the author of Miss Sara Sampson?",
+        "prediction": "Emilia Galotti",
+        "answer": "Emilia Galotti",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What instrument is played by the person from The Blackout All-Stars?",
+        "prediction": "conga",
+        "answer": "conga",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "What is the seat of the county where Van Hook Township is located?",
+        "prediction": "Stanley",
+        "answer": "Stanley",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      },
+      {
+        "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "prediction": "Sir Francis Baring, 1st Baronet",
+        "answer": "Sir Francis Baring, 1st Baronet",
+        "em": true,
+        "relaxed_em": true,
+        "f1": 1.0
+      }
+    ]
+  }
+}
