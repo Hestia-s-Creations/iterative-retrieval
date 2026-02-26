@@ -1,26 +1,26 @@
 # System-Level Iterative Retrieval for Small Language Models
 
-**A fully autonomous 7B pipeline beating published SOTA on MuSiQue multi-hop QA.**
+**A fully autonomous 7B pipeline matching published SOTA on MuSiQue multi-hop QA.**
 
 ## Key Result
 
-| Method | Model | Gold Labels? | MuSiQue EM |
+| Method | Model | Gold Labels? | MuSiQue EM (n=100) |
 |--------|-------|-------------|------------|
-| Single Pass (baseline) | Qwen 2.5 7B | N/A | 13.3% |
+| Single Pass (baseline) | Qwen 2.5 7B | N/A | 16.0% |
 | System Decomp + Embed Retrieval | Phi-3 3.8B | decompositions | 36.7% |
-| **System Decomp + Embed Retrieval** | **Qwen 2.5 7B** | **none** | **60.0%** |
-| System Decomp + Gold Context | Qwen 2.5 7B | context only | 63.3% |
+| **System Decomp + Embed Retrieval** | **Qwen 2.5 7B** | **none** | **42.0%** |
+| System Decomp + Gold Decomp | Qwen 2.5 7B | decompositions | 49.0% |
 | IRCoT (published) | GPT-3 175B | none | 36.5% |
 | StepChain GraphRAG (published SOTA) | GPT-4o | none | 43.9% |
 
-A fully autonomous pipeline — Qwen 2.5 7B decomposes, retrieves, and extracts with **zero gold labels** — achieves **60.0% Exact Match** on MuSiQue, **beating published SOTA** (StepChain 43.9%) by 16.1 points. Validated across 3 benchmarks.
+A fully autonomous pipeline — Qwen 2.5 7B decomposes, retrieves, and extracts with **zero gold labels** — achieves **42.0% EM** on MuSiQue (n=100), matching published SOTA (StepChain 43.9%) with a model **25x smaller**.
 
 ## The Core Insight
 
 Multi-hop QA fails for small models because the **model** tries to chain reasoning in a single pass. When the **system** decomposes questions into single-hop steps and chains the results, performance improves dramatically.
 
 > **Model-level decomposition**: -12.4% EM (hurts!)
-> **System-level decomposition**: +53% EM (works!)
+> **System-level decomposition**: +26% EM (works!)
 
 The technique (decomposition) was right. The implementation location (in-model vs in-system) was wrong.
 
@@ -28,7 +28,7 @@ The technique (decomposition) was right. The implementation location (in-model v
 
 ```
 Standard approach (single pass):
-  Full question + all documents → Model → Answer (13.3% EM)
+  Full question + all documents → Model → Answer (16.0% EM)
 
 Fully autonomous pipeline (our approach):
   Full question → Qwen 7B decomposes into sub-questions
@@ -36,7 +36,7 @@ Fully autonomous pipeline (our approach):
     Sub-question → BGE embedding retrieval → Top-3 paragraphs
     Paragraphs + sub-question → Qwen 7B extracts answer
     Answer feeds into next hop's question
-  Final hop answer = Final answer (60.0% EM)
+  Final hop answer = Final answer (42.0% EM on 100 questions)
 
 No gold labels used at any step.
 ```
@@ -49,26 +49,36 @@ No gold labels used at any step.
 | v2 | Few-shot prompting, BGE embeddings | **36.7%** | **60.0%** |
 | v3 | Answer normalization, auto-decomposition | 36.7% | - |
 | v4 | 100-hypothesis battery, Qwen 7B extractor | **56.7%** | **63.3%** |
-| v5 | Auto-decomposition (zero gold labels) | **60.0%** | **63.3%** |
+| v5 | Auto-decomposition (zero gold labels) | **42.0%** (n=100) | **49.0%** (n=100) |
 
 ## v5: Fully Autonomous Pipeline (The Key Result)
 
 Qwen 2.5 7B handles both decomposition AND extraction — no gold labels at any step.
 
+### Scale Validation (n=100)
+
+| Config | EM | Relaxed EM | F1 |
+|--------|------|------------|------|
+| Single pass | 16.0% | 20.0% | 0.242 |
+| Gold decomp + Qwen | 49.0% | 56.0% | 0.558 |
+| **Auto decomp + Qwen** | **42.0%** | **52.0%** | **0.507** |
+
+Auto-decomposition gap: **7.0% EM** at scale. Per-hop retrieval: 96% gold paragraph found.
+
+### Initial Results (n=30)
+
 | Config | Decomp | Extract | EM | Relaxed EM | F1 |
 |--------|--------|---------|------|------------|------|
 | Single pass (no decomp) | N/A | Qwen 7B | 13.3% | 16.7% | 0.203 |
 | Gold decomp + Phi-3 | gold | Phi-3 3.8B | 36.7% | 46.7% | 0.428 |
-| **Qwen decomp + Phi-3** | **auto** | **Phi-3 3.8B** | **36.7%** | **46.7%** | **0.494** |
+| Qwen decomp + Phi-3 | auto | Phi-3 3.8B | 36.7% | 46.7% | 0.494 |
 | Gold decomp + Qwen | gold | Qwen 7B | 60.0% | 66.7% | 0.657 |
 | **Qwen decomp + Qwen** | **auto** | **Qwen 7B** | **60.0%** | **70.0%** | **0.708** |
 | Qwen decomp + gold ctx | auto | Qwen 7B | 63.3% | 73.3% | 0.747 |
 
-**The auto-decomposition gap is zero.** Auto decomp matches gold decomp for both extractors:
-- Phi-3: 36.7% (gold) = 36.7% (auto)
-- Qwen: 60.0% (gold) = 60.0% (auto)
+Note: The first 30 MuSiQue validation questions are biased toward easier examples. The n=100 results are more representative. The auto-decomposition gap at n=30 was 0% but opens to 7% at scale.
 
-Decomposition quality: 100% correct hop count, 0.71 hop-1 F1, 0.52 hop-2 F1 vs gold. The decompositions are semantically different but functionally equivalent.
+Decomposition quality: 100% correct hop count, 0.71 hop-1 F1, 0.52 hop-2 F1 vs gold.
 
 ## v4: 100-Hypothesis Battery
 
@@ -106,17 +116,17 @@ Results across multiple benchmarks (prevents gaming any single dataset):
 | SiReRAG | - | 40.5% |
 | HopRAG | - | 42.2% |
 | StepChain GraphRAG (prev SOTA) | - | 43.9% |
-| **Ours (fully autonomous)** | **7B** | **60.0%** |
-| **Ours (gold context ceiling)** | **7B** | **63.3%** |
+| **Ours (fully autonomous, n=100)** | **7B** | **42.0%** |
+| **Ours (gold decomp, n=100)** | **7B** | **49.0%** |
 
 ## Key Findings
 
-1. **System architecture > model size**: 13.3% → 60.0% EM from system-level decomposition alone
-2. **Auto-decomposition gap is zero**: Qwen 7B decompositions are functionally equivalent to gold
-3. **Extractor quality matters most**: Phi-3→Qwen 7B gave +23.3% EM (biggest single improvement)
-4. **Retrieval is solved at sample scale**: BGE embeddings find gold paragraphs 93-97% of the time
-5. **Beats published SOTA**: 60.0% > StepChain's 43.9%, fully autonomous, using a 7B model
-6. **Phi-3 can't decompose**: 6.7% EM (v3), but Qwen 7B decomposes perfectly
+1. **System architecture > model size**: 16% → 42% EM (n=100) from system-level decomposition
+2. **Matches published SOTA at 25x smaller**: 42.0% vs StepChain's 43.9%, fully autonomous 7B model
+3. **Auto-decomposition works**: 7% gap vs gold at scale (0% at n=30, questions get harder)
+4. **Extractor quality matters most**: Phi-3→Qwen 7B gave +20% EM (biggest single improvement)
+5. **Retrieval is solved at sample scale**: BGE embeddings find gold paragraphs 96% of the time
+6. **Phi-3 can't decompose**: 6.7% EM (v3), but Qwen 7B decomposes effectively
 
 ### What Doesn't Work
 
@@ -161,7 +171,7 @@ python experiments/v3_normalization.py --limit 30
 
 ## Connection to "Let Them Forget" Paper
 
-This work provides empirical evidence for the thesis that capability comes from the **system**, not the model. A fully autonomous 7B pipeline with system-level orchestration beats published SOTA results that use much larger models — with zero gold labels.
+This work provides empirical evidence for the thesis that capability comes from the **system**, not the model. A fully autonomous 7B pipeline with system-level orchestration matches published SOTA results that use much larger models — with zero gold labels.
 
 The model encodes **extraction patterns** (parametric thought), not facts (parametric memory). Facts live in the retrieval system. The system handles decomposition, navigation, and chaining. Even decomposition itself can be delegated to the same model operating in a different role.
 

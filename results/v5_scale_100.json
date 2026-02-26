@@ -1,0 +1,2232 @@
+{
+  "metadata": {
+    "n_samples": 100,
+    "elapsed_seconds": 388.03794169425964,
+    "timestamp": "2026-02-26 12:21:19"
+  },
+  "summary": {
+    "single_pass": {
+      "em": 16.0,
+      "relaxed_em": 20.0,
+      "f1": 0.24226190476190473
+    },
+    "gold_qwen": {
+      "em": 49.0,
+      "relaxed_em": 56.00000000000001,
+      "f1": 0.5581957671957671
+    },
+    "auto_qwen": {
+      "em": 42.0,
+      "relaxed_em": 52.0,
+      "f1": 0.5065714285714286
+    }
+  },
+  "per_question": {
+    "single_pass": [
+      {
+        "q": "Who is the spouse of the Green performer?",
+        "pred": "Ahmad Rash\u0101d",
+        "ans": "Miquette Giraudy",
+        "em": false
+      },
+      {
+        "q": "Who founded the company that distributed the film UHF?",
+        "pred": "Kevin Smith",
+        "ans": "Mike Medavoy",
+        "em": false
+      },
+      {
+        "q": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "pred": "Pangi Territory",
+        "ans": "Tamaulipas",
+        "em": false
+      },
+      {
+        "q": "Where is Ulrich Walter's employer headquartered?",
+        "pred": "Karl Heinrich Ulrichs' classification scheme does not mention an employer",
+        "ans": "Cologne",
+        "em": false
+      },
+      {
+        "q": "Which company owns the manufacturer of Learjet 60?",
+        "pred": "Bombardier Inc",
+        "ans": "Bombardier Inc.",
+        "em": true
+      },
+      {
+        "q": "Who is the child of Caroline LeRoy's spouse?",
+        "pred": "Caroline",
+        "ans": "Fletcher Webster",
+        "em": false
+      },
+      {
+        "q": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "pred": "Anne of Austria",
+        "ans": "Marie de' Medici",
+        "em": false
+      },
+      {
+        "q": "What is the goal of the group that European Movement Germany is a member of?",
+        "pred": "European Movement International",
+        "ans": "European integration",
+        "em": false
+      },
+      {
+        "q": "What company succeeded the owner of Empire Sports Network?",
+        "pred": "NBCUniversal",
+        "ans": "Time Warner Cable",
+        "em": false
+      },
+      {
+        "q": "What province shares a border with the province where Lago District is located?",
+        "pred": "Cabo Delgado Province",
+        "ans": "Cabo Delgado Province",
+        "em": true
+      },
+      {
+        "q": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "pred": "Serie D",
+        "ans": "Lega Pro Prima Divisione",
+        "em": false
+      },
+      {
+        "q": "What is a notable work written by the author of The Timothy files?",
+        "pred": "Lawrence Sanders",
+        "ans": "Anderson Tapes",
+        "em": false
+      },
+      {
+        "q": "In which borough was Callum McManaman born?",
+        "pred": "question cannot be answered using the provided context. No information about Callum McManaman's birthplace or that of a \"Callum Kane\" is given",
+        "ans": "Knowsley",
+        "em": false
+      },
+      {
+        "q": "What other county does the county where Imperial is located share a border with?",
+        "pred": "Lack of context for Imperial's location",
+        "ans": "Crockett County",
+        "em": false
+      },
+      {
+        "q": "In what county is William W. Blair's birthplace located?",
+        "pred": "Minsk Region",
+        "ans": "Orleans County",
+        "em": false
+      },
+      {
+        "q": "What award did the author of The Red Tree receive?",
+        "pred": "Halfway Tree Award",
+        "ans": "Academy Award for Best Animated Short Film",
+        "em": false
+      },
+      {
+        "q": "Where was Tyler MacDuff's child educated?",
+        "pred": "Baltimore, Maryland",
+        "ans": "Blair High School",
+        "em": false
+      },
+      {
+        "q": "Who is the spouse of the Rabbit Hole's producer?",
+        "pred": "Nicole Kidman",
+        "ans": "Keith Urban",
+        "em": false
+      },
+      {
+        "q": "Who is the child of Sigrid Eskilsdotter's child?",
+        "pred": "Svante Turesson Bielke",
+        "ans": "Svante Stensson Sture",
+        "em": false
+      },
+      {
+        "q": "In which county is Kimbrough Memorial Stadium located?",
+        "pred": "Canyon",
+        "ans": "Randall County",
+        "em": false
+      },
+      {
+        "q": "What record label is the performer of Almost Made Ya signed to?",
+        "pred": "Roxy Recordings",
+        "ans": "Derrty Entertainment",
+        "em": false
+      },
+      {
+        "q": "Where was the author of Hannibal and Scipio educated at?",
+        "pred": "Exeter College, Oxford",
+        "ans": "Exeter College",
+        "em": false
+      },
+      {
+        "q": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "pred": "Charles County",
+        "ans": "Charles County",
+        "em": true
+      },
+      {
+        "q": "Who is the child of the Victim of Romance performer?",
+        "pred": "Lucilla Andrews",
+        "ans": "Chynna Phillips",
+        "em": false
+      },
+      {
+        "q": "What county was Tim Dubois born in?",
+        "pred": "Southwest City",
+        "ans": "McDonald County",
+        "em": false
+      },
+      {
+        "q": "What record label did the person who is part of The Bruce Lee Band start?",
+        "pred": "PIAS Recordings",
+        "ans": "Asian Man Records",
+        "em": false
+      },
+      {
+        "q": "What is another notable work made by the author of Miss Sara Sampson?",
+        "pred": "Pam Ferris",
+        "ans": "Emilia Galotti",
+        "em": false
+      },
+      {
+        "q": "What instrument is played by the person from The Blackout All-Stars?",
+        "pred": "Chapman Stick",
+        "ans": "conga",
+        "em": false
+      },
+      {
+        "q": "What is the seat of the county where Van Hook Township is located?",
+        "pred": "Stanley",
+        "ans": "Stanley",
+        "em": true
+      },
+      {
+        "q": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "pred": "Henry Baring",
+        "ans": "Sir Francis Baring, 1st Baronet",
+        "em": false
+      },
+      {
+        "q": "What group was the performer of Be the One a member of?",
+        "pred": "Jackie Jackson",
+        "ans": "Jackson 5",
+        "em": false
+      },
+      {
+        "q": "Who is the lead singer of the band performing Bang Bang Rock & Roll?",
+        "pred": "Eddie Argos",
+        "ans": "Eddie Argos",
+        "em": true
+      },
+      {
+        "q": "What is the network which National Cycle Route 57 is part of an example of?",
+        "pred": "National Scenic Byway",
+        "ans": "national cycling route network",
+        "em": false
+      },
+      {
+        "q": "Who is the spouse of the child of Peter Andreas Heiberg?",
+        "pred": "Margareta von Ascheberg",
+        "ans": "Johanne Luise Heiberg",
+        "em": false
+      },
+      {
+        "q": "The Unwinding author volunteered for which organisation?",
+        "pred": "No appropriate answer found in the provided context",
+        "ans": "Peace Corps",
+        "em": false
+      },
+      {
+        "q": "What is the capital of the county that Pine Springs is located in?",
+        "pred": "Van Horn",
+        "ans": "Van Horn",
+        "em": true
+      },
+      {
+        "q": "What district is the headquarter of Julia's House located?",
+        "pred": "Corfe Mullen",
+        "ans": "East Dorset",
+        "em": false
+      },
+      {
+        "q": "Who is the spouse of Young Man Luther's author?",
+        "pred": "Christel Khalil",
+        "ans": "Joan Erikson",
+        "em": false
+      },
+      {
+        "q": "What record label did the performer of The Place and the Time belong to?",
+        "pred": "Sundazed Records",
+        "ans": "Columbia Records",
+        "em": false
+      },
+      {
+        "q": "Who is the child of the person who followed Tihomir of Serbia?",
+        "pred": "Stracimir Zavidovi\u0107",
+        "ans": "Saint Sava",
+        "em": false
+      },
+      {
+        "q": "What team was Anna Benson's husband on?",
+        "pred": "Kris Benson",
+        "ans": "Pittsburgh Pirates",
+        "em": false
+      },
+      {
+        "q": "What place does the administrative territorial entity that Juba is located in share a border with?",
+        "pred": "Tananarive",
+        "ans": "Eastern Equatoria",
+        "em": false
+      },
+      {
+        "q": "Where was the spouse of Frances Tupper born?",
+        "pred": "Paris, France",
+        "ans": "Amherst",
+        "em": false
+      },
+      {
+        "q": "Who founded the political party of Dimuthu Bandara Abayakoon?",
+        "pred": "Fact: The information provided does not contain any details about a political party founded by Dimuthu Bandara Abayakoon. Therefore",
+        "ans": "Rohana Wijeweera",
+        "em": false
+      },
+      {
+        "q": "Bancroft's county borders what county?",
+        "pred": "Hastings County",
+        "ans": "Haliburton County",
+        "em": false
+      },
+      {
+        "q": "In which county is Mark Dismore's birthplace located?",
+        "pred": "Essex",
+        "ans": "Hancock County",
+        "em": false
+      },
+      {
+        "q": "Who was the sibling of Nannina de' Medici?",
+        "pred": "Lorenzo de' Medici",
+        "ans": "Giuliano de' Medici",
+        "em": false
+      },
+      {
+        "q": "What county is the NRHEG High School located in?",
+        "pred": "question does not match any provided context. There is no information about NRHEG High School or its location in any of the given contexts",
+        "ans": "Waseca County",
+        "em": false
+      },
+      {
+        "q": "What league does the team that occupies the Rabat Ajax Football Ground belong to?",
+        "pred": "Maltese Premier League",
+        "ans": "Maltese Premier League",
+        "em": true
+      },
+      {
+        "q": "Who was married to the star of No Escape?",
+        "pred": "Kris Jenner",
+        "ans": "John Profumo",
+        "em": false
+      },
+      {
+        "q": "What administrative territorial entity contains the place where KPRM is licensed to broadcast to?",
+        "pred": "Minnesota",
+        "ans": "Hubbard County",
+        "em": false
+      },
+      {
+        "q": "Where are the headquarters for the publisher of In the Shadow of Greatness?",
+        "pred": "Annapolis, Maryland",
+        "ans": "Annapolis",
+        "em": true
+      },
+      {
+        "q": "Who is part of the band that performed Full Cooperation?",
+        "pred": "Peter Rowan and Tony Rice",
+        "ans": "Erick Sermon",
+        "em": false
+      },
+      {
+        "q": "The territory containing Bansaan Island is located at which island?",
+        "pred": "Guadalcanal Province",
+        "ans": "Panglao Island",
+        "em": false
+      },
+      {
+        "q": "In which county did Snappy Tomato Pizza form?",
+        "pred": "Kenton County",
+        "ans": "Kenton County",
+        "em": true
+      },
+      {
+        "q": "What's the place of birth of the former member of The Sunnyboys?",
+        "pred": "Whiston, England",
+        "ans": "Kingscliff",
+        "em": false
+      },
+      {
+        "q": "In which district was Ernie Watts born?",
+        "pred": "Information not provided in the context",
+        "ans": "West Berkshire",
+        "em": false
+      },
+      {
+        "q": "Which county does Lloyd Dane's birthplace belong to?",
+        "pred": "Dane County",
+        "ans": "Miller County",
+        "em": false
+      },
+      {
+        "q": "Who is the spouse of the screenwriter of The Actress?",
+        "pred": "Stephen Hensley",
+        "ans": "Garson Kanin",
+        "em": false
+      },
+      {
+        "q": "What award was received by the person who authored Missing Person?",
+        "pred": "Prix Goncourt",
+        "ans": "Nobel Prize in Literature",
+        "em": true
+      },
+      {
+        "q": "What event caused the founder of Australia's liberal party to become Prime Minister?",
+        "pred": "Barton Government",
+        "ans": "Lyons' death in 1939",
+        "em": false
+      },
+      {
+        "q": "What event caused the Liberal Party of Australia's longest-serving leader to become Prime Minister?",
+        "pred": "Robert Menzies",
+        "ans": "Lyons' death in 1939",
+        "em": false
+      },
+      {
+        "q": "What was the average per capita GVA in 2013 of the country which created Burma's academic system?",
+        "pred": "Fact: The context provided does not contain information about a country that created Burma's academic system or any data on Gross Value Added",
+        "ans": "\u00a323,755",
+        "em": false
+      },
+      {
+        "q": "Who is the spouse of the creator of The Nanny Reunion: A Nosh to Remember?",
+        "pred": "Michael Rowe",
+        "ans": "Peter Marc Jacobson",
+        "em": false
+      },
+      {
+        "q": "Who founded the publisher of The Final Testament of the Holy Bible?",
+        "pred": "Larry Gagosian",
+        "ans": "Larry Gagosian",
+        "em": true
+      },
+      {
+        "q": "During which era was the company that makes Nirbhay founded?",
+        "pred": "not provided",
+        "ans": "From the 1950s to the 1970s",
+        "em": false
+      },
+      {
+        "q": "During what era was the manufacturer of Agni-V founded?",
+        "pred": "1893",
+        "ans": "From the 1950s to the 1970s",
+        "em": false
+      },
+      {
+        "q": "In what era was the company known as the manufacturer of Agni-V founded?",
+        "pred": "1967",
+        "ans": "From the 1950s to the 1970s",
+        "em": false
+      },
+      {
+        "q": "What city is located in the county containing Qiantong?",
+        "pred": "No suitable answer can be provided based on the given context as there is no mention of Qiantong or any related city or location",
+        "ans": "Ningbo",
+        "em": false
+      },
+      {
+        "q": "What is the performer of Heartbeat named after?",
+        "pred": "Nina Sky",
+        "ans": "Natalie Albino",
+        "em": true
+      },
+      {
+        "q": "The Move Ya Body song's band is named after who?",
+        "pred": "Nina Sky",
+        "ans": "Natalie Albino",
+        "em": true
+      },
+      {
+        "q": "When did the spacecraft that detected storms on Neptune leave our solar system?",
+        "pred": "question does not provide a specific date for when a spacecraft left the Solar System after detecting storms on Neptune. However",
+        "ans": "August 30, 2007",
+        "em": false
+      },
+      {
+        "q": "The Nicole and Natalie album's band is named after who?",
+        "pred": "Nina Sky",
+        "ans": "Natalie Albino",
+        "em": true
+      },
+      {
+        "q": "Where was the founder of the National Women's Party born?",
+        "pred": "Paulsdale",
+        "ans": "Mount Laurel Township",
+        "em": false
+      },
+      {
+        "q": "What is the place of birth of the person who submitted the first version of the equal rights amendment to congress in 1923?",
+        "pred": "New Jersey",
+        "ans": "Mount Laurel Township",
+        "em": false
+      },
+      {
+        "q": "The Directory of Public Worship was approved by a parliament whose modern equivalent has been based where since 2004?",
+        "pred": "Paris",
+        "ans": "Scottish Parliament Building",
+        "em": false
+      },
+      {
+        "q": "Where was the person featured on the Chester Arthur coin born?",
+        "pred": "New York City",
+        "ans": "Mount Laurel Township",
+        "em": false
+      },
+      {
+        "q": "Since 2004, what is the location of the body to which, if a matter is not specifically reserved, it is devolved?",
+        "pred": "Scottish Parliament",
+        "ans": "Scottish Parliament Building",
+        "em": false
+      },
+      {
+        "q": "The city which contains Broadhurst Park shares a border with what town?",
+        "pred": "Chadderton",
+        "ans": "Middleton",
+        "em": false
+      },
+      {
+        "q": "What is the record label of the Metalworks Studio founder?",
+        "pred": "Nothing Records",
+        "ans": "TML Entertainment",
+        "em": false
+      },
+      {
+        "q": "What is the mouth of watercourse for the body of water where Bartram's Covered Bridge is located?",
+        "pred": "Delaware River",
+        "ans": "Delaware River",
+        "em": true
+      },
+      {
+        "q": "What is the ruler of the underworld in ancient Egypt a part of?",
+        "pred": "underworld",
+        "ans": "ancient Egyptian religion",
+        "em": false
+      },
+      {
+        "q": "What pantheon is the God of the underworld in ancient Egypt a part of?",
+        "pred": "Egyptian pantheon",
+        "ans": "ancient Egyptian religion",
+        "em": false
+      },
+      {
+        "q": "In which district was Alhandra born?",
+        "pred": "Fact: Chirakkalkulam's significance arises from the birth of the historic Arakkal Kingdom",
+        "ans": "Lisbon District",
+        "em": false
+      },
+      {
+        "q": "In which state is Vera Barbosa's place of birth located?",
+        "pred": "Portugal",
+        "ans": "Lisbon District",
+        "em": false
+      },
+      {
+        "q": "In which state is P\u00f3voa de Santa Iria's municipality located?",
+        "pred": "Portugal",
+        "ans": "Lisbon District",
+        "em": false
+      },
+      {
+        "q": "How old was Mary when engaged to the person from whom S\u00e3o Jos\u00e9 dos Campos takes it's name?",
+        "pred": "12",
+        "ans": "12\u201314 years old",
+        "em": false
+      },
+      {
+        "q": "Where was Mary's betrothed born?",
+        "pred": "There is no information provided about where Mary's betrothed was born",
+        "ans": "Nazareth",
+        "em": false
+      },
+      {
+        "q": "Where is the country with ISO code ISO 3166-2:CV located?",
+        "pred": "Not provided",
+        "ans": "central Atlantic Ocean",
+        "em": false
+      },
+      {
+        "q": "Where is Assomada located?",
+        "pred": "Hakauata",
+        "ans": "central Atlantic Ocean",
+        "em": false
+      },
+      {
+        "q": "Where is Am\u00edlcar Cabral International Airport?",
+        "pred": "Guinea-Bissau",
+        "ans": "central Atlantic Ocean",
+        "em": false
+      },
+      {
+        "q": "Where was the person who wrote about the rioting being a dividing factor in Birmingham educated?",
+        "pred": "King Edward's School, Birmingham",
+        "ans": "University of Glasgow",
+        "em": false
+      },
+      {
+        "q": "Where was the designer of the Lap Engine educated?",
+        "pred": "University of Glasgow",
+        "ans": "University of Glasgow",
+        "em": true
+      },
+      {
+        "q": "Where was the creator of the Lap Engine educated?",
+        "pred": "Delft University of Technology",
+        "ans": "University of Glasgow",
+        "em": false
+      },
+      {
+        "q": "The 1967 Federation Cup is an instance of this tournament which is named after what organization?",
+        "pred": "NHL",
+        "ans": "International Tennis Federation",
+        "em": false
+      },
+      {
+        "q": "What is the competition that the 1965 Federation Cup is part of named after?",
+        "pred": "Fed Cup",
+        "ans": "International Tennis Federation",
+        "em": false
+      },
+      {
+        "q": "What is the competition the 1972 Federation Cup is part of named after?",
+        "pred": "Federation Cup",
+        "ans": "International Tennis Federation",
+        "em": false
+      },
+      {
+        "q": "What is the capital of the county which contains Hickory Grove Estates, Mississippi?",
+        "pred": "Clayton",
+        "ans": "Starkville",
+        "em": false
+      },
+      {
+        "q": "Who is the father of the performer of Je dis aime?",
+        "pred": "Andr\u00e9e Chedid",
+        "ans": "Louis Chedid",
+        "em": false
+      },
+      {
+        "q": "Who is the father of the Labo M performer?",
+        "pred": "David Wm. Sims",
+        "ans": "Louis Chedid",
+        "em": false
+      }
+    ],
+    "gold_qwen": [
+      {
+        "q": "Who is the spouse of the Green performer?",
+        "pred": "Miquette Giraudy",
+        "ans": "Miquette Giraudy",
+        "em": true
+      },
+      {
+        "q": "Who founded the company that distributed the film UHF?",
+        "pred": "Marketwired was founded in 1993",
+        "ans": "Mike Medavoy",
+        "em": false
+      },
+      {
+        "q": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "pred": "Tamaulipas",
+        "ans": "Tamaulipas",
+        "em": true
+      },
+      {
+        "q": "Where is Ulrich Walter's employer headquartered?",
+        "pred": "Braunschweig",
+        "ans": "Cologne",
+        "em": false
+      },
+      {
+        "q": "Which company owns the manufacturer of Learjet 60?",
+        "pred": "Bombardier Inc",
+        "ans": "Bombardier Inc.",
+        "em": true
+      },
+      {
+        "q": "Who is the child of Caroline LeRoy's spouse?",
+        "pred": "Fletcher Webster",
+        "ans": "Fletcher Webster",
+        "em": true
+      },
+      {
+        "q": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "pred": "Anne of Austria",
+        "ans": "Marie de' Medici",
+        "em": false
+      },
+      {
+        "q": "What is the goal of the group that European Movement Germany is a member of?",
+        "pred": "European Movement International",
+        "ans": "European integration",
+        "em": false
+      },
+      {
+        "q": "What company succeeded the owner of Empire Sports Network?",
+        "pred": "Empire Sports Network",
+        "ans": "Time Warner Cable",
+        "em": false
+      },
+      {
+        "q": "What province shares a border with the province where Lago District is located?",
+        "pred": "Cabo Delgado Province",
+        "ans": "Cabo Delgado Province",
+        "em": true
+      },
+      {
+        "q": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "pred": "Lega Pro Prima Divisione",
+        "ans": "Lega Pro Prima Divisione",
+        "em": true
+      },
+      {
+        "q": "What is a notable work written by the author of The Timothy files?",
+        "pred": "Anderson Tapes",
+        "ans": "Anderson Tapes",
+        "em": true
+      },
+      {
+        "q": "In which borough was Callum McManaman born?",
+        "pred": "Knowsley",
+        "ans": "Knowsley",
+        "em": true
+      },
+      {
+        "q": "What other county does the county where Imperial is located share a border with?",
+        "pred": "Canyon",
+        "ans": "Crockett County",
+        "em": false
+      },
+      {
+        "q": "In what county is William W. Blair's birthplace located?",
+        "pred": "Orleans County",
+        "ans": "Orleans County",
+        "em": true
+      },
+      {
+        "q": "What award did the author of The Red Tree receive?",
+        "pred": "Academy Award for Best Animated Short Film",
+        "ans": "Academy Award for Best Animated Short Film",
+        "em": true
+      },
+      {
+        "q": "Where was Tyler MacDuff's child educated?",
+        "pred": "Blair High School",
+        "ans": "Blair High School",
+        "em": true
+      },
+      {
+        "q": "Who is the spouse of the Rabbit Hole's producer?",
+        "pred": "No applicable answer based on the provided context",
+        "ans": "Keith Urban",
+        "em": false
+      },
+      {
+        "q": "Who is the child of Sigrid Eskilsdotter's child?",
+        "pred": "Sigrid Eskilsdotter (Ban\u00e9r)",
+        "ans": "Svante Stensson Sture",
+        "em": false
+      },
+      {
+        "q": "In which county is Kimbrough Memorial Stadium located?",
+        "pred": "Randall County",
+        "ans": "Randall County",
+        "em": true
+      },
+      {
+        "q": "What record label is the performer of Almost Made Ya signed to?",
+        "pred": "Derrty Entertainment",
+        "ans": "Derrty Entertainment",
+        "em": true
+      },
+      {
+        "q": "Where was the author of Hannibal and Scipio educated at?",
+        "pred": "Exeter College, Oxford",
+        "ans": "Exeter College",
+        "em": false
+      },
+      {
+        "q": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "pred": "Maryland",
+        "ans": "Charles County",
+        "em": false
+      },
+      {
+        "q": "Who is the child of the Victim of Romance performer?",
+        "pred": "Chynna Phillips",
+        "ans": "Chynna Phillips",
+        "em": true
+      },
+      {
+        "q": "What county was Tim Dubois born in?",
+        "pred": "McDonald County",
+        "ans": "McDonald County",
+        "em": true
+      },
+      {
+        "q": "What record label did the person who is part of The Bruce Lee Band start?",
+        "pred": "Asian Man Records",
+        "ans": "Asian Man Records",
+        "em": true
+      },
+      {
+        "q": "What is another notable work made by the author of Miss Sara Sampson?",
+        "pred": "Emilia Galotti",
+        "ans": "Emilia Galotti",
+        "em": true
+      },
+      {
+        "q": "What instrument is played by the person from The Blackout All-Stars?",
+        "pred": "conga",
+        "ans": "conga",
+        "em": true
+      },
+      {
+        "q": "What is the seat of the county where Van Hook Township is located?",
+        "pred": "Stanley",
+        "ans": "Stanley",
+        "em": true
+      },
+      {
+        "q": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "pred": "Sir Francis Baring, 1st Baronet",
+        "ans": "Sir Francis Baring, 1st Baronet",
+        "em": true
+      },
+      {
+        "q": "What group was the performer of Be the One a member of?",
+        "pred": "Jackson 5",
+        "ans": "Jackson 5",
+        "em": true
+      },
+      {
+        "q": "Who is the lead singer of the band performing Bang Bang Rock & Roll?",
+        "pred": "Eddie Argos",
+        "ans": "Eddie Argos",
+        "em": true
+      },
+      {
+        "q": "What is the network which National Cycle Route 57 is part of an example of?",
+        "pred": "National Cycle Route 57",
+        "ans": "national cycling route network",
+        "em": false
+      },
+      {
+        "q": "Who is the spouse of the child of Peter Andreas Heiberg?",
+        "pred": "Johanne Luise Heiberg",
+        "ans": "Johanne Luise Heiberg",
+        "em": true
+      },
+      {
+        "q": "The Unwinding author volunteered for which organisation?",
+        "pred": "Peace Corps",
+        "ans": "Peace Corps",
+        "em": true
+      },
+      {
+        "q": "What is the capital of the county that Pine Springs is located in?",
+        "pred": "Van Horn",
+        "ans": "Van Horn",
+        "em": true
+      },
+      {
+        "q": "What district is the headquarter of Julia's House located?",
+        "pred": "East Dorset",
+        "ans": "East Dorset",
+        "em": true
+      },
+      {
+        "q": "Who is the spouse of Young Man Luther's author?",
+        "pred": "Joan Erikson",
+        "ans": "Joan Erikson",
+        "em": true
+      },
+      {
+        "q": "What record label did the performer of The Place and the Time belong to?",
+        "pred": "Columbia Records",
+        "ans": "Columbia Records",
+        "em": true
+      },
+      {
+        "q": "Who is the child of the person who followed Tihomir of Serbia?",
+        "pred": "Stracimir Zavidovi\u0107",
+        "ans": "Saint Sava",
+        "em": false
+      },
+      {
+        "q": "What team was Anna Benson's husband on?",
+        "pred": "Jenny Benson",
+        "ans": "Pittsburgh Pirates",
+        "em": false
+      },
+      {
+        "q": "What place does the administrative territorial entity that Juba is located in share a border with?",
+        "pred": "Badigeru Swamp",
+        "ans": "Eastern Equatoria",
+        "em": false
+      },
+      {
+        "q": "Where was the spouse of Frances Tupper born?",
+        "pred": "Canada",
+        "ans": "Amherst",
+        "em": false
+      },
+      {
+        "q": "Who founded the political party of Dimuthu Bandara Abayakoon?",
+        "pred": "Rohana Wijeweera",
+        "ans": "Rohana Wijeweera",
+        "em": true
+      },
+      {
+        "q": "Bancroft's county borders what county?",
+        "pred": "Michigan",
+        "ans": "Haliburton County",
+        "em": false
+      },
+      {
+        "q": "In which county is Mark Dismore's birthplace located?",
+        "pred": "Hancock County",
+        "ans": "Hancock County",
+        "em": true
+      },
+      {
+        "q": "Who was the sibling of Nannina de' Medici?",
+        "pred": "Nannina de' Medici",
+        "ans": "Giuliano de' Medici",
+        "em": false
+      },
+      {
+        "q": "What county is the NRHEG High School located in?",
+        "pred": "Waseca County",
+        "ans": "Waseca County",
+        "em": true
+      },
+      {
+        "q": "What league does the team that occupies the Rabat Ajax Football Ground belong to?",
+        "pred": "Maltese Premier League",
+        "ans": "Maltese Premier League",
+        "em": true
+      },
+      {
+        "q": "Who was married to the star of No Escape?",
+        "pred": "David Profumo",
+        "ans": "John Profumo",
+        "em": false
+      },
+      {
+        "q": "What administrative territorial entity contains the place where KPRM is licensed to broadcast to?",
+        "pred": "Minnesota",
+        "ans": "Hubbard County",
+        "em": false
+      },
+      {
+        "q": "Where are the headquarters for the publisher of In the Shadow of Greatness?",
+        "pred": "Annapolis, Maryland",
+        "ans": "Annapolis",
+        "em": true
+      },
+      {
+        "q": "Who is part of the band that performed Full Cooperation?",
+        "pred": "Erick Sermon Redman Keith Murray",
+        "ans": "Erick Sermon",
+        "em": false
+      },
+      {
+        "q": "The territory containing Bansaan Island is located at which island?",
+        "pred": "municipality",
+        "ans": "Panglao Island",
+        "em": false
+      },
+      {
+        "q": "In which county did Snappy Tomato Pizza form?",
+        "pred": "Kenton County",
+        "ans": "Kenton County",
+        "em": true
+      },
+      {
+        "q": "What's the place of birth of the former member of The Sunnyboys?",
+        "pred": "Kingscliff, New South Wales",
+        "ans": "Kingscliff",
+        "em": true
+      },
+      {
+        "q": "In which district was Ernie Watts born?",
+        "pred": "England",
+        "ans": "West Berkshire",
+        "em": false
+      },
+      {
+        "q": "Which county does Lloyd Dane's birthplace belong to?",
+        "pred": "Miller County",
+        "ans": "Miller County",
+        "em": true
+      },
+      {
+        "q": "Who is the spouse of the screenwriter of The Actress?",
+        "pred": "Victor Willis",
+        "ans": "Garson Kanin",
+        "em": false
+      },
+      {
+        "q": "What award was received by the person who authored Missing Person?",
+        "pred": "Nobel Prize in Literature",
+        "ans": "Nobel Prize in Literature",
+        "em": true
+      },
+      {
+        "q": "What event caused the founder of Australia's liberal party to become Prime Minister?",
+        "pred": "Lyons' death",
+        "ans": "Lyons' death in 1939",
+        "em": false
+      },
+      {
+        "q": "What event caused the Liberal Party of Australia's longest-serving leader to become Prime Minister?",
+        "pred": "Lyons' death",
+        "ans": "Lyons' death in 1939",
+        "em": false
+      },
+      {
+        "q": "What was the average per capita GVA in 2013 of the country which created Burma's academic system?",
+        "pred": "\u00a319,943",
+        "ans": "\u00a323,755",
+        "em": false
+      },
+      {
+        "q": "Who is the spouse of the creator of The Nanny Reunion: A Nosh to Remember?",
+        "pred": "No information provided",
+        "ans": "Peter Marc Jacobson",
+        "em": false
+      },
+      {
+        "q": "Who founded the publisher of The Final Testament of the Holy Bible?",
+        "pred": "Larry Gagosian",
+        "ans": "Larry Gagosian",
+        "em": true
+      },
+      {
+        "q": "During which era was the company that makes Nirbhay founded?",
+        "pred": "not specified",
+        "ans": "From the 1950s to the 1970s",
+        "em": false
+      },
+      {
+        "q": "During what era was the manufacturer of Agni-V founded?",
+        "pred": "late 19th century",
+        "ans": "From the 1950s to the 1970s",
+        "em": false
+      },
+      {
+        "q": "In what era was the company known as the manufacturer of Agni-V founded?",
+        "pred": "late 20th century",
+        "ans": "From the 1950s to the 1970s",
+        "em": false
+      },
+      {
+        "q": "What city is located in the county containing Qiantong?",
+        "pred": "Zhejiang Province",
+        "ans": "Ningbo",
+        "em": false
+      },
+      {
+        "q": "What is the performer of Heartbeat named after?",
+        "pred": "Lost Thing",
+        "ans": "Natalie Albino",
+        "em": false
+      },
+      {
+        "q": "The Move Ya Body song's band is named after who?",
+        "pred": "Nina Sky",
+        "ans": "Natalie Albino",
+        "em": true
+      },
+      {
+        "q": "When did the spacecraft that detected storms on Neptune leave our solar system?",
+        "pred": "August 30, 2007",
+        "ans": "August 30, 2007",
+        "em": true
+      },
+      {
+        "q": "The Nicole and Natalie album's band is named after who?",
+        "pred": "Nicole and Natalie",
+        "ans": "Natalie Albino",
+        "em": false
+      },
+      {
+        "q": "Where was the founder of the National Women's Party born?",
+        "pred": "Paulsdale",
+        "ans": "Mount Laurel Township",
+        "em": false
+      },
+      {
+        "q": "What is the place of birth of the person who submitted the first version of the equal rights amendment to congress in 1923?",
+        "pred": "Paulsdale",
+        "ans": "Mount Laurel Township",
+        "em": false
+      },
+      {
+        "q": "The Directory of Public Worship was approved by a parliament whose modern equivalent has been based where since 2004?",
+        "pred": "Edinburgh",
+        "ans": "Scottish Parliament Building",
+        "em": false
+      },
+      {
+        "q": "Where was the person featured on the Chester Arthur coin born?",
+        "pred": "Not specified",
+        "ans": "Mount Laurel Township",
+        "em": false
+      },
+      {
+        "q": "Since 2004, what is the location of the body to which, if a matter is not specifically reserved, it is devolved?",
+        "pred": "Edinburgh",
+        "ans": "Scottish Parliament Building",
+        "em": false
+      },
+      {
+        "q": "The city which contains Broadhurst Park shares a border with what town?",
+        "pred": "Greater Manchester",
+        "ans": "Middleton",
+        "em": false
+      },
+      {
+        "q": "What is the record label of the Metalworks Studio founder?",
+        "pred": "Nothing Records",
+        "ans": "TML Entertainment",
+        "em": false
+      },
+      {
+        "q": "What is the mouth of watercourse for the body of water where Bartram's Covered Bridge is located?",
+        "pred": "Delaware River",
+        "ans": "Delaware River",
+        "em": true
+      },
+      {
+        "q": "What is the ruler of the underworld in ancient Egypt a part of?",
+        "pred": "god",
+        "ans": "ancient Egyptian religion",
+        "em": false
+      },
+      {
+        "q": "What pantheon is the God of the underworld in ancient Egypt a part of?",
+        "pred": "god",
+        "ans": "ancient Egyptian religion",
+        "em": false
+      },
+      {
+        "q": "In which district was Alhandra born?",
+        "pred": "Portugal",
+        "ans": "Lisbon District",
+        "em": false
+      },
+      {
+        "q": "In which state is Vera Barbosa's place of birth located?",
+        "pred": "Portugal",
+        "ans": "Lisbon District",
+        "em": false
+      },
+      {
+        "q": "In which state is P\u00f3voa de Santa Iria's municipality located?",
+        "pred": "Lisbon",
+        "ans": "Lisbon District",
+        "em": true
+      },
+      {
+        "q": "How old was Mary when engaged to the person from whom S\u00e3o Jos\u00e9 dos Campos takes it's name?",
+        "pred": "12\u201314",
+        "ans": "12\u201314 years old",
+        "em": false
+      },
+      {
+        "q": "Where was Mary's betrothed born?",
+        "pred": "Unspecified",
+        "ans": "Nazareth",
+        "em": false
+      },
+      {
+        "q": "Where is the country with ISO code ISO 3166-2:CV located?",
+        "pred": "Atlantic Ocean",
+        "ans": "central Atlantic Ocean",
+        "em": true
+      },
+      {
+        "q": "Where is Assomada located?",
+        "pred": "Atlantic Ocean",
+        "ans": "central Atlantic Ocean",
+        "em": true
+      },
+      {
+        "q": "Where is Am\u00edlcar Cabral International Airport?",
+        "pred": "Atlantic Ocean",
+        "ans": "central Atlantic Ocean",
+        "em": true
+      },
+      {
+        "q": "Where was the person who wrote about the rioting being a dividing factor in Birmingham educated?",
+        "pred": "Not specified",
+        "ans": "University of Glasgow",
+        "em": false
+      },
+      {
+        "q": "Where was the designer of the Lap Engine educated?",
+        "pred": "University of Glasgow",
+        "ans": "University of Glasgow",
+        "em": true
+      },
+      {
+        "q": "Where was the creator of the Lap Engine educated?",
+        "pred": "University of Glasgow",
+        "ans": "University of Glasgow",
+        "em": true
+      },
+      {
+        "q": "The 1967 Federation Cup is an instance of this tournament which is named after what organization?",
+        "pred": "Fed Cup",
+        "ans": "International Tennis Federation",
+        "em": false
+      },
+      {
+        "q": "What is the competition that the 1965 Federation Cup is part of named after?",
+        "pred": "Fed Cup is not named after any specific person or place mentioned in the context provided. It is named after the Federation of National Tennis Associations",
+        "ans": "International Tennis Federation",
+        "em": false
+      },
+      {
+        "q": "What is the competition the 1972 Federation Cup is part of named after?",
+        "pred": "Clean Water Act",
+        "ans": "International Tennis Federation",
+        "em": false
+      },
+      {
+        "q": "What is the capital of the county which contains Hickory Grove Estates, Mississippi?",
+        "pred": "Clayton Village",
+        "ans": "Starkville",
+        "em": false
+      },
+      {
+        "q": "Who is the father of the performer of Je dis aime?",
+        "pred": "Louis Chedid",
+        "ans": "Louis Chedid",
+        "em": true
+      },
+      {
+        "q": "Who is the father of the Labo M performer?",
+        "pred": "Louis Chedid",
+        "ans": "Louis Chedid",
+        "em": true
+      }
+    ],
+    "auto_qwen": [
+      {
+        "q": "Who is the spouse of the Green performer?",
+        "pred": "Miquette Giraudy",
+        "ans": "Miquette Giraudy",
+        "em": true,
+        "sub_qs": [
+          "Who performed Green?",
+          "Who is the spouse of #1?"
+        ]
+      },
+      {
+        "q": "Who founded the company that distributed the film UHF?",
+        "pred": "Mike Medavoy",
+        "ans": "Mike Medavoy",
+        "em": true,
+        "sub_qs": [
+          "1. What company distributed the film UHF?",
+          "Who founded #1?"
+        ]
+      },
+      {
+        "q": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+        "pred": "municipality",
+        "ans": "Tamaulipas",
+        "em": false,
+        "sub_qs": [
+          "1. What administrative territorial entity owns Ciudad Deportiva?",
+          "What administrative territorial entity is #1?"
+        ]
+      },
+      {
+        "q": "Where is Ulrich Walter's employer headquartered?",
+        "pred": "Not specified in the context provided",
+        "ans": "Cologne",
+        "em": false,
+        "sub_qs": [
+          "1. Who employs Ulrich Walter?",
+          "Where is #1 headquartered?"
+        ]
+      },
+      {
+        "q": "Which company owns the manufacturer of Learjet 60?",
+        "pred": "Bombardier Inc",
+        "ans": "Bombardier Inc.",
+        "em": true,
+        "sub_qs": [
+          "1. Who manufactured the Learjet 60?",
+          "Which company owns #1?"
+        ]
+      },
+      {
+        "q": "Who is the child of Caroline LeRoy's spouse?",
+        "pred": "Fletcher Webster",
+        "ans": "Fletcher Webster",
+        "em": true,
+        "sub_qs": [
+          "1. Who is Caroline LeRoy's spouse?",
+          "Who is the child of #1?"
+        ]
+      },
+      {
+        "q": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+        "pred": "Louis XIV",
+        "ans": "Marie de' Medici",
+        "em": false,
+        "sub_qs": [
+          "1. Who is Philippe, Duke of Orl\u00e9ans's mother?",
+          "Who is the grandmother of #1?"
+        ]
+      },
+      {
+        "q": "What is the goal of the group that European Movement Germany is a member of?",
+        "pred": "promoting European integration",
+        "ans": "European integration",
+        "em": false,
+        "sub_qs": [
+          "1. What group is European Movement Germany a member of?",
+          "What is the goal of #1?"
+        ]
+      },
+      {
+        "q": "What company succeeded the owner of Empire Sports Network?",
+        "pred": "Windjammer Communications",
+        "ans": "Time Warner Cable",
+        "em": false,
+        "sub_qs": [
+          "1. Who is the owner of Empire Sports Network?",
+          "What company succeeded #1?"
+        ]
+      },
+      {
+        "q": "What province shares a border with the province where Lago District is located?",
+        "pred": "Cabo Delgado Province",
+        "ans": "Cabo Delgado Province",
+        "em": true,
+        "sub_qs": [
+          "1. In which province is the Lago District located?",
+          "Which province shares a border with #1?"
+        ]
+      },
+      {
+        "q": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+        "pred": "Lega Pro Prima Divisione",
+        "ans": "Lega Pro Prima Divisione",
+        "em": true,
+        "sub_qs": [
+          "1. What team plays in Stadio Ciro Vigorito?",
+          "What league does #1 play for?"
+        ]
+      },
+      {
+        "q": "What is a notable work written by the author of The Timothy files?",
+        "pred": "Anderson Tapes",
+        "ans": "Anderson Tapes",
+        "em": true,
+        "sub_qs": [
+          "1. Who is the author of *The Timothy Files*?",
+          "What is a notable work written by #1?"
+        ]
+      },
+      {
+        "q": "In which borough was Callum McManaman born?",
+        "pred": "Knowsley",
+        "ans": "Knowsley",
+        "em": true,
+        "sub_qs": [
+          "1. Where was Callum McManaman born?",
+          "In which borough was #1 located?"
+        ]
+      },
+      {
+        "q": "What other county does the county where Imperial is located share a border with?",
+        "pred": "Texas",
+        "ans": "Crockett County",
+        "em": false,
+        "sub_qs": [
+          "1. In which county is Imperial located?",
+          "What other county shares a border with #1?"
+        ]
+      },
+      {
+        "q": "In what county is William W. Blair's birthplace located?",
+        "pred": "Orleans County",
+        "ans": "Orleans County",
+        "em": true,
+        "sub_qs": [
+          "1. Where was William W. Blair born?",
+          "What county is #1 located in?"
+        ]
+      },
+      {
+        "q": "What award did the author of The Red Tree receive?",
+        "pred": "Shaun Tan",
+        "ans": "Academy Award for Best Animated Short Film",
+        "em": false,
+        "sub_qs": [
+          "Question: What award did the author of The Red Tree receive?",
+          "Who is the author of The Red Tree?"
+        ]
+      },
+      {
+        "q": "Where was Tyler MacDuff's child educated?",
+        "pred": "Blair International Baccalaureate School",
+        "ans": "Blair High School",
+        "em": false,
+        "sub_qs": [
+          "1. Who is Tyler MacDuff's child?",
+          "Where was #1 educated?"
+        ]
+      },
+      {
+        "q": "Who is the spouse of the Rabbit Hole's producer?",
+        "pred": "Not specified",
+        "ans": "Keith Urban",
+        "em": false,
+        "sub_qs": [
+          "1. Who is the producer of Rabbit Hole?",
+          "Who is the spouse of #1?"
+        ]
+      },
+      {
+        "q": "Who is the child of Sigrid Eskilsdotter's child?",
+        "pred": "Christina Gyllenstierna",
+        "ans": "Svante Stensson Sture",
+        "em": false,
+        "sub_qs": [
+          "I'll break down your complex question into two simple sub-questions as requested:?",
+          "Who is Sigrid Eskilsdotter's child?"
+        ]
+      },
+      {
+        "q": "In which county is Kimbrough Memorial Stadium located?",
+        "pred": "Randall County",
+        "ans": "Randall County",
+        "em": true,
+        "sub_qs": [
+          "1. Where is Kimbrough Memorial Stadium located?",
+          "In which county is #1 located?"
+        ]
+      },
+      {
+        "q": "What record label is the performer of Almost Made Ya signed to?",
+        "pred": "Derrty Entertainment",
+        "ans": "Derrty Entertainment",
+        "em": true,
+        "sub_qs": [
+          "1. Who performed \"Almost Made Ya\"?",
+          "What record label is #1 signed to?"
+        ]
+      },
+      {
+        "q": "Where was the author of Hannibal and Scipio educated at?",
+        "pred": "Exeter College, Oxford",
+        "ans": "Exeter College",
+        "em": false,
+        "sub_qs": [
+          "1. Who is the author of Hannibal and Scipio?",
+          "Where was #1 educated?"
+        ]
+      },
+      {
+        "q": "In which county is Southern Maryland Electric Cooperative headquartered?",
+        "pred": "Charles County",
+        "ans": "Charles County",
+        "em": true,
+        "sub_qs": [
+          "1. Where is Southern Maryland Electric Cooperative headquartered?",
+          "In which county is #1 located?"
+        ]
+      },
+      {
+        "q": "Who is the child of the Victim of Romance performer?",
+        "pred": "Chynna Phillips",
+        "ans": "Chynna Phillips",
+        "em": true,
+        "sub_qs": [
+          "1. Who performed in the Victim of Romance?",
+          "Who is the child of #1?"
+        ]
+      },
+      {
+        "q": "What county was Tim Dubois born in?",
+        "pred": "McDonald County",
+        "ans": "McDonald County",
+        "em": true,
+        "sub_qs": [
+          "1. Where was Tim Dubois born?",
+          "What county was #1 located in?"
+        ]
+      },
+      {
+        "q": "What record label did the person who is part of The Bruce Lee Band start?",
+        "pred": "Dill Records",
+        "ans": "Asian Man Records",
+        "em": false,
+        "sub_qs": [
+          "1. Who is part of The Bruce Lee Band?",
+          "What record label did #1 start?"
+        ]
+      },
+      {
+        "q": "What is another notable work made by the author of Miss Sara Sampson?",
+        "pred": "Gotthold Ephraim Lessing",
+        "ans": "Emilia Galotti",
+        "em": false,
+        "sub_qs": [
+          "Question: What is another notable work made by the author of Miss Sara Sampson?",
+          "Who is the author of Miss Sara Sampson?"
+        ]
+      },
+      {
+        "q": "What instrument is played by the person from The Blackout All-Stars?",
+        "pred": "conga",
+        "ans": "conga",
+        "em": true,
+        "sub_qs": [
+          "1. Who is from The Blackout All-Stars?",
+          "What instrument does #1 play?"
+        ]
+      },
+      {
+        "q": "What is the seat of the county where Van Hook Township is located?",
+        "pred": "Stanley",
+        "ans": "Stanley",
+        "em": true,
+        "sub_qs": [
+          "1. In which county is Van Hook Township located?",
+          "What is the seat of #1?"
+        ]
+      },
+      {
+        "q": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+        "pred": "Sir Francis Baring, 1st Baronet",
+        "ans": "Sir Francis Baring, 1st Baronet",
+        "em": true,
+        "sub_qs": [
+          "1. Who is Edward Baring, 1st Baron Revelstoke's father?",
+          "Who is the father of #1?"
+        ]
+      },
+      {
+        "q": "What group was the performer of Be the One a member of?",
+        "pred": "Jackson 5",
+        "ans": "Jackson 5",
+        "em": true,
+        "sub_qs": [
+          "1. Who performed the song \"Be the One\"?",
+          "What group was #1 a member of?"
+        ]
+      },
+      {
+        "q": "Who is the lead singer of the band performing Bang Bang Rock & Roll?",
+        "pred": "Art Brut",
+        "ans": "Eddie Argos",
+        "em": false,
+        "sub_qs": [
+          "2. Who is the lead singer of #1?",
+          "Who is the lead singer of the band performing Bang Bang Rock & Roll?"
+        ]
+      },
+      {
+        "q": "What is the network which National Cycle Route 57 is part of an example of?",
+        "pred": "United Kingdom",
+        "ans": "national cycling route network",
+        "em": false,
+        "sub_qs": [
+          "1. Which network does National Cycle Route 57 belong to?",
+          "What is the network that #1 belongs to?"
+        ]
+      },
+      {
+        "q": "Who is the spouse of the child of Peter Andreas Heiberg?",
+        "pred": "Johanne Luise Heiberg",
+        "ans": "Johanne Luise Heiberg",
+        "em": true,
+        "sub_qs": [
+          "1. Who is the child of Peter Andreas Heiberg?",
+          "Who is the spouse of #1?"
+        ]
+      },
+      {
+        "q": "The Unwinding author volunteered for which organisation?",
+        "pred": "Susan Evans McCloud",
+        "ans": "Peace Corps",
+        "em": false,
+        "sub_qs": [
+          "1. Which organization did the author of \"The Unwinding\" volunteer for?",
+          "What is the final answer about #1?"
+        ]
+      },
+      {
+        "q": "What is the capital of the county that Pine Springs is located in?",
+        "pred": "Van Horn",
+        "ans": "Van Horn",
+        "em": true,
+        "sub_qs": [
+          "1. In which county is Pine Springs located?",
+          "What is the capital of #1?"
+        ]
+      },
+      {
+        "q": "What district is the headquarter of Julia's House located?",
+        "pred": "East Dorset",
+        "ans": "East Dorset",
+        "em": true,
+        "sub_qs": [
+          "1. Where is Julia's House headquartered?",
+          "What district is #1 located in?"
+        ]
+      },
+      {
+        "q": "Who is the spouse of Young Man Luther's author?",
+        "pred": "Joan Erikson",
+        "ans": "Joan Erikson",
+        "em": true,
+        "sub_qs": [
+          "1. Who wrote Young Man Luther?",
+          "Who is the spouse of #1?"
+        ]
+      },
+      {
+        "q": "What record label did the performer of The Place and the Time belong to?",
+        "pred": "Columbia Records",
+        "ans": "Columbia Records",
+        "em": true,
+        "sub_qs": [
+          "1. Who performed the song \"The Place and the Time\"?",
+          "What record label did #1 belong to?"
+        ]
+      },
+      {
+        "q": "Who is the child of the person who followed Tihomir of Serbia?",
+        "pred": "Stracimir and Miroslav",
+        "ans": "Saint Sava",
+        "em": false,
+        "sub_qs": [
+          "1. Who followed Tihomir of Serbia?",
+          "Who is the child of #1?"
+        ]
+      },
+      {
+        "q": "What team was Anna Benson's husband on?",
+        "pred": "Pittsburgh Pirates",
+        "ans": "Pittsburgh Pirates",
+        "em": true,
+        "sub_qs": [
+          "1. Whom is Anna Benson married to?",
+          "What team was #1 on?"
+        ]
+      },
+      {
+        "q": "What place does the administrative territorial entity that Juba is located in share a border with?",
+        "pred": "South Sudan",
+        "ans": "Eastern Equatoria",
+        "em": false,
+        "sub_qs": [
+          "1. In which administrative territorial entity is Juba located?",
+          "What place does #1 share a border with?"
+        ]
+      },
+      {
+        "q": "Where was the spouse of Frances Tupper born?",
+        "pred": "Canada",
+        "ans": "Amherst",
+        "em": false,
+        "sub_qs": [
+          "1. Who is Frances Tupper's spouse?",
+          "Where was #1 born?"
+        ]
+      },
+      {
+        "q": "Who founded the political party of Dimuthu Bandara Abayakoon?",
+        "pred": "Rohana Wijeweera",
+        "ans": "Rohana Wijeweera",
+        "em": true,
+        "sub_qs": [
+          "1. Which political party does Dimuthu Bandara Abayakoon belong to?",
+          "Who founded #1?"
+        ]
+      },
+      {
+        "q": "Bancroft's county borders what county?",
+        "pred": "Canyon",
+        "ans": "Haliburton County",
+        "em": false,
+        "sub_qs": [
+          "1. Which county does Bancroft border?",
+          "What is the name of the county that #1 borders?"
+        ]
+      },
+      {
+        "q": "In which county is Mark Dismore's birthplace located?",
+        "pred": "Hancock County",
+        "ans": "Hancock County",
+        "em": true,
+        "sub_qs": [
+          "1. Where was Mark Dismore born?",
+          "In which county is #1 located?"
+        ]
+      },
+      {
+        "q": "Who was the sibling of Nannina de' Medici?",
+        "pred": "Nannina de' Medici's brother",
+        "ans": "Giuliano de' Medici",
+        "em": false,
+        "sub_qs": [
+          "1. Who was Nannina de' Medici's sibling?",
+          "Who was #1?"
+        ]
+      },
+      {
+        "q": "What county is the NRHEG High School located in?",
+        "pred": "Waseca County",
+        "ans": "Waseca County",
+        "em": true,
+        "sub_qs": [
+          "1. Where is NRHEG High School located?",
+          "What county is #1 located in?"
+        ]
+      },
+      {
+        "q": "What league does the team that occupies the Rabat Ajax Football Ground belong to?",
+        "pred": "Maltese",
+        "ans": "Maltese Premier League",
+        "em": false,
+        "sub_qs": [
+          "1. What team occupies the Rabat Ajax Football Ground?",
+          "What league does #1 belong to?"
+        ]
+      },
+      {
+        "q": "Who was married to the star of No Escape?",
+        "pred": "John Profumo",
+        "ans": "John Profumo",
+        "em": true,
+        "sub_qs": [
+          "1. Who is the star of No Escape?",
+          "Who was married to #1?"
+        ]
+      },
+      {
+        "q": "What administrative territorial entity contains the place where KPRM is licensed to broadcast to?",
+        "pred": "Park Rapids, Minnesota",
+        "ans": "Hubbard County",
+        "em": false,
+        "sub_qs": [
+          "1. Where is KPRM licensed to broadcast to?",
+          "What administrative territorial entity contains #1?"
+        ]
+      },
+      {
+        "q": "Where are the headquarters for the publisher of In the Shadow of Greatness?",
+        "pred": "Annapolis, Maryland",
+        "ans": "Annapolis",
+        "em": true,
+        "sub_qs": [
+          "1. Which company publishes \"In the Shadow of Greatness\"?",
+          "Where are the headquarters for #1 located?"
+        ]
+      },
+      {
+        "q": "Who is part of the band that performed Full Cooperation?",
+        "pred": "Def Squad",
+        "ans": "Erick Sermon",
+        "em": false,
+        "sub_qs": [
+          "2. Who is part of the band that performed Full Cooperation?",
+          "Who is part of the band that performed Full Cooperation?"
+        ]
+      },
+      {
+        "q": "The territory containing Bansaan Island is located at which island?",
+        "pred": "None",
+        "ans": "Panglao Island",
+        "em": false,
+        "sub_qs": [
+          "1. Which territory contains Bansaan Island?",
+          "At which island is #1 located?"
+        ]
+      },
+      {
+        "q": "In which county did Snappy Tomato Pizza form?",
+        "pred": "Kenton County",
+        "ans": "Kenton County",
+        "em": true,
+        "sub_qs": [
+          "1. Where did Snappy Tomato Pizza form?",
+          "In which county is #1 located?"
+        ]
+      },
+      {
+        "q": "What's the place of birth of the former member of The Sunnyboys?",
+        "pred": "Kingscliff",
+        "ans": "Kingscliff",
+        "em": true,
+        "sub_qs": [
+          "1. Who is a former member of The Sunnyboys?",
+          "What is the place of birth of #1?"
+        ]
+      },
+      {
+        "q": "In which district was Ernie Watts born?",
+        "pred": "not specified",
+        "ans": "West Berkshire",
+        "em": false,
+        "sub_qs": [
+          "1. Where was Ernie Watts born?",
+          "In which district was #1 located?"
+        ]
+      },
+      {
+        "q": "Which county does Lloyd Dane's birthplace belong to?",
+        "pred": "Miller County",
+        "ans": "Miller County",
+        "em": true,
+        "sub_qs": [
+          "1. Where was Lloyd Dane born?",
+          "Which county does #1 belong to?"
+        ]
+      },
+      {
+        "q": "Who is the spouse of the screenwriter of The Actress?",
+        "pred": "Victor Willis",
+        "ans": "Garson Kanin",
+        "em": false,
+        "sub_qs": [
+          "1. Who is the screenwriter of The Actress?",
+          "Who is the spouse of #1?"
+        ]
+      },
+      {
+        "q": "What award was received by the person who authored Missing Person?",
+        "pred": "Nobel Prize in Literature",
+        "ans": "Nobel Prize in Literature",
+        "em": true,
+        "sub_qs": [
+          "1. Who authored the book \"Missing Person\"?",
+          "What award did #1 receive?"
+        ]
+      },
+      {
+        "q": "What event caused the founder of Australia's liberal party to become Prime Minister?",
+        "pred": "Lyons' death",
+        "ans": "Lyons' death in 1939",
+        "em": false,
+        "sub_qs": [
+          "1. Who is the founder of Australia's liberal party?",
+          "What event caused #1 to become Prime Minister?"
+        ]
+      },
+      {
+        "q": "What event caused the Liberal Party of Australia's longest-serving leader to become Prime Minister?",
+        "pred": "Lyons' death",
+        "ans": "Lyons' death in 1939",
+        "em": false,
+        "sub_qs": [
+          "1. Who was the longest-serving leader of the Liberal Party of Australia?",
+          "What event caused #1 to become Prime Minister?"
+        ]
+      },
+      {
+        "q": "What was the average per capita GVA in 2013 of the country which created Burma's academic system?",
+        "pred": "\u00a319,943",
+        "ans": "\u00a323,755",
+        "em": false,
+        "sub_qs": [
+          "1. Which country created Burma's academic system?",
+          "What was the average per capita GVA in 2013 of #1?"
+        ]
+      },
+      {
+        "q": "Who is the spouse of the creator of The Nanny Reunion: A Nosh to Remember?",
+        "pred": "Peter Marc Jacobson",
+        "ans": "Peter Marc Jacobson",
+        "em": true,
+        "sub_qs": [
+          "1. Who created The Nanny Reunion: A Nosh to Remember?",
+          "Who is the spouse of #1?"
+        ]
+      },
+      {
+        "q": "Who founded the publisher of The Final Testament of the Holy Bible?",
+        "pred": "Larry Gagosian",
+        "ans": "Larry Gagosian",
+        "em": true,
+        "sub_qs": [
+          "1. Which publisher is responsible for The Final Testament of the Holy Bible?",
+          "Who founded #1?"
+        ]
+      },
+      {
+        "q": "During which era was the company that makes Nirbhay founded?",
+        "pred": "not specified",
+        "ans": "From the 1950s to the 1970s",
+        "em": false,
+        "sub_qs": [
+          "1. Which company makes Nirbhay?",
+          "During which era was #1 founded?"
+        ]
+      },
+      {
+        "q": "During what era was the manufacturer of Agni-V founded?",
+        "pred": "late 19th century",
+        "ans": "From the 1950s to the 1970s",
+        "em": false,
+        "sub_qs": [
+          "1. Which company manufactures Agni-V?",
+          "During what era was #1 founded?"
+        ]
+      },
+      {
+        "q": "In what era was the company known as the manufacturer of Agni-V founded?",
+        "pred": "late 20th century",
+        "ans": "From the 1950s to the 1970s",
+        "em": false,
+        "sub_qs": [
+          "1. Which company is known for manufacturing Agni-V?",
+          "In what era was #1 founded?"
+        ]
+      },
+      {
+        "q": "What city is located in the county containing Qiantong?",
+        "pred": "Qiantong",
+        "ans": "Ningbo",
+        "em": false,
+        "sub_qs": [
+          "1. In which county is Qiantong located?",
+          "What city is located in #1?"
+        ]
+      },
+      {
+        "q": "What is the performer of Heartbeat named after?",
+        "pred": "Heartbeat",
+        "ans": "Natalie Albino",
+        "em": false,
+        "sub_qs": [
+          "1. What is the name of the performer of Heartbeat?",
+          "What does the name of #1 refer to or get its inspiration from?"
+        ]
+      },
+      {
+        "q": "The Move Ya Body song's band is named after who?",
+        "pred": "Nina Sky",
+        "ans": "Natalie Albino",
+        "em": true,
+        "sub_qs": [
+          "1. What band sings the song \"Move Ya Body\"?",
+          "The band is named after who?"
+        ]
+      },
+      {
+        "q": "When did the spacecraft that detected storms on Neptune leave our solar system?",
+        "pred": "2007",
+        "ans": "August 30, 2007",
+        "em": false,
+        "sub_qs": [
+          "1. Which spacecraft detected storms on Neptune?",
+          "When did #1 leave our solar system?"
+        ]
+      },
+      {
+        "q": "The Nicole and Natalie album's band is named after who?",
+        "pred": "Nina Sky",
+        "ans": "Natalie Albino",
+        "em": true,
+        "sub_qs": [
+          "1. What is the name of the band whose album Nicole and Natalie are associated with?",
+          "The band is named after who?"
+        ]
+      },
+      {
+        "q": "Where was the founder of the National Women's Party born?",
+        "pred": "Paulsdale",
+        "ans": "Mount Laurel Township",
+        "em": false,
+        "sub_qs": [
+          "1. Who founded the National Women's Party?",
+          "Where was #1 born?"
+        ]
+      },
+      {
+        "q": "What is the place of birth of the person who submitted the first version of the equal rights amendment to congress in 1923?",
+        "pred": "Paulsdale",
+        "ans": "Mount Laurel Township",
+        "em": false,
+        "sub_qs": [
+          "1. Who submitted the first version of the equal rights amendment to Congress in 1923?",
+          "Where was #1 born?"
+        ]
+      },
+      {
+        "q": "The Directory of Public Worship was approved by a parliament whose modern equivalent has been based where since 2004?",
+        "pred": "Edinburgh",
+        "ans": "Scottish Parliament Building",
+        "em": false,
+        "sub_qs": [
+          "1. Which parliament approved the Directory of Public Worship?",
+          "Where has the modern equivalent of #1 been based since 2004?"
+        ]
+      },
+      {
+        "q": "Where was the person featured on the Chester Arthur coin born?",
+        "pred": "2007",
+        "ans": "Mount Laurel Township",
+        "em": false,
+        "sub_qs": [
+          "1. On which coin is a person featured?",
+          "Where was #1 born?"
+        ]
+      },
+      {
+        "q": "Since 2004, what is the location of the body to which, if a matter is not specifically reserved, it is devolved?",
+        "pred": "Edinburgh",
+        "ans": "Scottish Parliament Building",
+        "em": false,
+        "sub_qs": [
+          "1. Since 2004, to which body are matters devolved if they are not specifically reserved?",
+          "What is the location of #1?"
+        ]
+      },
+      {
+        "q": "The city which contains Broadhurst Park shares a border with what town?",
+        "pred": "Chadderton",
+        "ans": "Middleton",
+        "em": false,
+        "sub_qs": [
+          "1. Which city contains Broadhurst Park?",
+          "Which town shares a border with #1?"
+        ]
+      },
+      {
+        "q": "What is the record label of the Metalworks Studio founder?",
+        "pred": "Nothing Records",
+        "ans": "TML Entertainment",
+        "em": false,
+        "sub_qs": [
+          "1. Who founded Metalworks Studio?",
+          "What is the record label of #1?"
+        ]
+      },
+      {
+        "q": "What is the mouth of watercourse for the body of water where Bartram's Covered Bridge is located?",
+        "pred": "Eddystone",
+        "ans": "Delaware River",
+        "em": false,
+        "sub_qs": [
+          "1. Where is Bartram's Covered Bridge located?",
+          "What is the mouth of the watercourse for #1?"
+        ]
+      },
+      {
+        "q": "What is the ruler of the underworld in ancient Egypt a part of?",
+        "pred": "Ancient Egyptian",
+        "ans": "ancient Egyptian religion",
+        "em": false,
+        "sub_qs": [
+          "Sure, let's break down your complex question into two simple sub-questions.?",
+          "In which ancient civilization did the concept of an afterlife with an underworld ruler first appear?"
+        ]
+      },
+      {
+        "q": "What pantheon is the God of the underworld in ancient Egypt a part of?",
+        "pred": "Egyptian",
+        "ans": "ancient Egyptian religion",
+        "em": false,
+        "sub_qs": [
+          "1. Which god is the God of the underworld in ancient Egypt?",
+          "Which pantheon does #1 belong to?"
+        ]
+      },
+      {
+        "q": "In which district was Alhandra born?",
+        "pred": "Portage Street Historic District",
+        "ans": "Lisbon District",
+        "em": false,
+        "sub_qs": [
+          "1. Where was Alhandra born?",
+          "In which district was #1 located?"
+        ]
+      },
+      {
+        "q": "In which state is Vera Barbosa's place of birth located?",
+        "pred": "Portugal",
+        "ans": "Lisbon District",
+        "em": false,
+        "sub_qs": [
+          "1. Where was Vera Barbosa born?",
+          "In which state is #1 located?"
+        ]
+      },
+      {
+        "q": "In which state is P\u00f3voa de Santa Iria's municipality located?",
+        "pred": "Not applicable",
+        "ans": "Lisbon District",
+        "em": false,
+        "sub_qs": [
+          "1. In which country is P\u00f3voa de Santa Iria located?",
+          "In which state is #1 located?"
+        ]
+      },
+      {
+        "q": "How old was Mary when engaged to the person from whom S\u00e3o Jos\u00e9 dos Campos takes it's name?",
+        "pred": "12\u201314",
+        "ans": "12\u201314 years old",
+        "em": false,
+        "sub_qs": [
+          "1. To which person does S\u00e3o Jos\u00e9 dos Campos owe its naming?",
+          "How old was Mary when she was engaged to #1?"
+        ]
+      },
+      {
+        "q": "Where was Mary's betrothed born?",
+        "pred": "Unspecified",
+        "ans": "Nazareth",
+        "em": false,
+        "sub_qs": [
+          "1. Who was Mary's betrothed?",
+          "Where was #1 born?"
+        ]
+      },
+      {
+        "q": "Where is the country with ISO code ISO 3166-2:CV located?",
+        "pred": "Atlantic Ocean",
+        "ans": "central Atlantic Ocean",
+        "em": true,
+        "sub_qs": [
+          "1. Which country has the ISO code ISO 3166-2:CV?",
+          "Where is #1 located?"
+        ]
+      },
+      {
+        "q": "Where is Assomada located?",
+        "pred": "west of the Cape Verde Peninsula off the coast of Northwest Africa",
+        "ans": "central Atlantic Ocean",
+        "em": false,
+        "sub_qs": [
+          "1. In which country is Assomada located?",
+          "Where is #1 located?"
+        ]
+      },
+      {
+        "q": "Where is Am\u00edlcar Cabral International Airport?",
+        "pred": "Cabo Verde",
+        "ans": "central Atlantic Ocean",
+        "em": false,
+        "sub_qs": [
+          "1. Where is Am\u00edlcar Cabral International Airport located?",
+          "Where is #1?"
+        ]
+      },
+      {
+        "q": "Where was the person who wrote about the rioting being a dividing factor in Birmingham educated?",
+        "pred": "University of Glasgow",
+        "ans": "University of Glasgow",
+        "em": true,
+        "sub_qs": [
+          "1. Who wrote about the rioting being a dividing factor in Birmingham?",
+          "Where was #1 educated?"
+        ]
+      },
+      {
+        "q": "Where was the designer of the Lap Engine educated?",
+        "pred": "University of Glasgow",
+        "ans": "University of Glasgow",
+        "em": true,
+        "sub_qs": [
+          "1. Who is the designer of the Lap Engine?",
+          "Where was #1 educated?"
+        ]
+      },
+      {
+        "q": "Where was the creator of the Lap Engine educated?",
+        "pred": "University of Glasgow",
+        "ans": "University of Glasgow",
+        "em": true,
+        "sub_qs": [
+          "1. Who is the creator of the Lap Engine?",
+          "Where was #1 educated?"
+        ]
+      },
+      {
+        "q": "The 1967 Federation Cup is an instance of this tournament which is named after what organization?",
+        "pred": "Federation",
+        "ans": "International Tennis Federation",
+        "em": false,
+        "sub_qs": [
+          "1. Which tournament is the 1967 Federation Cup an instance of?",
+          "What organization does #1 name itself after?"
+        ]
+      },
+      {
+        "q": "What is the competition that the 1965 Federation Cup is part of named after?",
+        "pred": "Fed Cup",
+        "ans": "International Tennis Federation",
+        "em": false,
+        "sub_qs": [
+          "1. What competition is the 1965 Federation Cup part of?",
+          "What is the name of #1?"
+        ]
+      },
+      {
+        "q": "What is the competition the 1972 Federation Cup is part of named after?",
+        "pred": "Fed Cup",
+        "ans": "International Tennis Federation",
+        "em": false,
+        "sub_qs": [
+          "1. What competition is the 1972 Federation Cup part of?",
+          "What is the competition named after that includes #1?"
+        ]
+      },
+      {
+        "q": "What is the capital of the county which contains Hickory Grove Estates, Mississippi?",
+        "pred": "Clayton Village",
+        "ans": "Starkville",
+        "em": false,
+        "sub_qs": [
+          "1. In which county is Hickory Grove Estates located in Mississippi?",
+          "What is the capital of #1?"
+        ]
+      },
+      {
+        "q": "Who is the father of the performer of Je dis aime?",
+        "pred": "Matthieu Chedid",
+        "ans": "Louis Chedid",
+        "em": false,
+        "sub_qs": [
+          "Question: Who is the father of the performer of Je dis aime?",
+          "Who performed Je dis aime?"
+        ]
+      },
+      {
+        "q": "Who is the father of the Labo M performer?",
+        "pred": "Louis Chedid",
+        "ans": "Louis Chedid",
+        "em": true,
+        "sub_qs": [
+          "1. Who performed as Labo M?",
+          "Who is the father of #1?"
+        ]
+      }
+    ]
+  }
+}
