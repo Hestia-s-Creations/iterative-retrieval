@@ -31,6 +31,7 @@ from pathlib import Path
 from collections import defaultdict
 from dataclasses import dataclass, field
 
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 
 # ── Metrics ──────────────────────────────────────────────────────────
@@ -242,28 +243,43 @@ def run_hotpotqa_gold_context(processed, verbose=False):
 # ── TriviaQA Processing ─────────────────────────────────────────────
 
 def process_triviaqa_sample(sample):
-    """Convert TriviaQA sample to standardized format."""
+    """Convert TriviaQA sample to standardized format.
+
+    TriviaQA uses columnar format: search_results is a dict with lists,
+    not a list of dicts. E.g. search_results["title"] = [title1, title2, ...]
+    """
     answer = sample["answer"]["value"]
     aliases = sample["answer"].get("aliases", [])
 
-    # TriviaQA RC has search_results with passages
+    # TriviaQA RC has search_results in columnar format
     paragraphs = []
-    if sample.get("search_results"):
-        for sr in sample["search_results"][:5]:
-            if sr.get("search_context"):
+    sr = sample.get("search_results", {})
+    if sr and sr.get("search_context"):
+        titles = sr.get("title", [])
+        contexts = sr.get("search_context", [])
+        for i in range(min(5, len(contexts))):
+            ctx = contexts[i] if i < len(contexts) else ""
+            title = titles[i] if i < len(titles) else ""
+            if ctx:
                 paragraphs.append({
-                    "title": sr.get("title", ""),
-                    "text": sr["search_context"][:500]  # Truncate long passages
+                    "title": title,
+                    "text": ctx[:500]
                 })
 
-    # Also try entity_pages
-    if not paragraphs and sample.get("entity_pages"):
-        for ep in sample["entity_pages"][:5]:
-            if ep.get("wiki_context"):
-                paragraphs.append({
-                    "title": ep.get("title", ""),
-                    "text": ep["wiki_context"][:500]
-                })
+    # Also try entity_pages (also columnar)
+    if not paragraphs:
+        ep = sample.get("entity_pages", {})
+        if ep and ep.get("wiki_context"):
+            titles = ep.get("title", [])
+            contexts = ep.get("wiki_context", [])
+            for i in range(min(5, len(contexts))):
+                ctx = contexts[i] if i < len(contexts) else ""
+                title = titles[i] if i < len(titles) else ""
+                if ctx:
+                    paragraphs.append({
+                        "title": title,
+                        "text": ctx[:500]
+                    })
 
     return {
         "question": sample["question"],
