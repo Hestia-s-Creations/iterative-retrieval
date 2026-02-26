@@ -1,0 +1,646 @@
+{
+  "configs": {
+    "EMBED_NORMALIZED": {
+      "em": 36.666666666666664,
+      "relaxed_em": 43.333333333333336,
+      "f1": 0.41777777777777775,
+      "latency_ms": 1916.9293562571208,
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "predicted": "Miquette Giraudy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__252311_366220",
+          "predicted": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__701895_752697",
+          "predicted": "N/A does not have a specified location within an administrative region based on the provided context",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__259228_793698",
+          "predicted": "Germany",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__481349_302087",
+          "predicted": "GenCorp",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__697790_864352",
+          "predicted": "Daniel Bremer Juell",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__207476_625987",
+          "predicted": "Anne of Austria",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__390947_232243",
+          "predicted": "Promoting European integration and disseminating information about it",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.4,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__354635_174222",
+          "predicted": "Empire Sports Network",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__635187_861533",
+          "predicted": "- Lake Nyasa to the west",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__166824_185403",
+          "predicted": "Serie A",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__698577_851686",
+          "predicted": "Timothy Files",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__362107_652514",
+          "predicted": "Merseyside",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__402530_774333",
+          "predicted": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__195917_575657",
+          "predicted": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__683835_709167",
+          "predicted": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__197470_271394",
+          "predicted": "Columbia University",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__458131_174974",
+          "predicted": "Nicole Kidman",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__299142_347613",
+          "predicted": "Not specified in context, cannot be determined from given information",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__528263_865831",
+          "predicted": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__569582_304416",
+          "predicted": "Roxy Recordings",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__505860_650613",
+          "predicted": "Exeter College, Oxford",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__821197_368148",
+          "predicted": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__554167_451128",
+          "predicted": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__702496_430061",
+          "predicted": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__549146_223121",
+          "predicted": "Go Down Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.3333333333333333,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__647996_551681",
+          "predicted": "Emilia Galotti",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__673655_316668",
+          "predicted": "Trombone",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__574419_270105",
+          "predicted": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2
+        },
+        {
+          "id": "2hop__403712_793210",
+          "predicted": "Edward Stillingfleet",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2
+        }
+      ]
+    },
+    "AUTO_DECOMPOSE": {
+      "em": 6.666666666666667,
+      "relaxed_em": 13.333333333333334,
+      "f1": 0.18664021164021166,
+      "latency_ms": 1740.45725663503,
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "predicted": "Tim Robbins; Miquette Giraudy",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.6666666666666666,
+          "n_hops": 2,
+          "sub_questions": [
+            "To find out who performed as \"Green,\" we need to identify individuals known for such roles in films or other media where they might have had a significant presence, often associated with environmental themes due to their name's similarity to the color green. Once identified, this information can lead us directly to Tim Robbins and his spouse, based on public knowledge of celebrity relationships as of my last update.?"
+          ]
+        },
+        {
+          "id": "2hop__252311_366220",
+          "predicted": "Yes",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What is the name of the distributor for the film \"UHF\"?",
+            "Which company distributed the film \"UHF\"?",
+            "Who founded #1? (Answer to sub-question 1)?",
+            "Did this company distribute other films as well, such as independent or foreign films? Yes/No - If yes, which ones were they? This can help narrow down potential founders if the distributor is known for?"
+          ]
+        },
+        {
+          "id": "2hop__701895_752697",
+          "predicted": "Not applicable - no founder information provided for \"Not specified\"",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What county was Tim Dubois born in?",
+            "Where was Tim DuBois born? (Answered using #N)?",
+            "What county is #1 located in? (Answered using #N)?",
+            "Which company distributed the film UHF? (Answered using #N)?",
+            "Who founded #1?"
+          ]
+        },
+        {
+          "id": "2hop__259228_793698",
+          "predicted": "University of California at Berkeley",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What university did Dr. Emily Thompson receive her PhD from in the field of Astrophysics?",
+            "Who was awarded a PhD by #N, where is this person currently working as an astrophysicist?",
+            "Where are universities located that offer programs leading to a PhD in Physics or related fields like Astrophysics?"
+          ]
+        },
+        {
+          "id": "2hop__481349_302087",
+          "predicted": "Bombardier Inc",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: Which company currently holds ownership over Gulfstream Aerospace, a known producer and seller of aircraft including models like Learjet 60?",
+            "What is the name of the manufacturer that produces the Learjet 60 model? (Answer needed for future reference) #N?",
+            "Which company currently owns Gulfstream Aerospace, known as a producer and seller of aircraft including models like Learjet 60?"
+          ]
+        },
+        {
+          "id": "2hop__697790_864352",
+          "predicted": "No specific names given for their siblings",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: Who is the child of Caroline LeRoy's spouse?",
+            "Who did Caroline LeRoy marry? (Caroline LeRoy's spouse)?",
+            "What are the children of #1 called or known as, if available information about them exists in public records or media mentions?"
+          ]
+        },
+        {
+          "id": "2hop__207476_625987",
+          "predicted": "Fran\u00e7oise Marie de Bourbon",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.5714285714285715,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: Who was Philippe, Duke of Orl\u00e9ans's mother?"
+          ]
+        },
+        {
+          "id": "2hop__390947_232243",
+          "predicted": "To coordinate efforts for promoting European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.4444444444444445,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What is the goal of the group that European Movement Germany is a member of?",
+            "Which organization does European Movement Germany belong to as a member?",
+            "What are the goals or objectives of #1?"
+          ]
+        },
+        {
+          "id": "2hop__354635_174222",
+          "predicted": "Windjammer Cable Company",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.3333333333333333,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What company took over ownership of Empire Sports Network?",
+            "Which network was previously owned by Empire Media Group?",
+            "Who is/was the new owner #1 that succeeded Empire Media Group with their acquisition or takeover?"
+          ]
+        },
+        {
+          "id": "2hop__635187_861533",
+          "predicted": "Mozambique",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "What country does Lago District belong to?"
+          ]
+        },
+        {
+          "id": "2hop__166824_185403",
+          "predicted": "Typically",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: In which football league does the team playing at Stadio Ciro Vigorito compete?",
+            "Which team currently plays at Stadio Ciro Vigorito?",
+            "What is #1's name in Italian soccer terminology (if applicable)?",
+            "In which country does the league that includes #2 operate?",
+            "How many teams are typically found within a single football division of this league, and what?"
+          ]
+        },
+        {
+          "id": "2hop__698577_851686",
+          "predicted": "Open Boat and Other Tales of Adventure",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What is a notable work written by John Kessel, who wrote \"The Timothy Files\"?",
+            "Who wrote \"The Timothy Files\"?",
+            "Can you name any other works #1 has authored? (Note that this sub-question may not have an answer provided in the previous ones and might require external knowledge.)?"
+          ]
+        },
+        {
+          "id": "2hop__362107_652514",
+          "predicted": "Not specified in the context provided",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: In which county is Tim Dubois from? (#N)?"
+          ]
+        },
+        {
+          "id": "2hop__402530_774333",
+          "predicted": "Mexico",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: Which country borders California to the north, east, and southeast of Imperial County?",
+            "In which U.S. state is Imperial County located?",
+            "What countries or states share a border with #1 (California) in each direction mentioned above?"
+          ]
+        },
+        {
+          "id": "2hop__195917_575657",
+          "predicted": "Oregon",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What state was Bill Walton born in?"
+          ]
+        },
+        {
+          "id": "2hop__683835_709167",
+          "predicted": "Nobel Prize in Literature",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What award did the author of The Red Tree receive?",
+            "Who is the author of The Red Tree?",
+            "Which prestigious literary prize was awarded to #1 for their work on The Red Tree?"
+          ]
+        },
+        {
+          "id": "2hop__197470_271394",
+          "predicted": "Tim Duncan attended Peabody College for his undergraduate degree",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What county is Tim DuBois from, and where did he receive his education before graduating in the same place as #2?",
+            "Who is Tim DuBois married to if they share a spouse with Tyler MacDuff's child? (Hint: Look for information about their relationship)?",
+            "Where was this person born, and what county are they from in the US?",
+            "What school did #2 attend?"
+          ]
+        },
+        {
+          "id": "2hop__458131_174974",
+          "predicted": "N/A",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: Who is the spouse of the Rabbit Hole's producer?",
+            "Which film did #2 produce for A24, a company known for producing independent films with unique narratives and visual styles often dealing with complex emotional themes such as grief or loss in their storytelling approach?",
+            "Who is the spouse of #1?"
+          ]
+        },
+        {
+          "id": "2hop__299142_347613",
+          "predicted": "Svante Turesson Bielke",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.3333333333333333,
+          "n_hops": 2,
+          "sub_questions": [
+            "Who was Sigrid Eskilsdotter married to, and what were their children called (to identify her direct descendants)?",
+            "What are the names of #1's known offspring or heirs?",
+            "Who is one of these individuals that had a child themselves, and can you name this descendant as Sigrid Eskilsdotter's grandchild?"
+          ]
+        },
+        {
+          "id": "2hop__528263_865831",
+          "predicted": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: In which county is Kimbrough Memorial Stadium located?",
+            "What city does the Kimbrough Memorial Stadium belong to?",
+            "Which state is #1 located in?",
+            "How many counties are there in #2, and can you name them all?",
+            "In which county of #3 is one specific county from your list found?"
+          ]
+        },
+        {
+          "id": "2hop__569582_304416",
+          "predicted": "Roxy Recordings",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What record label is the performer of \"Almost Made Ya\" signed to?",
+            "Who performed \"Almost Made Ya\"?",
+            "Which record label did #1 sign with for their music career?"
+          ]
+        },
+        {
+          "id": "2hop__505860_650613",
+          "predicted": "Not specified",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What university did the author of \"Hannibal\" attend for his education?",
+            "Who is the author of \"Hannibal\"?",
+            "Where was #1 born and/or raised, as this often influences educational choices?"
+          ]
+        },
+        {
+          "id": "2hop__821197_368148",
+          "predicted": "Randall County",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.5,
+          "n_hops": 2,
+          "sub_questions": [
+            "What company provides electricity in Southern Maryland?",
+            "In which county is #1 located?"
+          ]
+        },
+        {
+          "id": "2hop__554167_451128",
+          "predicted": "Child labour is not directly related to the context of \"The Official Story.\" The question about Susan Aglukark's album does not provide information on child",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: Who is the child of the Victim of Romance performer?",
+            "Which actor portrayed the character known as \"Victim of Romance\"?",
+            "Does #1 have any children in real life or are they fictional characters, and if so, who plays their role(s)?"
+          ]
+        },
+        {
+          "id": "2hop__702496_430061",
+          "predicted": "Randall County",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.5,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: In which county was Tim DuBois, also known as Tim Dubois, born?",
+            "Who is the performer referred to as \"Tim DuBois\"?",
+            "What county is #1 located in?"
+          ]
+        },
+        {
+          "id": "2hop__549146_223121",
+          "predicted": "No",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What record label did John Krebs, a member of The Bruce Lee Band, start or sign with during his music career?",
+            "Who is John Krebs and what band is he part of? (This will identify the person in question)?",
+            "During his time as part of #1, which record label did John Krebs work with for any solo projects or while associated with The Bruce Lee Band itself if applicable?",
+            "If there?"
+          ]
+        },
+        {
+          "id": "2hop__647996_551681",
+          "predicted": "James Redfield - The Celestine Prophecy (novel)",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "What book did the author who wrote \"Miss Sara Sampson\" also write?",
+            "Who is the author that wrote #1 and what other works have they created besides \"#1\"?"
+          ]
+        },
+        {
+          "id": "2hop__673655_316668",
+          "predicted": "Chapman Stick and percussion (from The Blackout All-Stars)",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "Question: What instrument does a member of The Blackout All-Stars play?",
+            "Who are the members of The Blackout All-Stars band?",
+            "Which one is an instrumentalist among #1?",
+            "What instruments do they all know how to play, specifically for this person from #2?"
+          ]
+        },
+        {
+          "id": "2hop__574419_270105",
+          "predicted": "Van Buren Township",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "n_hops": 2,
+          "sub_questions": [
+            "What township does Van Hook belong to in Indiana?"
+          ]
+        },
+        {
+          "id": "2hop__403712_793210",
+          "predicted": "Henry Bingham Baring",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.25,
+          "n_hops": 2,
+          "sub_questions": [
+            "To find out who the father of Edward Baring, 1st Baron Revelstoke's father was, we can break it down into simpler sub-questions as follows:?",
+            "What are some known details about Edward Baring, 1st Baron Revelstoke's family history or lineage?",
+            "Based on #1?"
+          ]
+        }
+      ]
+    }
+  }
+}
