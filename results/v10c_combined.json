@@ -1,0 +1,1526 @@
+{
+  "metadata": {
+    "experiment": "v10c_combined",
+    "n_configs": 6,
+    "n_completed": 6,
+    "n_samples": 30,
+    "timestamp": "2026-02-28 00:02:16"
+  },
+  "configs": {
+    "0_baseline": {
+      "em": 60.0,
+      "relaxed_em": 66.66666666666666,
+      "f1": 0.6666666666666666,
+      "latency_ms": 960.4466120402018,
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "prediction": "Miquette Giraudy",
+          "answer": "Miquette Giraudy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__252311_366220",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__701895_752697",
+          "prediction": "municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__259228_793698",
+          "prediction": "Not specified",
+          "answer": "Cologne",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__481349_302087",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__697790_864352",
+          "prediction": "Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__207476_625987",
+          "prediction": "Louis XIV",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__390947_232243",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__354635_174222",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__635187_861533",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__166824_185403",
+          "prediction": "Lega Pro Prima Divisione",
+          "answer": "Lega Pro Prima Divisione",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__698577_851686",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__362107_652514",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__402530_774333",
+          "prediction": "Texas",
+          "answer": "Crockett County",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__195917_575657",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__683835_709167",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__197470_271394",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__458131_174974",
+          "prediction": "Not mentioned",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__299142_347613",
+          "prediction": "Christina Gyllenstierna",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__528263_865831",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__569582_304416",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__505860_650613",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__821197_368148",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__554167_451128",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__702496_430061",
+          "prediction": "McDonald County",
+          "answer": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__549146_223121",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4
+        },
+        {
+          "id": "2hop__647996_551681",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__673655_316668",
+          "prediction": "conga",
+          "answer": "conga",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__574419_270105",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__403712_793210",
+          "prediction": "Sir Francis Baring, 1st Baronet",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        }
+      ],
+      "stats": {}
+    },
+    "1_aic_only": {
+      "em": 63.33333333333333,
+      "relaxed_em": 70.0,
+      "f1": 0.7,
+      "latency_ms": 941.4691289265951,
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "prediction": "Miquette Giraudy",
+          "answer": "Miquette Giraudy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__252311_366220",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__701895_752697",
+          "prediction": "municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__259228_793698",
+          "prediction": "Braunschweig",
+          "answer": "Cologne",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__481349_302087",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__697790_864352",
+          "prediction": "Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__207476_625987",
+          "prediction": "Louis XIV",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__390947_232243",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__354635_174222",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__635187_861533",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__166824_185403",
+          "prediction": "Lega Pro Prima Divisione",
+          "answer": "Lega Pro Prima Divisione",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__698577_851686",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__362107_652514",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__402530_774333",
+          "prediction": "Crockett County",
+          "answer": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__195917_575657",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__683835_709167",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__197470_271394",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__458131_174974",
+          "prediction": "Not mentioned",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__299142_347613",
+          "prediction": "Christina Gyllenstierna",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__528263_865831",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__569582_304416",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__505860_650613",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__821197_368148",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__554167_451128",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__702496_430061",
+          "prediction": "McDonald County",
+          "answer": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__549146_223121",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4
+        },
+        {
+          "id": "2hop__647996_551681",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__673655_316668",
+          "prediction": "conga",
+          "answer": "conga",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__574419_270105",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__403712_793210",
+          "prediction": "Sir Francis Baring, 1st Baronet",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        }
+      ],
+      "stats": {
+        "aic_passed": 57,
+        "aic_triggered": 3,
+        "aic_kept_original": 3
+      }
+    },
+    "2_focused_rerank": {
+      "em": 63.33333333333333,
+      "relaxed_em": 73.33333333333333,
+      "f1": 0.7222222222222221,
+      "latency_ms": 1032.5796445210774,
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "prediction": "Miquette Giraudy",
+          "answer": "Miquette Giraudy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__252311_366220",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__701895_752697",
+          "prediction": "municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__259228_793698",
+          "prediction": "Cologne",
+          "answer": "Cologne",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__481349_302087",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__697790_864352",
+          "prediction": "Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__207476_625987",
+          "prediction": "Queen Anneheten",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__390947_232243",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__354635_174222",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__635187_861533",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__166824_185403",
+          "prediction": "Lega Pro",
+          "answer": "Lega Pro Prima Divisione",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "2hop__698577_851686",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__362107_652514",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__402530_774333",
+          "prediction": "Crockett County",
+          "answer": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__195917_575657",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__683835_709167",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__197470_271394",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__458131_174974",
+          "prediction": "Not specified",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__299142_347613",
+          "prediction": "Christina Gyllenstierna",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__528263_865831",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__569582_304416",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__505860_650613",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__821197_368148",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__554167_451128",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__702496_430061",
+          "prediction": "McDonald County",
+          "answer": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__549146_223121",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4
+        },
+        {
+          "id": "2hop__647996_551681",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__673655_316668",
+          "prediction": "conga",
+          "answer": "conga",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__574419_270105",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__403712_793210",
+          "prediction": "Sir Francis Baring, 1st Baronet",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        }
+      ],
+      "stats": {
+        "focused_queries": 30
+      }
+    },
+    "3_aic_plus_focused": {
+      "em": 66.66666666666666,
+      "relaxed_em": 73.33333333333333,
+      "f1": 0.7428571428571428,
+      "latency_ms": 1098.430569966634,
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "prediction": "Miquette Giraudy",
+          "answer": "Miquette Giraudy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__252311_366220",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__701895_752697",
+          "prediction": "municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__259228_793698",
+          "prediction": "Cologne",
+          "answer": "Cologne",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__481349_302087",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__697790_864352",
+          "prediction": "Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__207476_625987",
+          "prediction": "Louise de La Valli\u00e8re",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.28571428571428575
+        },
+        {
+          "id": "2hop__390947_232243",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__354635_174222",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__635187_861533",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__166824_185403",
+          "prediction": "Lega Pro Prima Divisione",
+          "answer": "Lega Pro Prima Divisione",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__698577_851686",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__362107_652514",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__402530_774333",
+          "prediction": "Crockett County",
+          "answer": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__195917_575657",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__683835_709167",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__197470_271394",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__458131_174974",
+          "prediction": "Not specified",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__299142_347613",
+          "prediction": "Christina Gyllenstierna",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__528263_865831",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__569582_304416",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__505860_650613",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__821197_368148",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__554167_451128",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__702496_430061",
+          "prediction": "McDonald County",
+          "answer": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__549146_223121",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4
+        },
+        {
+          "id": "2hop__647996_551681",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__673655_316668",
+          "prediction": "conga",
+          "answer": "conga",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__574419_270105",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__403712_793210",
+          "prediction": "Sir Francis Baring, 1st Baronet",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        }
+      ],
+      "stats": {
+        "aic_passed": 57,
+        "focused_queries": 30,
+        "aic_triggered": 3,
+        "aic_rescued": 1,
+        "aic_kept_original": 2
+      }
+    },
+    "4_aic_focused_k5": {
+      "em": 50.0,
+      "relaxed_em": 60.0,
+      "f1": 0.615079365079365,
+      "latency_ms": 1235.9166463216145,
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "prediction": "Miquette Giraudy",
+          "answer": "Miquette Giraudy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__252311_366220",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__701895_752697",
+          "prediction": "Municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__259228_793698",
+          "prediction": "Cologne, Germany",
+          "answer": "Cologne",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "id": "2hop__481349_302087",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__697790_864352",
+          "prediction": "Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__207476_625987",
+          "prediction": "Louise de La Valli\u00e8re",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.28571428571428575
+        },
+        {
+          "id": "2hop__390947_232243",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__354635_174222",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__635187_861533",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__166824_185403",
+          "prediction": "Serie A",
+          "answer": "Lega Pro Prima Divisione",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__698577_851686",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__362107_652514",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__402530_774333",
+          "prediction": "Crockett County",
+          "answer": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__195917_575657",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__683835_709167",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__197470_271394",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__458131_174974",
+          "prediction": "Not mentioned",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__299142_347613",
+          "prediction": "Christina Gyllenstierna",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__528263_865831",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__569582_304416",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__505860_650613",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__821197_368148",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__554167_451128",
+          "prediction": "This Child",
+          "answer": "Chynna Phillips",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__702496_430061",
+          "prediction": "Randall County",
+          "answer": "McDonald County",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.5
+        },
+        {
+          "id": "2hop__549146_223121",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4
+        },
+        {
+          "id": "2hop__647996_551681",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__673655_316668",
+          "prediction": "drums",
+          "answer": "conga",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__574419_270105",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__403712_793210",
+          "prediction": "Sir Francis Baring, 1st Baronet",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        }
+      ],
+      "stats": {
+        "aic_passed": 57,
+        "focused_k5": 30,
+        "aic_triggered": 3,
+        "aic_kept_original": 3
+      }
+    },
+    "5_aic_focused_narrow": {
+      "em": 66.66666666666666,
+      "relaxed_em": 73.33333333333333,
+      "f1": 0.7333333333333333,
+      "latency_ms": 1059.3521912892659,
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "prediction": "Miquette Giraudy",
+          "answer": "Miquette Giraudy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__252311_366220",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__701895_752697",
+          "prediction": "municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__259228_793698",
+          "prediction": "Cologne",
+          "answer": "Cologne",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__481349_302087",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__697790_864352",
+          "prediction": "Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__207476_625987",
+          "prediction": "King Louis XIV of France",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__390947_232243",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__354635_174222",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__635187_861533",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__166824_185403",
+          "prediction": "Lega Pro Prima Divisione",
+          "answer": "Lega Pro Prima Divisione",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__698577_851686",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__362107_652514",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__402530_774333",
+          "prediction": "Crockett County",
+          "answer": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__195917_575657",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__683835_709167",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__197470_271394",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__458131_174974",
+          "prediction": "Aaron Eckhart",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__299142_347613",
+          "prediction": "Christina Gyllenstierna",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__528263_865831",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__569582_304416",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__505860_650613",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8
+        },
+        {
+          "id": "2hop__821197_368148",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__554167_451128",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__702496_430061",
+          "prediction": "McDonald County",
+          "answer": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__549146_223121",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4
+        },
+        {
+          "id": "2hop__647996_551681",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0
+        },
+        {
+          "id": "2hop__673655_316668",
+          "prediction": "conga",
+          "answer": "conga",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__574419_270105",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        },
+        {
+          "id": "2hop__403712_793210",
+          "prediction": "Sir Francis Baring, 1st Baronet",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0
+        }
+      ],
+      "stats": {
+        "aic_passed": 57,
+        "aic_triggered": 3,
+        "narrow_rescued": 3
+      }
+    }
+  }
+}
