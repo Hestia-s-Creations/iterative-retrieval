@@ -508,7 +508,7 @@ The 545-configuration study reveals a clear asymmetry in the returns to differen
 
 \begin{itemize}[nosep]
     \item \textbf{Extraction optimization}: 20 technique categories, 545 configs, best gain $+6.7\%$
-    \item \textbf{Model upgrade} (Qwen $\rightarrow$ Opus): $+17\%$ EM within the same system
+    \item \textbf{Model upgrade} (Qwen $\rightarrow$ Opus): $+17\%$ EM within the same system\footnote{The $+17\%$ compares the established Qwen 7B baseline (60.0\% EM, validated across 3+ independent experiments) against Opus (76.7\%). When Qwen was re-run alongside Opus in the same frontier experiment, it scored 63.3\%, yielding a same-conditions delta of $+13.4\%$. We report $+17\%$ as the primary figure because 60.0\% is the more robustly validated baseline at $n=30$.}
     \item \textbf{Better decomposition} (auto $\rightarrow$ gold): $+7.3\%$ EM at n=1,252
     \item \textbf{System architecture} (none $\rightarrow$ ours): $+46.7\%$ EM
 \end{itemize}
@@ -851,15 +851,15 @@ Table~\ref{tab:series_summary} summarizes all nine experiment series comprising 
 \toprule
 \textbf{Series} & \textbf{Focus} & \textbf{Configs} & \textbf{Best EM} & \textbf{Worst EM} & \textbf{Key Finding} \\
 \midrule
-v8 & Knowledge graph enrichment & 7 & 63.3 & 33.3 & KG context distracts more than it helps \\
-v8b & Parameter sweep (context, retrieval) & 186 & 63.3 & 0.0 & Near-optimal at defaults \\
-v8c & Creative techniques & 252 & 66.7 & 0.0 & AIC+rerank found here \\
-v9 & Verification loops & 9 & 63.3 & 60.0 & 6 configs tied; AIC simplest \\
-v9b & Type constraints & 9 & 60.0 & 46.7 & All constraints hurt \\
-v9c & Architecture alternatives & 7 & 63.3 & 0.0 & Decomposition irreplaceable \\
-v10 & Generate-then-select & 8 & 63.3 & 3.3 & MC categorically worse \\
-v10b & Per-paragraph extraction & 6 & 63.3 & 40.0 & Focused rerank survives \\
-v10c & Combined best techniques & 6 & \textbf{66.7} & 50.0 & AIC + rerank = +6.7\% \\
+v8 & Knowledge graph enrichment & 6 & 63.3 & 33.3 & KG context distracts more than it helps \\
+v8b & Parameter sweep (context, retrieval) & 250 & 63.3 & 0.0 & Near-optimal at defaults \\
+v8c & Creative techniques & 250 & 66.7 & 0.0 & AIC+rerank found here \\
+v9 & Verification loops & 8 & 63.3 & 60.0 & 6 configs tied; AIC simplest \\
+v9b & Type constraints & 8 & 60.0 & 46.7 & All constraints hurt \\
+v9c & Architecture alternatives & 6 & 63.3 & 0.0 & Decomposition irreplaceable \\
+v10 & Generate-then-select & 7 & 63.3 & 3.3 & MC categorically worse \\
+v10b & Per-paragraph extraction & 5 & 63.3 & 40.0 & Focused rerank survives \\
+v10c & Combined best techniques & 5 & \textbf{66.7} & 50.0 & AIC + rerank = +6.7\% \\
 \midrule
 \multicolumn{2}{l}{\textbf{Total}} & \textbf{545} & \textbf{66.7} & \textbf{0.0} & Best gain: +6.7\% \\
 \bottomrule
