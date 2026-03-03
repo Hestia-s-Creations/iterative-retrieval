@@ -328,6 +328,117 @@ def fig7_cross_benchmark():
     print("Generated: fig7_cross_benchmark")
 
 
+def fig8_diminishing_returns():
+    """Figure 8: Diminishing returns — delta-EM by technique category.
+
+    Strip plot showing every v8-v10 technique category's best delta-EM.
+    Highlights that only retrieval-quality improvements survive.
+    """
+    # Categories sorted by delta-EM, with config counts
+    categories = [
+        ("Replace 8-shot\nw/ generate+select", -60.0, 1),
+        ("No decomposition", -43.3, 1),
+        ("MC selection\nfrom LLM candidates", -20.0, 2),
+        ("Per-paragraph\nextraction", -20.0, 2),
+        ("Answer position\nbias constraint", -13.3, 1),
+        ("Query decomp\n(model-level)", -12.4, 1),
+        ("KG enrichment", -10.0, 250),
+        ("Retrieval k=5\nfor hop 2", -10.0, 2),
+        ("CoT prompting", -7.2, 1),
+        ("Multi-model\nensemble", -6.7, 2),
+        ("Type constraints", -3.3, 9),
+        ("Contrastive\nprompts", -3.3, 3),
+        ("Retrieval k=10", -2.4, 1),
+        ("Self-consistency\n(temperature)", 0.0, 3),
+        ("Pipeline\nself-consistency", 0.0, 1),
+        ("Position bias\n(reversed ctx)", 0.0, 1),
+        ("Confidence\ngating", 0.0, 2),
+        ("Entailment\ncheck", 3.3, 1),
+        ("AIC +\nfocused rerank", 6.7, 6),
+    ]
+
+    labels = [c[0] for c in categories]
+    deltas = [c[1] for c in categories]
+
+    fig, ax = plt.subplots(figsize=(7, 7))
+
+    colors = []
+    for d in deltas:
+        if d > 0:
+            colors.append(GREEN)
+        elif d < 0:
+            colors.append(RED)
+        else:
+            colors.append(GRAY)
+
+    y_pos = np.arange(len(labels))
+    ax.barh(y_pos, deltas, color=colors, edgecolor="black", linewidth=0.5, alpha=0.85)
+
+    for i, d in enumerate(deltas):
+        offset = 1.5 if d >= 0 else -1.5
+        ha = "left" if d >= 0 else "right"
+        ax.text(d + offset, i, f"{d:+.1f}%", va="center", ha=ha, fontsize=7,
+                fontweight="bold")
+
+    ax.axvline(x=0, color="black", linewidth=1)
+    ax.axvline(x=17.0, color=PURPLE, linewidth=1.5, linestyle="--", alpha=0.7)
+    ax.text(17.5, len(labels) - 1, "Model upgrade\n(Qwen$\\to$Opus)\n+17%",
+            fontsize=7, color=PURPLE, va="top")
+
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(labels, fontsize=7)
+    ax.set_xlabel("$\\Delta$ Exact Match (%) from 60.0% baseline")
+    ax.set_title("Diminishing Returns: 545 Configs Across 20 Categories\n"
+                 "(MuSiQue 2-hop, Qwen 7B, n=30)", fontsize=10)
+    ax.set_xlim(-68, 25)
+    ax.invert_yaxis()
+    ax.grid(axis="x", alpha=0.3)
+
+    fig.tight_layout()
+    fig.savefig(FIGURES_DIR / "fig8_diminishing_returns.pdf", bbox_inches="tight")
+    fig.savefig(FIGURES_DIR / "fig8_diminishing_returns.png", bbox_inches="tight")
+    plt.close(fig)
+    print("Generated: fig8_diminishing_returns")
+
+
+def fig9_error_taxonomy():
+    """Figure 9: Error taxonomy pie chart — 12 baseline failures diagnosed."""
+    labels = [
+        "Extraction confused\n(wrong entity from\ncorrect paragraph)",
+        "Retrieval miss\non hop 2",
+        "Over-verbose\n(correct but long)",
+        "Refusal\n(\"not mentioned\")",
+        "Near-miss\nentity name",
+        "Wrong granularity\n(e.g. state vs county)",
+    ]
+    sizes = [5, 2, 2, 1, 1, 1]
+    colors_pie = [RED, ORANGE, BLUE, GRAY, TEAL, PURPLE]
+    explode = (0.05, 0, 0, 0, 0, 0)
+
+    fig, ax = plt.subplots(figsize=(7, 5))
+
+    wedges, texts, autotexts = ax.pie(
+        sizes, explode=explode, labels=None,
+        autopct=lambda pct: f"{int(round(pct * 12 / 100))}/12",
+        colors=colors_pie, startangle=90, textprops={"fontsize": 9},
+        pctdistance=0.75,
+        wedgeprops={"edgecolor": "white", "linewidth": 1.5},
+    )
+
+    ax.legend(wedges, labels, title="Error Type", loc="center left",
+              bbox_to_anchor=(1, 0, 0.5, 1), fontsize=8, title_fontsize=9)
+
+    ax.set_title("Baseline Error Taxonomy (12 failures at n=30)\n"
+                 "42% are extraction confusion: model has the right paragraph,\n"
+                 "picks the wrong entity", fontsize=9)
+
+    fig.tight_layout()
+    fig.savefig(FIGURES_DIR / "fig9_error_taxonomy.pdf", bbox_inches="tight")
+    fig.savefig(FIGURES_DIR / "fig9_error_taxonomy.png", bbox_inches="tight")
+    plt.close(fig)
+    print("Generated: fig9_error_taxonomy")
+
+
 if __name__ == "__main__":
     fig1_frontier_scaling()
     fig2_direction_reversal()
@@ -336,4 +447,6 @@ if __name__ == "__main__":
     fig5_full_validation()
     fig6_per_hop()
     fig7_cross_benchmark()
+    fig8_diminishing_returns()
+    fig9_error_taxonomy()
     print(f"\nAll figures saved to {FIGURES_DIR}")

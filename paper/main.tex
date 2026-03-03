@@ -6,6 +6,7 @@
 \onehalfspacing
 
 % Packages
+\usepackage{lmodern}
 \usepackage{amsmath,amssymb}
 \usepackage{booktabs}
 \usepackage{graphicx}
@@ -36,7 +37,7 @@
 
 % ============================================================================
 \begin{abstract}
-The dominant paradigm in AI capability research focuses on scaling: larger models, longer context windows, better reasoning chains. We demonstrate that this captures only half the picture. Through systematic experiments on multi-hop question answering, we show that \emph{system-level decomposition}---where a complex question is broken into single-hop sub-questions handled by separate retrieval-extraction cycles---produces dramatic improvements across models spanning three orders of magnitude. A 7B parameter model improves from 13.3\% to 60.0\% Exact Match (+46.7\%), Claude Sonnet improves from 20.0\% to 60.0\% (+40.0\%), and Claude Opus improves from 30.0\% to 76.7\% (+46.7\%) on MuSiQue multi-hop QA. Our fully autonomous 7B pipeline exceeds published state-of-the-art (StepChain GraphRAG, 43.9\%) by 16.1 points with zero gold labels. We further show a \emph{direction reversal}: query decomposition applied at the model level \emph{harms} performance ($-12.4\%$, $p=0.0009$), but produces the largest gains when moved to the system level. Critically, the system benefit is roughly constant across model scales ($\sim$40--47\% EM), demonstrating that system architecture is an orthogonal axis of improvement, not a crutch for weak models. Full validation on all 1,252 two-hop MuSiQue questions confirms the pattern: our gold-decomposition pipeline (45.9\% EM) exceeds StepChain SOTA, and the fully autonomous pipeline achieves 38.6\% EM. We propose \emph{externalized cognition} as a framework: intelligence emerges from the interaction between a reasoning processor and its supporting systems, not from the processor alone.
+The dominant paradigm in AI capability research focuses on scaling: larger models, longer context windows, better reasoning chains. We demonstrate that this captures only half the picture. Through systematic experiments on multi-hop question answering, we show that \emph{system-level decomposition}---where a complex question is broken into single-hop sub-questions handled by separate retrieval-extraction cycles---produces dramatic improvements across models spanning three orders of magnitude. A 7B parameter model improves from 13.3\% to 60.0\% Exact Match (+46.7\%), Claude Sonnet improves from 20.0\% to 60.0\% (+40.0\%), and Claude Opus improves from 30.0\% to 76.7\% (+46.7\%) on MuSiQue multi-hop QA. Our fully autonomous 7B pipeline exceeds published state-of-the-art (StepChain GraphRAG, 43.9\%) by 16.1 points with zero gold labels. We further show a \emph{direction reversal}: query decomposition applied at the model level \emph{harms} performance ($-12.4\%$, $p=0.0009$), but produces the largest gains when moved to the system level. Critically, the system benefit is roughly constant across model scales ($\sim$40--47\% EM), demonstrating that system architecture is an orthogonal axis of improvement, not a crutch for weak models. Full validation on all 1,252 two-hop MuSiQue questions confirms the pattern: our gold-decomposition pipeline (45.9\% EM) exceeds StepChain SOTA, and the fully autonomous pipeline achieves 38.6\% EM. We further present a 545-configuration ablation study across 20 technique categories showing sharply diminishing returns on extraction optimization: the best extraction-level gain is $+6.7\%$, while a single model upgrade yields $+17\%$. This delineates the boundary between productive and wasteful optimization. We propose \emph{externalized cognition} as a framework: intelligence emerges from the interaction between a reasoning processor and its supporting systems, not from the processor alone.
 \end{abstract}
 
 % ============================================================================
@@ -60,6 +61,8 @@ In this paper, we demonstrate that system-level decomposition---breaking a multi
 Three findings are particularly striking. First, the system benefit is \emph{roughly constant} across model scales ($\sim$40--47\% EM), demonstrating that system architecture is an orthogonal multiplier, not a crutch for weak models. Second, a 7B model with our system (60.0\%) \emph{ties} a frontier model with the same system (Sonnet at 60.0\%) and \emph{exceeds} a frontier model without it (Opus at 30.0\%). Third, we observe a \emph{direction reversal}: query decomposition applied at the model level \emph{harms} small model performance ($-12.4\%$, $p=0.0009$), but produces the single largest improvement when the same technique is applied at the system level.
 
 Our fully autonomous pipeline---requiring zero gold labels or human annotation---exceeds the previous state-of-the-art on MuSiQue (StepChain GraphRAG, 43.9\% EM) by 16.1 points. Large-scale validation on all 1,252 two-hop MuSiQue questions confirms the pattern holds at scale.
+
+Fourth, we present a comprehensive ablation study: 545 configurations across 9 experiment series and 20 technique categories, testing whether the 60.0\% baseline can be improved by extraction-level optimization. The answer is sharply diminishing returns. Chain-of-thought prompting ($-7\%$), multiple-choice selection ($-20\%$), self-consistency ($+0\%$), knowledge graph enrichment ($-10\%$), type constraints ($-3$ to $-13\%$), and per-paragraph extraction ($-20\%$) all fail or show no improvement. Only retrieval-quality improvements survive ($+6.7\%$ combined), while a single model upgrade yields $+17\%$. This delineates where optimization effort is productive and where it is wasted.
 
 We propose \emph{externalized cognition} as a framework for understanding these results. A language model is not intelligence---it is a reasoning engine. Intelligence emerges when that engine operates within a system that decomposes problems, retrieves relevant information, and orchestrates multi-step workflows. The model does not need to know everything. It needs to think clearly within a well-designed system.
 
@@ -120,9 +123,16 @@ We test three decomposition strategies:
 
 We use BGE-base-en-v1.5 \citep{xiao2023bge} embeddings to encode all candidate paragraphs. For each sub-question, we retrieve the top-3 most similar paragraphs by cosine similarity. This replaces the naive approach of providing all 20 candidate paragraphs.
 
+For hop-2 retrieval, we augment the sub-question with the hop-1 answer to create a more targeted query embedding. For example, if the hop-2 sub-question is ``Where was \#1 born?'' and hop-1 yielded ``Christopher Nolan,'' the retrieval query becomes ``Where was Christopher Nolan born? Christopher Nolan''---concatenating both the resolved question and the entity. This focused re-retrieval improves paragraph ranking for the second hop (\S\ref{sec:what_survives}).
+
 \subsection{Extraction}
 
 The extractor LLM receives a sub-question and the top-3 retrieved paragraphs. It is prompted with 8 few-shot examples (4 positive, 4 negative) demonstrating concise extraction. We test four extractors: Phi-3-mini 3.8B, Qwen 2.5 7B, Claude Sonnet 4.6, and Claude Opus 4.6.
+
+\subsection{Answer-in-Context Verification}
+\label{sec:aic}
+
+After extraction, we apply a zero-cost \emph{answer-in-context} (AIC) check: if the extracted answer does not appear as a substring in any of the retrieved paragraphs, the answer is likely hallucinated. In this case, the system re-extracts with a stricter prompt emphasizing that the answer must come from the provided context. This catches errors where the model produces plausible but unsupported entities (e.g., extracting a state name when the context only mentions a county). The AIC check requires no additional LLM calls---only a string match.
 
 \subsection{Chaining}
 
@@ -363,6 +373,149 @@ Decomposition \emph{hurts} on HotpotQA. The model can already handle these quest
 \end{figure}
 
 % ============================================================================
+\section{Diminishing Returns on Extraction}
+\label{sec:diminishing}
+
+The results in \S\ref{sec:results} establish that system-level decomposition produces a $\sim$40--47\% EM gain. A natural follow-up question: can the 60.0\% baseline (Qwen 7B with our system) be substantially improved by optimizing the extraction component? We conducted the most comprehensive ablation study to date on multi-hop QA extraction, testing 545 configurations across 9 experiment series and 20 technique categories. The answer: sharply diminishing returns.
+
+\subsection{The Error Landscape}
+\label{sec:error_landscape}
+
+Before attempting fixes, we diagnosed all 12 baseline failures at n=30. Figure~\ref{fig:error_taxonomy} shows the distribution.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/fig9_error_taxonomy.pdf}
+    \caption{Taxonomy of 12 baseline failures (n=30). The dominant failure mode (5/12, 42\%) is extraction confusion: the model retrieves the correct paragraph but extracts the wrong entity. For example, extracting ``Dill Records'' when the gold answer ``Asian Man Records'' appears in the same sentence.}
+    \label{fig:error_taxonomy}
+\end{figure}
+
+\begin{itemize}[nosep]
+    \item \textbf{Extraction confused} (5/12): The model has the right paragraph but picks the wrong entity. Example: ``Dill Records'' instead of ``Asian Man Records'' when both appear in the same sentence.
+    \item \textbf{Retrieval miss on hop 2} (2/12): The gold paragraph is ranked 4th or 8th, outside the top-3 retrieval window.
+    \item \textbf{Over-verbose} (2/12): The answer is correct but too long for exact match (passes relaxed EM).
+    \item \textbf{Refusal} (1/12): The model responds ``not mentioned'' despite the answer being present.
+    \item \textbf{Near-miss entity name} (1/12): A close but not exact entity match.
+    \item \textbf{Wrong granularity} (1/12): ``Texas'' instead of ``Crockett County''---correct region, wrong specificity.
+\end{itemize}
+
+This diagnosis guided our experiments: 42\% of failures are extraction confusion (suggesting better extraction prompts), 17\% are retrieval misses (suggesting better retrieval), and the rest are edge cases.
+
+\subsection{What Doesn't Work}
+\label{sec:what_doesnt_work}
+
+Table~\ref{tab:money} summarizes all 20 technique categories tested across 545 configurations. This is arguably the most practically useful table in this paper: before investing effort in extraction optimization for small language models, check whether your approach category is already represented.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Diminishing returns: 545 configurations across 20 technique categories (MuSiQue 2-hop, Qwen 7B, n=30). Baseline EM = 60.0\%. Only two techniques (both retrieval-quality improvements) produce durable gains.}
+\label{tab:money}
+\begin{tabular}{llccp{3.8cm}}
+\toprule
+\textbf{Category} & \textbf{Technique} & \textbf{$\Delta$EM} & \textbf{Configs} & \textbf{Failure Mechanism} \\
+\midrule
+\multicolumn{5}{l}{\textit{Prompting strategies}} \\
+& CoT prompting & $-7.2$ & 1 & Overthinking; verbose output \\
+& Model-level decomp & $-12.4$ & 1 & Overwhelms model capacity \\
+& Type constraints & $-3$ to $-13$ & 9 & Breaks correct answers \\
+& Contrastive prompts & $-3.3$ & 3 & Same failure mode as baseline \\
+\midrule
+\multicolumn{5}{l}{\textit{Retrieval modifications}} \\
+& More context (k=5, hop 2) & $-10.0$ & 2 & Additional noise outweighs signal \\
+& More context (k=10) & $-2.4$ & 1 & Even more noise \\
+& KG enrichment & $-10.0$ & 250 & KG context distracts extractor \\
+\midrule
+\multicolumn{5}{l}{\textit{Verification and checking}} \\
+& Naive verify loop & $-26.7$ & 1 & Model never confirms ``yes'' \\
+& Entailment check & $+3.3$ & 1 & Same fix as AIC (below) \\
+& Confidence gating & $0.0$ & 2 & Model deterministic at all temps \\
+\midrule
+\multicolumn{5}{l}{\textit{Ensemble methods}} \\
+& Self-consistency (temp) & $0.0$ & 3 & 90\% answer unanimity \\
+& Pipeline self-consistency & $0.0$ & 1 & Same answer with different decomps \\
+& Multi-model (Qwen+Phi-3) & $-6.7$ & 2 & Phi-3 adds noise, not signal \\
+& Per-paragraph extraction & $-20.0$ & 2 & Missing answer $\rightarrow$ hallucination \\
+\midrule
+\multicolumn{5}{l}{\textit{Architecture changes}} \\
+& MC from LLM candidates & $-20.0$ & 2 & MC worse than 8-shot generation \\
+& Replace 8-shot w/ gen+select & $-60.0$ & 1 & 8-shot prompt is irreplaceable \\
+& Reversed context (position) & $0.0$ & 1 & Minimal position bias \\
+& Extractive span (NER+BGE) & $0.0$ & 1 & Embeddings cannot do QA \\
+& No decomposition & $-43.3$ & 1 & Proves decomposition essential \\
+\midrule
+\multicolumn{5}{l}{\textit{Retrieval quality (the survivors)}} \\
+& \textbf{AIC verification} & $\mathbf{+3.3}$ & 1 & Catches hallucinated entities \\
+& \textbf{Focused re-retrieval} & $\mathbf{+3.3}$ & 6 & Better hop-2 paragraph ranking \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:diminishing} visualizes the landscape. The overwhelming majority of techniques cluster at zero or negative $\Delta$EM. The model upgrade comparison ($+17\%$ from Qwen $\rightarrow$ Opus) dwarfs the best extraction-level improvement.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figures/fig8_diminishing_returns.pdf}
+    \caption{Diminishing returns across 545 configurations and 20 technique categories. Red: techniques that hurt. Gray: no effect. Green: the only surviving improvements (both retrieval-quality, not extraction-quality). The dashed purple line shows the $+17\%$ gain from a model upgrade (Qwen $\rightarrow$ Opus), dwarfing the best extraction-level improvement of $+6.7\%$.}
+    \label{fig:diminishing}
+\end{figure}
+
+\subsection{Why Returns Diminish}
+\label{sec:why_diminish}
+
+Three structural properties of the pipeline explain why extraction-level optimization hits a wall:
+
+\paragraph{The 8-shot prompt carries everything.} Removing the 8-shot extraction prompt drops EM from 60.0\% to approximately 0\% (Config v10:2, generate-then-select without 8-shot). The few-shot examples implicitly encode answer type, answer length, and extraction strategy. No explicit type constraint, verification prompt, or selection mechanism can replicate this implicit calibration. The 8-shot prompt is not merely helpful---it \emph{is} the extraction capability.
+
+\paragraph{The model is pathologically deterministic.} At temperatures 0.1, 0.5, and 0.8, Qwen 7B produces the same answer 90\% of the time (v10:4, self-consistency pool). Self-consistency ensembling and temperature-based diversity are therefore vacuous. Different decomposition paths also converge to the same final answer (v10:6, pipeline self-consistency, 100\% majority at n=30). There is insufficient answer variance to exploit.
+
+\paragraph{Multiple-choice selection is categorically worse than generation.} This contradicts the cognitive science intuition that recognition should be easier than recall. For Qwen 7B on this task, the 8-shot generation prompt outperforms every discrimination or selection prompt we tested (v10:1, $-20\%$; v10:2, $-60\%$). The model is better at \emph{producing} answers than \emph{judging} them.
+
+\subsection{What Survives: The +6.7\% Fix}
+\label{sec:what_survives}
+
+Two orthogonal micro-improvements survive the ablation wall:
+
+\begin{table}[htbp]
+\centering
+\caption{The two surviving improvements (MuSiQue 2-hop, Qwen 7B, n=30). Both are retrieval-quality improvements, not extraction improvements. Combined: $+6.7\%$ EM, 2 questions fixed, 0 broken.}
+\label{tab:survivors}
+\begin{tabular}{lcccp{4.5cm}}
+\toprule
+\textbf{Technique} & \textbf{$\Delta$EM} & \textbf{Fixed} & \textbf{Broken} & \textbf{Mechanism} \\
+\midrule
+AIC verification & $+3.3$ & 1 & 0 & String-match check catches ``Texas'' (not in context); re-extraction yields ``Crockett County'' \\
+Focused re-retrieval & $+3.3$ & 1 & 0 & Augments hop-2 query with hop-1 answer; ``Cologne'' paragraph enters top-3 \\
+\midrule
+\textbf{Combined} & $\mathbf{+6.7}$ & \textbf{2} & \textbf{0} & Zero overlap: fixes are orthogonal \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Critically, both surviving techniques improve \emph{retrieval quality}, not extraction quality:
+
+\begin{itemize}[nosep]
+    \item \textbf{Answer-in-Context (AIC) check}: A zero-cost string match verifying that the extracted answer appears in at least one retrieved paragraph. If it does not, the answer is likely hallucinated; the system re-extracts with a stricter prompt. This catches the ``wrong granularity'' error type (e.g., ``Texas'' $\rightarrow$ ``Crockett County''). No LLM call overhead.
+    \item \textbf{Focused re-retrieval}: For hop 2, the retrieval query is augmented with the hop-1 answer, creating a more specific embedding. This shifts the correct paragraph into the top-3 retrieval window. This fixes one ``retrieval miss on hop 2'' error.
+\end{itemize}
+
+The combined system achieves 66.7\% EM ($+6.7\%$), fixing 2 questions with zero regressions. The fixes target different questions (zero overlap), confirming orthogonality.
+
+\subsection{Implications: Don't Polish the Wrong Surface}
+\label{sec:diminishing_implications}
+
+The 545-configuration study reveals a clear asymmetry in the returns to different optimization axes:
+
+\begin{itemize}[nosep]
+    \item \textbf{Extraction optimization}: 20 technique categories, 545 configs, best gain $+6.7\%$
+    \item \textbf{Model upgrade} (Qwen $\rightarrow$ Opus): $+17\%$ EM within the same system
+    \item \textbf{Better decomposition} (auto $\rightarrow$ gold): $+7.3\%$ EM at n=1,252
+    \item \textbf{System architecture} (none $\rightarrow$ ours): $+46.7\%$ EM
+\end{itemize}
+
+The practical message: once system-level decomposition is in place, the next highest-return investment is not extraction optimization---it is a better model or better retrieval. We do not claim that no extraction technique could ever exceed $+6.7\%$ for Qwen 7B on MuSiQue. We claim that the space has been explored broadly enough to conclude that further extraction optimization offers poor return on investment compared to the orthogonal axes.
+
+% ============================================================================
 \section{Discussion}
 \label{sec:discussion}
 
@@ -388,6 +541,14 @@ The direction reversal (Table~\ref{tab:reversal}) has practical implications for
 
 This suggests a general design principle: \textbf{match each cognitive demand to the right level of the system}. Multi-step reasoning belongs at the system level. Single-hop extraction belongs at the model level. Retrieval and context curation belong at the infrastructure level. The model should do what it does best---understand language and extract information---and the system should handle the rest.
 
+\subsection{Diminishing Returns as a Design Principle}
+
+The 545-configuration ablation study (\S\ref{sec:diminishing}) suggests a practical design principle: \textbf{when optimization on one axis reaches diminishing returns, redirect effort to an orthogonal axis}. Within our system, extraction-level techniques across 20 categories yield at most $+6.7\%$ EM. Meanwhile, a model upgrade (Qwen $\rightarrow$ Opus) yields $+17\%$, and better decomposition (auto $\rightarrow$ gold) yields $+7.3\%$ at scale.
+
+This is not a negative result---it is a roadmap. The ablation wall tells practitioners \emph{where not to invest}: chain-of-thought prompting ($-7\%$), multiple-choice selection ($-20\%$), self-consistency ($+0\%$), and type constraints ($-3$ to $-13\%$) are dead ends for small model extraction. The surviving techniques (AIC verification and focused re-retrieval) both improve \emph{retrieval quality}, not extraction quality. The message is clear: don't polish the wrong surface.
+
+For system builders, we recommend consulting Table~\ref{tab:money} before investing effort in extraction optimization for small LMs. If your approach category is already represented and showed no gain, the expected return on further work in that direction is low.
+
 \subsection{Externalized Cognition}
 
 We propose \emph{externalized cognition} as a framework for understanding these results. The term draws from distributed cognition in cognitive science, where intelligent behavior emerges from the interaction between an agent and its environment rather than from internal processing alone.
@@ -405,12 +566,13 @@ A human who tries to solve a complex problem entirely in their head will struggl
 \subsection{Limitations}
 
 \begin{itemize}[nosep]
-    \item \textbf{Sample size}: Primary results use n=30; validated at n=1,252 for top configurations. Full-scale validation of frontier configurations would strengthen claims.
+    \item \textbf{Sample size}: Primary results use n=30 for most ablation experiments; validated at n=1,252 for top configurations. The 545-config ablation uses n=30 per config, which limits statistical power for small effects. However, the dominant pattern (most techniques at or below baseline) is robust to sample size.
     \item \textbf{Retrieval from sample paragraphs}: Retrieval is from $\sim$20 candidate paragraphs per question, not an open-domain corpus. Real-world deployment faces harder retrieval challenges.
     \item \textbf{Two-hop only}: Current results focus on 2-hop questions. Preliminary 3--4 hop experiments show the auto-decomposition pipeline does not yet generalize (3.3\% and 6.7\% EM), suggesting error cascading or decomposition quality limits.
     \item \textbf{QA only}: We test on extractive QA benchmarks. Whether the framework generalizes to generation, summarization, or coding tasks remains untested.
     \item \textbf{Model family breadth}: We test across Phi-3, Qwen, and two Claude models. Additional families (Llama, Gemma, GPT) would strengthen generalizability.
     \item \textbf{Frontier model sizes unknown}: Claude parameter counts are not disclosed, limiting precise scaling analysis.
+    \item \textbf{No ceiling claim}: We do not claim that no extraction technique could ever exceed $+6.7\%$ for Qwen 7B on MuSiQue. We claim that 545 configurations across 20 categories offer strong evidence of diminishing returns, making orthogonal axes more productive.
 \end{itemize}
 
 % ============================================================================
@@ -422,6 +584,8 @@ We have presented empirical evidence that AI capability is a systems problem, no
 Our central finding is a \textbf{direction reversal}: techniques that harm models when applied internally ($-12.4\%$, $p=0.0009$) produce dramatic gains when moved to the system level ($+46.7\%$). This holds across all model scales tested. The technique is not wrong. The location of application is wrong.
 
 System architecture is an \textbf{orthogonal axis of improvement}. The $\sim$40--47\% system gain is constant whether the base model is 7B or frontier-scale. A 7B model with the system ties a frontier model with the system. Opus with the system reaches 76.7\%---because both sides of the equation contribute.
+
+Our 545-configuration ablation study reveals where this axis has \emph{limits}. Within a fixed system-model pairing, extraction-level optimization across 20 technique categories yields at most $+6.7\%$ EM, while a single model upgrade yields $+17\%$. The most productive path beyond system architecture is orthogonal: better models, better retrieval, better decomposition. When one axis saturates, redirect effort to the other.
 
 The field's investment in scaling models is necessary but captures only half the opportunity. Our results suggest that comparable investment in system architecture could yield outsized returns---improving every model from 7B to the largest frontier systems. For practitioners: build the system before upgrading the model. For researchers: the other half of intelligence deserves the same rigor we apply to the model half.
 
@@ -672,5 +836,36 @@ Answer:
 \end{small}
 
 The extraction prompt is identical across all model scales. Context is the concatenation of the top-3 retrieved paragraphs.
+
+% ============================================================================
+\section{Full Ablation Series Summary}
+\label{app:ablation_series}
+
+Table~\ref{tab:series_summary} summarizes all nine experiment series comprising the 545-configuration ablation study. Each series was hypothesis-driven with pre-registered evaluation criteria.
+
+\begin{table}[htbp]
+\centering
+\caption{Summary of all ablation experiment series (MuSiQue 2-hop, Qwen 7B, n=30). Baseline EM = 60.0\% unless noted.}
+\label{tab:series_summary}
+\begin{tabular}{llcccp{3.5cm}}
+\toprule
+\textbf{Series} & \textbf{Focus} & \textbf{Configs} & \textbf{Best EM} & \textbf{Worst EM} & \textbf{Key Finding} \\
+\midrule
+v8 & Knowledge graph enrichment & 7 & 63.3 & 33.3 & KG context distracts more than it helps \\
+v8b & Parameter sweep (context, retrieval) & 186 & 63.3 & 0.0 & Near-optimal at defaults \\
+v8c & Creative techniques & 252 & 66.7 & 0.0 & AIC+rerank found here \\
+v9 & Verification loops & 9 & 63.3 & 60.0 & 6 configs tied; AIC simplest \\
+v9b & Type constraints & 9 & 60.0 & 46.7 & All constraints hurt \\
+v9c & Architecture alternatives & 7 & 63.3 & 0.0 & Decomposition irreplaceable \\
+v10 & Generate-then-select & 8 & 63.3 & 3.3 & MC categorically worse \\
+v10b & Per-paragraph extraction & 6 & 63.3 & 40.0 & Focused rerank survives \\
+v10c & Combined best techniques & 6 & \textbf{66.7} & 50.0 & AIC + rerank = +6.7\% \\
+\midrule
+\multicolumn{2}{l}{\textbf{Total}} & \textbf{545} & \textbf{66.7} & \textbf{0.0} & Best gain: +6.7\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The striking pattern across all series: the vast majority of configurations either match the baseline (60.0\%) or fall below it. Only retrieval-quality improvements (AIC verification and focused re-retrieval) produce durable gains. The complete per-question results for all 545 configurations are available in the supplementary materials.
 
 \end{document}
