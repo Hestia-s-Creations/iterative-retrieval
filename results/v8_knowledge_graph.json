@@ -1,0 +1,5778 @@
+{
+  "metadata": {
+    "n_samples": 30,
+    "timestamp": "2026-02-26 20:57:39",
+    "kg_cache_size": 535,
+    "kg_extraction_stats": {
+      "extracted": 535,
+      "cached": 65,
+      "failed": 0
+    },
+    "avg_entities_per_question": 61.233333333333334,
+    "avg_edges_per_question": 45.63333333333333,
+    "elapsed_seconds": 1593.895899772644
+  },
+  "results": {
+    "baseline_auto": {
+      "em": 63.33333333333333,
+      "relaxed_em": 70.0,
+      "f1": 0.7,
+      "latency_ms": 1065.055267016093,
+      "kg_stats": {
+        "bridge_hits": 0,
+        "context_triples_added": 0,
+        "retrieval_boosted": 0
+      },
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "question": "Who is the spouse of the Green performer?",
+          "prediction": "Miquette Giraudy",
+          "answer": "Miquette Giraudy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who performed Green?",
+              "gold_answer": "Steve Hillage",
+              "predicted": "Steve Hillage",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Steve Hillage?",
+              "gold_answer": "Miquette Giraudy",
+              "predicted": "Miquette Giraudy",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__252311_366220",
+          "question": "Who founded the company that distributed the film UHF?",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What company distributed the film UHF?",
+              "gold_answer": "Orion Pictures",
+              "predicted": "Orion Pictures",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who founded Orion Pictures?",
+              "gold_answer": "Mike Medavoy",
+              "predicted": "Mike Medavoy",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__701895_752697",
+          "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+          "prediction": "municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What administrative territorial entity owns Ciudad Deportiva?",
+              "gold_answer": "Nuevo Laredo",
+              "predicted": "Nuevo Laredo",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative territorial entity is Nuevo Laredo?",
+              "gold_answer": "Tamaulipas",
+              "predicted": "municipality",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__259228_793698",
+          "question": "Where is Ulrich Walter's employer headquartered?",
+          "prediction": "Berlin",
+          "answer": "Cologne",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who employs Ulrich Walter?",
+              "gold_answer": "German Aerospace Center",
+              "predicted": "German Aerospace Center",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is German Aerospace Center headquartered?",
+              "gold_answer": "Cologne",
+              "predicted": "Berlin",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__481349_302087",
+          "question": "Which company owns the manufacturer of Learjet 60?",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who manufactured the Learjet 60?",
+              "gold_answer": "Bombardier Aerospace",
+              "predicted": "Bombardier Aerospace",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which company owns Bombardier Aerospace?",
+              "gold_answer": "Bombardier Inc.",
+              "predicted": "Bombardier Inc",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__697790_864352",
+          "question": "Who is the child of Caroline LeRoy's spouse?",
+          "prediction": "Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Caroline LeRoy's spouse?",
+              "gold_answer": "Daniel Webster",
+              "predicted": "Daniel Webster",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Daniel Webster?",
+              "gold_answer": "Fletcher Webster",
+              "predicted": "Fletcher Webster",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__207476_625987",
+          "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+          "prediction": "Louis XIV",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Philippe, Duke of Orl\u00e9ans's mother?",
+              "gold_answer": "Louis XIII",
+              "predicted": "Anne of Austria",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the grandmother of Anne of Austria?",
+              "gold_answer": "Marie de' Medici",
+              "predicted": "Louis XIV",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__390947_232243",
+          "question": "What is the goal of the group that European Movement Germany is a member of?",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What group is European Movement Germany a member of?",
+              "gold_answer": "European Movement International",
+              "predicted": "European Movement International",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the goal of European Movement International?",
+              "gold_answer": "European integration",
+              "predicted": "promoting European integration",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__354635_174222",
+          "question": "What company succeeded the owner of Empire Sports Network?",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the owner of Empire Sports Network?",
+              "gold_answer": "Adelphia Communications Corporation",
+              "predicted": "Adelphia Communications Corporation",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What company succeeded Adelphia Communications Corporation?",
+              "gold_answer": "Time Warner Cable",
+              "predicted": "Windjammer Communications",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__635187_861533",
+          "question": "What province shares a border with the province where Lago District is located?",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which province is the Lago District located?",
+              "gold_answer": "Niassa Province",
+              "predicted": "Niassa Province",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which province shares a border with Niassa Province?",
+              "gold_answer": "Cabo Delgado Province",
+              "predicted": "Cabo Delgado Province",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__166824_185403",
+          "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+          "prediction": "Lega Pro Prima Divisione",
+          "answer": "Lega Pro Prima Divisione",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What team plays in Stadio Ciro Vigorito?",
+              "gold_answer": "Benevento Calcio",
+              "predicted": "Benevento Calcio",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What league does Benevento Calcio play for?",
+              "gold_answer": "Lega Pro Prima Divisione",
+              "predicted": "Lega Pro Prima Divisione",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__698577_851686",
+          "question": "What is a notable work written by the author of The Timothy files?",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of *The Timothy Files*?",
+              "gold_answer": "Lawrence Sanders",
+              "predicted": "Lawrence Sanders",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is a notable work written by Lawrence Sanders?",
+              "gold_answer": "Anderson Tapes",
+              "predicted": "Anderson Tapes",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__362107_652514",
+          "question": "In which borough was Callum McManaman born?",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Callum McManaman born?",
+              "gold_answer": "Whiston",
+              "predicted": "Whiston",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which borough is Whiston located?",
+              "gold_answer": "Knowsley",
+              "predicted": "Knowsley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__402530_774333",
+          "question": "What other county does the county where Imperial is located share a border with?",
+          "prediction": "Crockett County",
+          "answer": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Imperial located?",
+              "gold_answer": "Pecos County",
+              "predicted": "Pecos County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What other county shares a border with Pecos County?",
+              "gold_answer": "Crockett County",
+              "predicted": "Crockett County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__195917_575657",
+          "question": "In what county is William W. Blair's birthplace located?",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was William W. Blair born?",
+              "gold_answer": "Holley",
+              "predicted": "Holley, New York",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county is Holley, New York located in?",
+              "gold_answer": "Orleans County",
+              "predicted": "Orleans County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__683835_709167",
+          "question": "What award did the author of The Red Tree receive?",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of The Red Tree?",
+              "gold_answer": "Shaun Tan",
+              "predicted": "Shaun Tan",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What award did Shaun Tan receive?",
+              "gold_answer": "Academy Award for Best Animated Short Film",
+              "predicted": "Academy Award for Best Animated Short Film",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__197470_271394",
+          "question": "Where was Tyler MacDuff's child educated?",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tyler MacDuff's child educated?",
+              "gold_answer": "Dana MacDuff",
+              "predicted": "Blair International Baccalaureate School",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is Blair International Baccalaureate School located?",
+              "gold_answer": "Blair High School",
+              "predicted": "Pasadena",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__458131_174974",
+          "question": "Who is the spouse of the Rabbit Hole's producer?",
+          "prediction": "None",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which company produced the play \"Rabbit Hole\"?",
+              "gold_answer": "Nicole Kidman",
+              "predicted": "None",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of None?",
+              "gold_answer": "Keith Urban",
+              "predicted": "None",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__299142_347613",
+          "question": "Who is the child of Sigrid Eskilsdotter's child?",
+          "prediction": "Sigrid Eskilsdotter (Ban\u00e9r)",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Sigrid Eskilsdotter's child?",
+              "gold_answer": "Christina Gyllenstierna",
+              "predicted": "Christina Gyllenstierna",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Christina Gyllenstierna?",
+              "gold_answer": "Svante Stensson Sture",
+              "predicted": "Sigrid Eskilsdotter (Ban\u00e9r)",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__528263_865831",
+          "question": "In which county is Kimbrough Memorial Stadium located?",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Kimbrough Memorial Stadium located?",
+              "gold_answer": "Canyon",
+              "predicted": "Canyon, Texas",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Canyon, Texas located?",
+              "gold_answer": "Randall County",
+              "predicted": "Randall County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__569582_304416",
+          "question": "What record label is the performer of Almost Made Ya signed to?",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed the song \"Almost Made Ya\"?",
+              "gold_answer": "Ali & Gipp",
+              "predicted": "Ali & Gipp",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label is Ali & Gipp signed to?",
+              "gold_answer": "Derrty Entertainment",
+              "predicted": "Derrty Entertainment",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__505860_650613",
+          "question": "Where was the author of Hannibal and Scipio educated at?",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of Hannibal and Scipio?",
+              "gold_answer": "Thomas Nabbes",
+              "predicted": "Thomas Nabbes",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where was Thomas Nabbes educated?",
+              "gold_answer": "Exeter College",
+              "predicted": "Exeter College, Oxford",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__821197_368148",
+          "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Southern Maryland Electric Cooperative headquartered?",
+              "gold_answer": "Hughesville",
+              "predicted": "Hughesville",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Hughesville located?",
+              "gold_answer": "Charles County",
+              "predicted": "Charles County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__554167_451128",
+          "question": "Who is the child of the Victim of Romance performer?",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed in the Victim of Romance?",
+              "gold_answer": "Michelle Phillips",
+              "predicted": "Michelle Phillips",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Michelle Phillips?",
+              "gold_answer": "Chynna Phillips",
+              "predicted": "Chynna Phillips",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__702496_430061",
+          "question": "What county was Tim Dubois born in?",
+          "prediction": "McDonald County",
+          "answer": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tim Dubois born?",
+              "gold_answer": "Southwest City",
+              "predicted": "Southwest City, Missouri",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county was Southwest City, Missouri located in?",
+              "gold_answer": "McDonald County",
+              "predicted": "McDonald County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__549146_223121",
+          "question": "What record label did the person who is part of The Bruce Lee Band start?",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is part of The Bruce Lee Band?",
+              "gold_answer": "Mike Park",
+              "predicted": "Mike Park",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label did Mike Park start?",
+              "gold_answer": "Asian Man Records",
+              "predicted": "Dill Records",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__647996_551681",
+          "question": "What is another notable work made by the author of Miss Sara Sampson?",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Question: What is another notable work made by the author of Miss Sara Sampson?",
+              "gold_answer": "Gotthold Ephraim Lessing",
+              "predicted": "Glenda Goss",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the author of Miss Sara Sampson?",
+              "gold_answer": "Emilia Galotti",
+              "predicted": "Gotthold Ephraim Lessing",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__673655_316668",
+          "question": "What instrument is played by the person from The Blackout All-Stars?",
+          "prediction": "Conga",
+          "answer": "conga",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which band are The Blackout All-Stars?",
+              "gold_answer": "Ray Barretto",
+              "predicted": "Latin supergroup",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What instrument is played by the person from Latin supergroup?",
+              "gold_answer": "conga",
+              "predicted": "Conga",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__574419_270105",
+          "question": "What is the seat of the county where Van Hook Township is located?",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Van Hook Township located?",
+              "gold_answer": "Mountrail County",
+              "predicted": "Mountrail County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the seat of Mountrail County?",
+              "gold_answer": "Stanley",
+              "predicted": "Stanley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__403712_793210",
+          "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+          "prediction": "Sir Francis Baring, 1st Baronet",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Edward Baring, 1st Baron Revelstoke's father?",
+              "gold_answer": "Henry Baring",
+              "predicted": "Henry Baring",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the father of Henry Baring?",
+              "gold_answer": "Sir Francis Baring, 1st Baronet",
+              "predicted": "Sir Francis Baring, 1st Baronet",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        }
+      ]
+    },
+    "kg_context_only": {
+      "em": 53.333333333333336,
+      "relaxed_em": 63.33333333333333,
+      "f1": 0.6445238095238095,
+      "latency_ms": 1151.2722730636597,
+      "kg_stats": {
+        "bridge_hits": 0,
+        "context_triples_added": 288,
+        "retrieval_boosted": 0
+      },
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "question": "Who is the spouse of the Green performer?",
+          "prediction": "Victor Willises",
+          "answer": "Miquette Giraudy",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who performed Green?",
+              "gold_answer": "Steve Hillage",
+              "predicted": "Joni Mitchell",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Joni Mitchell?",
+              "gold_answer": "Miquette Giraudy",
+              "predicted": "Victor Willises",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__252311_366220",
+          "question": "Who founded the company that distributed the film UHF?",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What company distributed the film UHF?",
+              "gold_answer": "Orion Pictures",
+              "predicted": "Orion Pictures",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who founded Orion Pictures?",
+              "gold_answer": "Mike Medavoy",
+              "predicted": "Mike Medavoy",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__701895_752697",
+          "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+          "prediction": "Municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What administrative territorial entity owns Ciudad Deportiva?",
+              "gold_answer": "Nuevo Laredo",
+              "predicted": "Nuevo Laredo",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative territorial entity is Nuevo Laredo?",
+              "gold_answer": "Tamaulipas",
+              "predicted": "Municipality",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__259228_793698",
+          "question": "Where is Ulrich Walter's employer headquartered?",
+          "prediction": "United States",
+          "answer": "Cologne",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who employs Ulrich Walter?",
+              "gold_answer": "German Aerospace Center",
+              "predicted": "German Aerospace Center",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is German Aerospace Center headquartered?",
+              "gold_answer": "Cologne",
+              "predicted": "United States",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__481349_302087",
+          "question": "Which company owns the manufacturer of Learjet 60?",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who manufactured the Learjet 60?",
+              "gold_answer": "Bombardier Aerospace",
+              "predicted": "Bombardier Aerospace",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which company owns Bombardier Aerospace?",
+              "gold_answer": "Bombardier Inc.",
+              "predicted": "Bombardier Inc",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__697790_864352",
+          "question": "Who is the child of Caroline LeRoy's spouse?",
+          "prediction": "Grace Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Caroline LeRoy's spouse?",
+              "gold_answer": "Daniel Webster",
+              "predicted": "Daniel Webster",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Daniel Webster?",
+              "gold_answer": "Fletcher Webster",
+              "predicted": "Grace Fletcher Webster",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__207476_625987",
+          "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+          "prediction": "Louise de La Valli\u00e8re",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.28571428571428575,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Philippe, Duke of Orl\u00e9ans's mother?",
+              "gold_answer": "Louis XIII",
+              "predicted": "Anne of Austria",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the grandmother of Anne of Austria?",
+              "gold_answer": "Marie de' Medici",
+              "predicted": "Louise de La Valli\u00e8re",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__390947_232243",
+          "question": "What is the goal of the group that European Movement Germany is a member of?",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What group is European Movement Germany a member of?",
+              "gold_answer": "European Movement International",
+              "predicted": "European Movement International",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the goal of European Movement International?",
+              "gold_answer": "European integration",
+              "predicted": "promoting European integration",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__354635_174222",
+          "question": "What company succeeded the owner of Empire Sports Network?",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the owner of Empire Sports Network?",
+              "gold_answer": "Adelphia Communications Corporation",
+              "predicted": "Adelphia Communications Corporation",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What company succeeded Adelphia Communications Corporation?",
+              "gold_answer": "Time Warner Cable",
+              "predicted": "Windjammer Communications",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__635187_861533",
+          "question": "What province shares a border with the province where Lago District is located?",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which province is the Lago District located?",
+              "gold_answer": "Niassa Province",
+              "predicted": "Niassa Province",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which province shares a border with Niassa Province?",
+              "gold_answer": "Cabo Delgado Province",
+              "predicted": "Cabo Delgado Province",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__166824_185403",
+          "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+          "prediction": "Lega Pro Prima Divisione",
+          "answer": "Lega Pro Prima Divisione",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What team plays in Stadio Ciro Vigorito?",
+              "gold_answer": "Benevento Calcio",
+              "predicted": "Benevento Calcio",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What league does Benevento Calcio play for?",
+              "gold_answer": "Lega Pro Prima Divisione",
+              "predicted": "Lega Pro Prima Divisione",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__698577_851686",
+          "question": "What is a notable work written by the author of The Timothy files?",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of *The Timothy Files*?",
+              "gold_answer": "Lawrence Sanders",
+              "predicted": "Lawrence Sanders",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is a notable work written by Lawrence Sanders?",
+              "gold_answer": "Anderson Tapes",
+              "predicted": "Anderson Tapes",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__362107_652514",
+          "question": "In which borough was Callum McManaman born?",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Callum McManaman born?",
+              "gold_answer": "Whiston",
+              "predicted": "Whiston",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which borough is Whiston located?",
+              "gold_answer": "Knowsley",
+              "predicted": "Knowsley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__402530_774333",
+          "question": "What other county does the county where Imperial is located share a border with?",
+          "prediction": "Crockett County",
+          "answer": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Imperial located?",
+              "gold_answer": "Pecos County",
+              "predicted": "Pecos County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What other county shares a border with Pecos County?",
+              "gold_answer": "Crockett County",
+              "predicted": "Crockett County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__195917_575657",
+          "question": "In what county is William W. Blair's birthplace located?",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was William W. Blair born?",
+              "gold_answer": "Holley",
+              "predicted": "Holley, New York",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county is Holley, New York located in?",
+              "gold_answer": "Orleans County",
+              "predicted": "Orleans County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__683835_709167",
+          "question": "What award did the author of The Red Tree receive?",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of The Red Tree?",
+              "gold_answer": "Shaun Tan",
+              "predicted": "Shaun Tan",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What award did Shaun Tan receive?",
+              "gold_answer": "Academy Award for Best Animated Short Film",
+              "predicted": "Academy Award for Best Animated Short Film",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__197470_271394",
+          "question": "Where was Tyler MacDuff's child educated?",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tyler MacDuff's child educated?",
+              "gold_answer": "Dana MacDuff",
+              "predicted": "Blair International Baccalaureate School",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is Blair International Baccalaureate School located?",
+              "gold_answer": "Blair High School",
+              "predicted": "Pasadena",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__458131_174974",
+          "question": "Who is the spouse of the Rabbit Hole's producer?",
+          "prediction": "Nicole Kidman",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which company produced the play \"Rabbit Hole\"?",
+              "gold_answer": "Nicole Kidman",
+              "predicted": "Blossom Films",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Blossom Films?",
+              "gold_answer": "Keith Urban",
+              "predicted": "Nicole Kidman",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__299142_347613",
+          "question": "Who is the child of Sigrid Eskilsdotter's child?",
+          "prediction": "Christina Gyllenstierna",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Sigrid Eskilsdotter's child?",
+              "gold_answer": "Christina Gyllenstierna",
+              "predicted": "Christina Gyllenstierna",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Christina Gyllenstierna?",
+              "gold_answer": "Svante Stensson Sture",
+              "predicted": "Christina Gyllenstierna",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__528263_865831",
+          "question": "In which county is Kimbrough Memorial Stadium located?",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Kimbrough Memorial Stadium located?",
+              "gold_answer": "Canyon",
+              "predicted": "Canyon",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Canyon located?",
+              "gold_answer": "Randall County",
+              "predicted": "Randall County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__569582_304416",
+          "question": "What record label is the performer of Almost Made Ya signed to?",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed the song \"Almost Made Ya\"?",
+              "gold_answer": "Ali & Gipp",
+              "predicted": "Ali & Gipp",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label is Ali & Gipp signed to?",
+              "gold_answer": "Derrty Entertainment",
+              "predicted": "Derrty Entertainment",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__505860_650613",
+          "question": "Where was the author of Hannibal and Scipio educated at?",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of Hannibal and Scipio?",
+              "gold_answer": "Thomas Nabbes",
+              "predicted": "Thomas Nabbes",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where was Thomas Nabbes educated?",
+              "gold_answer": "Exeter College",
+              "predicted": "Exeter College, Oxford",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__821197_368148",
+          "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Southern Maryland Electric Cooperative headquartered?",
+              "gold_answer": "Hughesville",
+              "predicted": "Hughesville",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Hughesville located?",
+              "gold_answer": "Charles County",
+              "predicted": "Charles County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__554167_451128",
+          "question": "Who is the child of the Victim of Romance performer?",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed in the Victim of Romance?",
+              "gold_answer": "Michelle Phillips",
+              "predicted": "Michelle Phillips",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Michelle Phillips?",
+              "gold_answer": "Chynna Phillips",
+              "predicted": "Chynna Phillips",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__702496_430061",
+          "question": "What county was Tim Dubois born in?",
+          "prediction": "McDonald County",
+          "answer": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tim Dubois born?",
+              "gold_answer": "Southwest City",
+              "predicted": "Southwest City, Missouri",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county was Southwest City, Missouri located in?",
+              "gold_answer": "McDonald County",
+              "predicted": "McDonald County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__549146_223121",
+          "question": "What record label did the person who is part of The Bruce Lee Band start?",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is part of The Bruce Lee Band?",
+              "gold_answer": "Mike Park",
+              "predicted": "Mike Park",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label did Mike Park start?",
+              "gold_answer": "Asian Man Records",
+              "predicted": "Dill Records",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__647996_551681",
+          "question": "What is another notable work made by the author of Miss Sara Sampson?",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Question: What is another notable work made by the author of Miss Sara Sampson?",
+              "gold_answer": "Gotthold Ephraim Lessing",
+              "predicted": "Emilia Galotti",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the author of Miss Sara Sampson?",
+              "gold_answer": "Emilia Galotti",
+              "predicted": "Gotthold Ephraim Lessing",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__673655_316668",
+          "question": "What instrument is played by the person from The Blackout All-Stars?",
+          "prediction": "Conga",
+          "answer": "conga",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which band are The Blackout All-Stars?",
+              "gold_answer": "Ray Barretto",
+              "predicted": "Latin supergroup",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What instrument is played by the person from Latin supergroup?",
+              "gold_answer": "conga",
+              "predicted": "Conga",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__574419_270105",
+          "question": "What is the seat of the county where Van Hook Township is located?",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Van Hook Township located?",
+              "gold_answer": "Mountrail County",
+              "predicted": "Mountrail County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the seat of Mountrail County?",
+              "gold_answer": "Stanley",
+              "predicted": "Stanley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__403712_793210",
+          "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+          "prediction": "Lieutenant-General Charles Baring",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.25,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Edward Baring, 1st Baron Revelstoke's father?",
+              "gold_answer": "Henry Baring",
+              "predicted": "Henry Baring",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the father of Henry Baring?",
+              "gold_answer": "Sir Francis Baring, 1st Baronet",
+              "predicted": "Lieutenant-General Charles Baring",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        }
+      ]
+    },
+    "kg_bridging_only": {
+      "em": 63.33333333333333,
+      "relaxed_em": 70.0,
+      "f1": 0.7,
+      "latency_ms": 1208.0021858215332,
+      "kg_stats": {
+        "bridge_hits": 4,
+        "context_triples_added": 0,
+        "retrieval_boosted": 0
+      },
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "question": "Who is the spouse of the Green performer?",
+          "prediction": "Miquette Giraudy",
+          "answer": "Miquette Giraudy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who performed Green?",
+              "gold_answer": "Steve Hillage",
+              "predicted": "Steve Hillage",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Steve Hillage?",
+              "gold_answer": "Miquette Giraudy",
+              "predicted": "Miquette Giraudy",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__252311_366220",
+          "question": "Who founded the company that distributed the film UHF?",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What company distributed the film UHF?",
+              "gold_answer": "Orion Pictures",
+              "predicted": "Orion Pictures",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who founded Orion Pictures?",
+              "gold_answer": "Mike Medavoy",
+              "predicted": "Mike Medavoy",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__701895_752697",
+          "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+          "prediction": "municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What administrative territorial entity owns Ciudad Deportiva?",
+              "gold_answer": "Nuevo Laredo",
+              "predicted": "Nuevo Laredo",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative territorial entity is Nuevo Laredo?",
+              "gold_answer": "Tamaulipas",
+              "predicted": "municipality",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__259228_793698",
+          "question": "Where is Ulrich Walter's employer headquartered?",
+          "prediction": "Braunschweig",
+          "answer": "Cologne",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who employs Ulrich Walter?",
+              "gold_answer": "German Aerospace Center",
+              "predicted": "German Aerospace Center",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is German Aerospace Center headquartered?",
+              "gold_answer": "Cologne",
+              "predicted": "Braunschweig",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__481349_302087",
+          "question": "Which company owns the manufacturer of Learjet 60?",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who manufactured the Learjet 60?",
+              "gold_answer": "Bombardier Aerospace",
+              "predicted": "Bombardier Aerospace",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which company owns Bombardier Aerospace?",
+              "gold_answer": "Bombardier Inc.",
+              "predicted": "Bombardier Inc",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__697790_864352",
+          "question": "Who is the child of Caroline LeRoy's spouse?",
+          "prediction": "Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Caroline LeRoy's spouse?",
+              "gold_answer": "Daniel Webster",
+              "predicted": "Daniel Webster",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Daniel Webster?",
+              "gold_answer": "Fletcher Webster",
+              "predicted": "Fletcher Webster",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__207476_625987",
+          "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+          "prediction": "Louis XIII",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Philippe, Duke of Orl\u00e9ans's mother?",
+              "gold_answer": "Louis XIII",
+              "predicted": "Anne of Austria",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the grandmother of Anne of Austria?",
+              "gold_answer": "Marie de' Medici",
+              "predicted": "Louis XIII",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__390947_232243",
+          "question": "What is the goal of the group that European Movement Germany is a member of?",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What group is European Movement Germany a member of?",
+              "gold_answer": "European Movement International",
+              "predicted": "European Movement International",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the goal of European Movement International?",
+              "gold_answer": "European integration",
+              "predicted": "promoting European integration",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__354635_174222",
+          "question": "What company succeeded the owner of Empire Sports Network?",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the owner of Empire Sports Network?",
+              "gold_answer": "Adelphia Communications Corporation",
+              "predicted": "Adelphia Communications Corporation",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What company succeeded Adelphia Communications Corporation?",
+              "gold_answer": "Time Warner Cable",
+              "predicted": "Windjammer Communications",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__635187_861533",
+          "question": "What province shares a border with the province where Lago District is located?",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which province is the Lago District located?",
+              "gold_answer": "Niassa Province",
+              "predicted": "Niassa Province",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which province shares a border with Niassa Province?",
+              "gold_answer": "Cabo Delgado Province",
+              "predicted": "Cabo Delgado Province",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__166824_185403",
+          "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+          "prediction": "Lega Pro Prima Divisione",
+          "answer": "Lega Pro Prima Divisione",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What team plays in Stadio Ciro Vigorito?",
+              "gold_answer": "Benevento Calcio",
+              "predicted": "Benevento Calcio",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What league does Benevento Calcio play for?",
+              "gold_answer": "Lega Pro Prima Divisione",
+              "predicted": "Lega Pro Prima Divisione",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__698577_851686",
+          "question": "What is a notable work written by the author of The Timothy files?",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of *The Timothy Files*?",
+              "gold_answer": "Lawrence Sanders",
+              "predicted": "Lawrence Sanders",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is a notable work written by Lawrence Sanders?",
+              "gold_answer": "Anderson Tapes",
+              "predicted": "Anderson Tapes",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__362107_652514",
+          "question": "In which borough was Callum McManaman born?",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Callum McManaman born?",
+              "gold_answer": "Whiston",
+              "predicted": "Whiston",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which borough is Whiston located?",
+              "gold_answer": "Knowsley",
+              "predicted": "Knowsley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__402530_774333",
+          "question": "What other county does the county where Imperial is located share a border with?",
+          "prediction": "Crockett County",
+          "answer": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Imperial located?",
+              "gold_answer": "Pecos County",
+              "predicted": "Pecos County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What other county shares a border with Pecos County?",
+              "gold_answer": "Crockett County",
+              "predicted": "Crockett County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__195917_575657",
+          "question": "In what county is William W. Blair's birthplace located?",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was William W. Blair born?",
+              "gold_answer": "Holley",
+              "predicted": "Holley, New York",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county is Holley, New York located in?",
+              "gold_answer": "Orleans County",
+              "predicted": "Orleans County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__683835_709167",
+          "question": "What award did the author of The Red Tree receive?",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of The Red Tree?",
+              "gold_answer": "Shaun Tan",
+              "predicted": "Shaun Tan",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What award did Shaun Tan receive?",
+              "gold_answer": "Academy Award for Best Animated Short Film",
+              "predicted": "Academy Award for Best Animated Short Film",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__197470_271394",
+          "question": "Where was Tyler MacDuff's child educated?",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tyler MacDuff's child educated?",
+              "gold_answer": "Dana MacDuff",
+              "predicted": "Blair International Baccalaureate School",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is Blair International Baccalaureate School located?",
+              "gold_answer": "Blair High School",
+              "predicted": "Pasadena",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__458131_174974",
+          "question": "Who is the spouse of the Rabbit Hole's producer?",
+          "prediction": "None",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which company produced the play \"Rabbit Hole\"?",
+              "gold_answer": "Nicole Kidman",
+              "predicted": "None",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of None?",
+              "gold_answer": "Keith Urban",
+              "predicted": "None",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__299142_347613",
+          "question": "Who is the child of Sigrid Eskilsdotter's child?",
+          "prediction": "Sigrid Eskilsdotter (Ban\u00e9r)",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Sigrid Eskilsdotter's child?",
+              "gold_answer": "Christina Gyllenstierna",
+              "predicted": "Christina Gyllenstierna",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Christina Gyllenstierna?",
+              "gold_answer": "Svante Stensson Sture",
+              "predicted": "Sigrid Eskilsdotter (Ban\u00e9r)",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__528263_865831",
+          "question": "In which county is Kimbrough Memorial Stadium located?",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Kimbrough Memorial Stadium located?",
+              "gold_answer": "Canyon",
+              "predicted": "Canyon, Texas",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Canyon, Texas located?",
+              "gold_answer": "Randall County",
+              "predicted": "Randall County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__569582_304416",
+          "question": "What record label is the performer of Almost Made Ya signed to?",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed the song \"Almost Made Ya\"?",
+              "gold_answer": "Ali & Gipp",
+              "predicted": "Ali & Gipp",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label is Ali & Gipp signed to?",
+              "gold_answer": "Derrty Entertainment",
+              "predicted": "Derrty Entertainment",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__505860_650613",
+          "question": "Where was the author of Hannibal and Scipio educated at?",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of Hannibal and Scipio?",
+              "gold_answer": "Thomas Nabbes",
+              "predicted": "Thomas Nabbes",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where was Thomas Nabbes educated?",
+              "gold_answer": "Exeter College",
+              "predicted": "Exeter College, Oxford",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__821197_368148",
+          "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Southern Maryland Electric Cooperative headquartered?",
+              "gold_answer": "Hughesville",
+              "predicted": "Hughesville",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Hughesville located?",
+              "gold_answer": "Charles County",
+              "predicted": "Charles County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__554167_451128",
+          "question": "Who is the child of the Victim of Romance performer?",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed in the Victim of Romance?",
+              "gold_answer": "Michelle Phillips",
+              "predicted": "Michelle Phillips",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Michelle Phillips?",
+              "gold_answer": "Chynna Phillips",
+              "predicted": "Chynna Phillips",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__702496_430061",
+          "question": "What county was Tim Dubois born in?",
+          "prediction": "McDonald County",
+          "answer": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tim Dubois born?",
+              "gold_answer": "Southwest City",
+              "predicted": "Southwest City, Missouri",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county was Southwest City, Missouri located in?",
+              "gold_answer": "McDonald County",
+              "predicted": "McDonald County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__549146_223121",
+          "question": "What record label did the person who is part of The Bruce Lee Band start?",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is part of The Bruce Lee Band?",
+              "gold_answer": "Mike Park",
+              "predicted": "Mike Park",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label did Mike Park start?",
+              "gold_answer": "Asian Man Records",
+              "predicted": "Dill Records",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__647996_551681",
+          "question": "What is another notable work made by the author of Miss Sara Sampson?",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Question: What is another notable work made by the author of Miss Sara Sampson?",
+              "gold_answer": "Gotthold Ephraim Lessing",
+              "predicted": "Glenda Goss",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the author of Miss Sara Sampson?",
+              "gold_answer": "Emilia Galotti",
+              "predicted": "Gotthold Ephraim Lessing",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__673655_316668",
+          "question": "What instrument is played by the person from The Blackout All-Stars?",
+          "prediction": "Conga",
+          "answer": "conga",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which band are The Blackout All-Stars?",
+              "gold_answer": "Ray Barretto",
+              "predicted": "Latin supergroup",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What instrument is played by the person from Latin supergroup?",
+              "gold_answer": "conga",
+              "predicted": "Conga",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__574419_270105",
+          "question": "What is the seat of the county where Van Hook Township is located?",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Van Hook Township located?",
+              "gold_answer": "Mountrail County",
+              "predicted": "Mountrail County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the seat of Mountrail County?",
+              "gold_answer": "Stanley",
+              "predicted": "Stanley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__403712_793210",
+          "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+          "prediction": "Sir Francis Baring, 1st Baronet",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Edward Baring, 1st Baron Revelstoke's father?",
+              "gold_answer": "Henry Baring",
+              "predicted": "Henry Baring",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the father of Henry Baring?",
+              "gold_answer": "Sir Francis Baring, 1st Baronet",
+              "predicted": "Sir Francis Baring, 1st Baronet",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        }
+      ]
+    },
+    "kg_retrieval_only": {
+      "em": 63.33333333333333,
+      "relaxed_em": 70.0,
+      "f1": 0.7,
+      "latency_ms": 907.8326225280762,
+      "kg_stats": {
+        "bridge_hits": 0,
+        "context_triples_added": 0,
+        "retrieval_boosted": 60
+      },
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "question": "Who is the spouse of the Green performer?",
+          "prediction": "Miquette Giraudy",
+          "answer": "Miquette Giraudy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who performed Green?",
+              "gold_answer": "Steve Hillage",
+              "predicted": "Steve Hillage",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Steve Hillage?",
+              "gold_answer": "Miquette Giraudy",
+              "predicted": "Miquette Giraudy",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__252311_366220",
+          "question": "Who founded the company that distributed the film UHF?",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What company distributed the film UHF?",
+              "gold_answer": "Orion Pictures",
+              "predicted": "Orion Pictures",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who founded Orion Pictures?",
+              "gold_answer": "Mike Medavoy",
+              "predicted": "Mike Medavoy",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__701895_752697",
+          "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+          "prediction": "municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What administrative territorial entity owns Ciudad Deportiva?",
+              "gold_answer": "Nuevo Laredo",
+              "predicted": "Nuevo Laredo",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative territorial entity is Nuevo Laredo?",
+              "gold_answer": "Tamaulipas",
+              "predicted": "municipality",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__259228_793698",
+          "question": "Where is Ulrich Walter's employer headquartered?",
+          "prediction": "Berlin",
+          "answer": "Cologne",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who employs Ulrich Walter?",
+              "gold_answer": "German Aerospace Center",
+              "predicted": "German Aerospace Center",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is German Aerospace Center headquartered?",
+              "gold_answer": "Cologne",
+              "predicted": "Berlin",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__481349_302087",
+          "question": "Which company owns the manufacturer of Learjet 60?",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who manufactured the Learjet 60?",
+              "gold_answer": "Bombardier Aerospace",
+              "predicted": "Bombardier Aerospace",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which company owns Bombardier Aerospace?",
+              "gold_answer": "Bombardier Inc.",
+              "predicted": "Bombardier Inc",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__697790_864352",
+          "question": "Who is the child of Caroline LeRoy's spouse?",
+          "prediction": "Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Caroline LeRoy's spouse?",
+              "gold_answer": "Daniel Webster",
+              "predicted": "Daniel Webster",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Daniel Webster?",
+              "gold_answer": "Fletcher Webster",
+              "predicted": "Fletcher Webster",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__207476_625987",
+          "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+          "prediction": "Louis XIII",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Philippe, Duke of Orl\u00e9ans's mother?",
+              "gold_answer": "Louis XIII",
+              "predicted": "Anne of Austria",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the grandmother of Anne of Austria?",
+              "gold_answer": "Marie de' Medici",
+              "predicted": "Louis XIII",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__390947_232243",
+          "question": "What is the goal of the group that European Movement Germany is a member of?",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What group is European Movement Germany a member of?",
+              "gold_answer": "European Movement International",
+              "predicted": "European Movement International",
+              "em": true,
+              "gold_retrieved": false
+            },
+            {
+              "hop": 2,
+              "question": "What is the goal of European Movement International?",
+              "gold_answer": "European integration",
+              "predicted": "promoting European integration",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__354635_174222",
+          "question": "What company succeeded the owner of Empire Sports Network?",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the owner of Empire Sports Network?",
+              "gold_answer": "Adelphia Communications Corporation",
+              "predicted": "Adelphia Communications Corporation",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What company succeeded Adelphia Communications Corporation?",
+              "gold_answer": "Time Warner Cable",
+              "predicted": "Windjammer Communications",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__635187_861533",
+          "question": "What province shares a border with the province where Lago District is located?",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which province is the Lago District located?",
+              "gold_answer": "Niassa Province",
+              "predicted": "Niassa Province",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which province shares a border with Niassa Province?",
+              "gold_answer": "Cabo Delgado Province",
+              "predicted": "Cabo Delgado Province",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__166824_185403",
+          "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+          "prediction": "Lega Pro Prima Divisione",
+          "answer": "Lega Pro Prima Divisione",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What team plays in Stadio Ciro Vigorito?",
+              "gold_answer": "Benevento Calcio",
+              "predicted": "Benevento Calcio",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What league does Benevento Calcio play for?",
+              "gold_answer": "Lega Pro Prima Divisione",
+              "predicted": "Lega Pro Prima Divisione",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__698577_851686",
+          "question": "What is a notable work written by the author of The Timothy files?",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of *The Timothy Files*?",
+              "gold_answer": "Lawrence Sanders",
+              "predicted": "Lawrence Sanders",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is a notable work written by Lawrence Sanders?",
+              "gold_answer": "Anderson Tapes",
+              "predicted": "Anderson Tapes",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__362107_652514",
+          "question": "In which borough was Callum McManaman born?",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Callum McManaman born?",
+              "gold_answer": "Whiston",
+              "predicted": "Whiston",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which borough is Whiston located?",
+              "gold_answer": "Knowsley",
+              "predicted": "Knowsley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__402530_774333",
+          "question": "What other county does the county where Imperial is located share a border with?",
+          "prediction": "Crockett County",
+          "answer": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Imperial located?",
+              "gold_answer": "Pecos County",
+              "predicted": "Pecos County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What other county shares a border with Pecos County?",
+              "gold_answer": "Crockett County",
+              "predicted": "Crockett County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__195917_575657",
+          "question": "In what county is William W. Blair's birthplace located?",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was William W. Blair born?",
+              "gold_answer": "Holley",
+              "predicted": "Holley, New York",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county is Holley, New York located in?",
+              "gold_answer": "Orleans County",
+              "predicted": "Orleans County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__683835_709167",
+          "question": "What award did the author of The Red Tree receive?",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of The Red Tree?",
+              "gold_answer": "Shaun Tan",
+              "predicted": "Shaun Tan",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What award did Shaun Tan receive?",
+              "gold_answer": "Academy Award for Best Animated Short Film",
+              "predicted": "Academy Award for Best Animated Short Film",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__197470_271394",
+          "question": "Where was Tyler MacDuff's child educated?",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tyler MacDuff's child educated?",
+              "gold_answer": "Dana MacDuff",
+              "predicted": "Blair International Baccalaureate School",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is Blair International Baccalaureate School located?",
+              "gold_answer": "Blair High School",
+              "predicted": "Pasadena",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__458131_174974",
+          "question": "Who is the spouse of the Rabbit Hole's producer?",
+          "prediction": "No applicable answer based on the provided context",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which company produced the play \"Rabbit Hole\"?",
+              "gold_answer": "Nicole Kidman",
+              "predicted": "Lionsgate",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Lionsgate?",
+              "gold_answer": "Keith Urban",
+              "predicted": "No applicable answer based on the provided context",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__299142_347613",
+          "question": "Who is the child of Sigrid Eskilsdotter's child?",
+          "prediction": "Sigrid Eskilsdotter (Ban\u00e9r)",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Sigrid Eskilsdotter's child?",
+              "gold_answer": "Christina Gyllenstierna",
+              "predicted": "Christina Gyllenstierna",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Christina Gyllenstierna?",
+              "gold_answer": "Svante Stensson Sture",
+              "predicted": "Sigrid Eskilsdotter (Ban\u00e9r)",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__528263_865831",
+          "question": "In which county is Kimbrough Memorial Stadium located?",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Kimbrough Memorial Stadium located?",
+              "gold_answer": "Canyon",
+              "predicted": "Canyon, Texas",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Canyon, Texas located?",
+              "gold_answer": "Randall County",
+              "predicted": "Randall County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__569582_304416",
+          "question": "What record label is the performer of Almost Made Ya signed to?",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed the song \"Almost Made Ya\"?",
+              "gold_answer": "Ali & Gipp",
+              "predicted": "Ali & Gipp",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label is Ali & Gipp signed to?",
+              "gold_answer": "Derrty Entertainment",
+              "predicted": "Derrty Entertainment",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__505860_650613",
+          "question": "Where was the author of Hannibal and Scipio educated at?",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of Hannibal and Scipio?",
+              "gold_answer": "Thomas Nabbes",
+              "predicted": "Thomas Nabbes",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where was Thomas Nabbes educated?",
+              "gold_answer": "Exeter College",
+              "predicted": "Exeter College, Oxford",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__821197_368148",
+          "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Southern Maryland Electric Cooperative headquartered?",
+              "gold_answer": "Hughesville",
+              "predicted": "Hughesville, Maryland",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Hughesville, Maryland located?",
+              "gold_answer": "Charles County",
+              "predicted": "Charles County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__554167_451128",
+          "question": "Who is the child of the Victim of Romance performer?",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed in the Victim of Romance?",
+              "gold_answer": "Michelle Phillips",
+              "predicted": "Michelle Phillips",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Michelle Phillips?",
+              "gold_answer": "Chynna Phillips",
+              "predicted": "Chynna Phillips",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__702496_430061",
+          "question": "What county was Tim Dubois born in?",
+          "prediction": "McDonald County",
+          "answer": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tim Dubois born?",
+              "gold_answer": "Southwest City",
+              "predicted": "Southwest City, Missouri",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county was Southwest City, Missouri located in?",
+              "gold_answer": "McDonald County",
+              "predicted": "McDonald County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__549146_223121",
+          "question": "What record label did the person who is part of The Bruce Lee Band start?",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is part of The Bruce Lee Band?",
+              "gold_answer": "Mike Park",
+              "predicted": "Mike Park",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label did Mike Park start?",
+              "gold_answer": "Asian Man Records",
+              "predicted": "Dill Records",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__647996_551681",
+          "question": "What is another notable work made by the author of Miss Sara Sampson?",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Question: What is another notable work made by the author of Miss Sara Sampson?",
+              "gold_answer": "Gotthold Ephraim Lessing",
+              "predicted": "Miss Sara Sampson",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the author of Miss Sara Sampson?",
+              "gold_answer": "Emilia Galotti",
+              "predicted": "Gotthold Ephraim Lessing",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__673655_316668",
+          "question": "What instrument is played by the person from The Blackout All-Stars?",
+          "prediction": "Conga",
+          "answer": "conga",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which band are The Blackout All-Stars?",
+              "gold_answer": "Ray Barretto",
+              "predicted": "Latin supergroup",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What instrument is played by the person from Latin supergroup?",
+              "gold_answer": "conga",
+              "predicted": "Conga",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__574419_270105",
+          "question": "What is the seat of the county where Van Hook Township is located?",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Van Hook Township located?",
+              "gold_answer": "Mountrail County",
+              "predicted": "Mountrail County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the seat of Mountrail County?",
+              "gold_answer": "Stanley",
+              "predicted": "Stanley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__403712_793210",
+          "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+          "prediction": "Sir Francis Baring, 1st Baronet",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Edward Baring, 1st Baron Revelstoke's father?",
+              "gold_answer": "Henry Baring",
+              "predicted": "Henry Baring",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the father of Henry Baring?",
+              "gold_answer": "Sir Francis Baring, 1st Baronet",
+              "predicted": "Sir Francis Baring, 1st Baronet",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        }
+      ]
+    },
+    "kg_bridge_context": {
+      "em": 53.333333333333336,
+      "relaxed_em": 63.33333333333333,
+      "f1": 0.6349999999999999,
+      "latency_ms": 1309.2245976130168,
+      "kg_stats": {
+        "bridge_hits": 6,
+        "context_triples_added": 285,
+        "retrieval_boosted": 0
+      },
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "question": "Who is the spouse of the Green performer?",
+          "prediction": "Little Green",
+          "answer": "Miquette Giraudy",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who performed Green?",
+              "gold_answer": "Steve Hillage",
+              "predicted": "Joni Mitchell",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Joni Mitchell?",
+              "gold_answer": "Miquette Giraudy",
+              "predicted": "Little Green",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__252311_366220",
+          "question": "Who founded the company that distributed the film UHF?",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What company distributed the film UHF?",
+              "gold_answer": "Orion Pictures",
+              "predicted": "Orion Pictures",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who founded Orion Pictures?",
+              "gold_answer": "Mike Medavoy",
+              "predicted": "Mike Medavoy",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__701895_752697",
+          "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+          "prediction": "Municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What administrative territorial entity owns Ciudad Deportiva?",
+              "gold_answer": "Nuevo Laredo",
+              "predicted": "Nuevo Laredo",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative territorial entity is Nuevo Laredo?",
+              "gold_answer": "Tamaulipas",
+              "predicted": "Municipality",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__259228_793698",
+          "question": "Where is Ulrich Walter's employer headquartered?",
+          "prediction": "United States",
+          "answer": "Cologne",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who employs Ulrich Walter?",
+              "gold_answer": "German Aerospace Center",
+              "predicted": "German Aerospace Center",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is German Aerospace Center headquartered?",
+              "gold_answer": "Cologne",
+              "predicted": "United States",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__481349_302087",
+          "question": "Which company owns the manufacturer of Learjet 60?",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who manufactured the Learjet 60?",
+              "gold_answer": "Bombardier Aerospace",
+              "predicted": "Bombardier Aerospace",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which company owns Bombardier Aerospace?",
+              "gold_answer": "Bombardier Inc.",
+              "predicted": "Bombardier Inc",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__697790_864352",
+          "question": "Who is the child of Caroline LeRoy's spouse?",
+          "prediction": "Grace Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Caroline LeRoy's spouse?",
+              "gold_answer": "Daniel Webster",
+              "predicted": "Daniel Webster",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Daniel Webster?",
+              "gold_answer": "Fletcher Webster",
+              "predicted": "Grace Fletcher Webster",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__207476_625987",
+          "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+          "prediction": "King Louis XIII of France",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Philippe, Duke of Orl\u00e9ans's mother?",
+              "gold_answer": "Louis XIII",
+              "predicted": "Anne of Austria",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the grandmother of Anne of Austria?",
+              "gold_answer": "Marie de' Medici",
+              "predicted": "King Louis XIII of France",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__390947_232243",
+          "question": "What is the goal of the group that European Movement Germany is a member of?",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What group is European Movement Germany a member of?",
+              "gold_answer": "European Movement International",
+              "predicted": "European Movement International",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the goal of European Movement International?",
+              "gold_answer": "European integration",
+              "predicted": "promoting European integration",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__354635_174222",
+          "question": "What company succeeded the owner of Empire Sports Network?",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the owner of Empire Sports Network?",
+              "gold_answer": "Adelphia Communications Corporation",
+              "predicted": "Adelphia Communications Corporation",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What company succeeded Adelphia Communications Corporation?",
+              "gold_answer": "Time Warner Cable",
+              "predicted": "Windjammer Communications",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__635187_861533",
+          "question": "What province shares a border with the province where Lago District is located?",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which province is the Lago District located?",
+              "gold_answer": "Niassa Province",
+              "predicted": "Niassa Province",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which province shares a border with Niassa Province?",
+              "gold_answer": "Cabo Delgado Province",
+              "predicted": "Cabo Delgado Province",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__166824_185403",
+          "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+          "prediction": "Lega Pro Prima Divisione",
+          "answer": "Lega Pro Prima Divisione",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What team plays in Stadio Ciro Vigorito?",
+              "gold_answer": "Benevento Calcio",
+              "predicted": "Benevento Calcio",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What league does Benevento Calcio play for?",
+              "gold_answer": "Lega Pro Prima Divisione",
+              "predicted": "Lega Pro Prima Divisione",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__698577_851686",
+          "question": "What is a notable work written by the author of The Timothy files?",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of *The Timothy Files*?",
+              "gold_answer": "Lawrence Sanders",
+              "predicted": "Lawrence Sanders",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is a notable work written by Lawrence Sanders?",
+              "gold_answer": "Anderson Tapes",
+              "predicted": "Anderson Tapes",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__362107_652514",
+          "question": "In which borough was Callum McManaman born?",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Callum McManaman born?",
+              "gold_answer": "Whiston",
+              "predicted": "Whiston",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which borough is Whiston located?",
+              "gold_answer": "Knowsley",
+              "predicted": "Knowsley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__402530_774333",
+          "question": "What other county does the county where Imperial is located share a border with?",
+          "prediction": "Crockett County",
+          "answer": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Imperial located?",
+              "gold_answer": "Pecos County",
+              "predicted": "Pecos County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What other county shares a border with Pecos County?",
+              "gold_answer": "Crockett County",
+              "predicted": "Crockett County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__195917_575657",
+          "question": "In what county is William W. Blair's birthplace located?",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was William W. Blair born?",
+              "gold_answer": "Holley",
+              "predicted": "Holley, New York",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county is Holley, New York located in?",
+              "gold_answer": "Orleans County",
+              "predicted": "Orleans County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__683835_709167",
+          "question": "What award did the author of The Red Tree receive?",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of The Red Tree?",
+              "gold_answer": "Shaun Tan",
+              "predicted": "Shaun Tan",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What award did Shaun Tan receive?",
+              "gold_answer": "Academy Award for Best Animated Short Film",
+              "predicted": "Academy Award for Best Animated Short Film",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__197470_271394",
+          "question": "Where was Tyler MacDuff's child educated?",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tyler MacDuff's child educated?",
+              "gold_answer": "Dana MacDuff",
+              "predicted": "Blair International Baccalaureate School",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is Blair International Baccalaureate School located?",
+              "gold_answer": "Blair High School",
+              "predicted": "Pasadena",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__458131_174974",
+          "question": "Who is the spouse of the Rabbit Hole's producer?",
+          "prediction": "Nicole Kidman",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which company produced the play \"Rabbit Hole\"?",
+              "gold_answer": "Nicole Kidman",
+              "predicted": "Blossom Films",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Blossom Films?",
+              "gold_answer": "Keith Urban",
+              "predicted": "Nicole Kidman",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__299142_347613",
+          "question": "Who is the child of Sigrid Eskilsdotter's child?",
+          "prediction": "Christina Gyllenstierna",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Sigrid Eskilsdotter's child?",
+              "gold_answer": "Christina Gyllenstierna",
+              "predicted": "Christina Gyllenstierna",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Christina Gyllenstierna?",
+              "gold_answer": "Svante Stensson Sture",
+              "predicted": "Christina Gyllenstierna",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__528263_865831",
+          "question": "In which county is Kimbrough Memorial Stadium located?",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Kimbrough Memorial Stadium located?",
+              "gold_answer": "Canyon",
+              "predicted": "Canyon",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Canyon located?",
+              "gold_answer": "Randall County",
+              "predicted": "Randall County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__569582_304416",
+          "question": "What record label is the performer of Almost Made Ya signed to?",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed the song \"Almost Made Ya\"?",
+              "gold_answer": "Ali & Gipp",
+              "predicted": "Ali & Gipp",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label is Ali & Gipp signed to?",
+              "gold_answer": "Derrty Entertainment",
+              "predicted": "Derrty Entertainment",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__505860_650613",
+          "question": "Where was the author of Hannibal and Scipio educated at?",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of Hannibal and Scipio?",
+              "gold_answer": "Thomas Nabbes",
+              "predicted": "Thomas Nabbes",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where was Thomas Nabbes educated?",
+              "gold_answer": "Exeter College",
+              "predicted": "Exeter College, Oxford",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__821197_368148",
+          "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Southern Maryland Electric Cooperative headquartered?",
+              "gold_answer": "Hughesville",
+              "predicted": "Hughesville",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Hughesville located?",
+              "gold_answer": "Charles County",
+              "predicted": "Charles County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__554167_451128",
+          "question": "Who is the child of the Victim of Romance performer?",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed in the Victim of Romance?",
+              "gold_answer": "Michelle Phillips",
+              "predicted": "Michelle Phillips",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Michelle Phillips?",
+              "gold_answer": "Chynna Phillips",
+              "predicted": "Chynna Phillips",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__702496_430061",
+          "question": "What county was Tim Dubois born in?",
+          "prediction": "McDonald County",
+          "answer": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tim Dubois born?",
+              "gold_answer": "Southwest City",
+              "predicted": "Southwest City, Missouri",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county was Southwest City, Missouri located in?",
+              "gold_answer": "McDonald County",
+              "predicted": "McDonald County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__549146_223121",
+          "question": "What record label did the person who is part of The Bruce Lee Band start?",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is part of The Bruce Lee Band?",
+              "gold_answer": "Mike Park",
+              "predicted": "Mike Park",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label did Mike Park start?",
+              "gold_answer": "Asian Man Records",
+              "predicted": "Dill Records",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__647996_551681",
+          "question": "What is another notable work made by the author of Miss Sara Sampson?",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Question: What is another notable work made by the author of Miss Sara Sampson?",
+              "gold_answer": "Gotthold Ephraim Lessing",
+              "predicted": "Emilia Galotti",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the author of Miss Sara Sampson?",
+              "gold_answer": "Emilia Galotti",
+              "predicted": "Gotthold Ephraim Lessing",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__673655_316668",
+          "question": "What instrument is played by the person from The Blackout All-Stars?",
+          "prediction": "Conga",
+          "answer": "conga",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which band are The Blackout All-Stars?",
+              "gold_answer": "Ray Barretto",
+              "predicted": "Latin supergroup",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What instrument is played by the person from Latin supergroup?",
+              "gold_answer": "conga",
+              "predicted": "Conga",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__574419_270105",
+          "question": "What is the seat of the county where Van Hook Township is located?",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Van Hook Township located?",
+              "gold_answer": "Mountrail County",
+              "predicted": "Mountrail County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the seat of Mountrail County?",
+              "gold_answer": "Stanley",
+              "predicted": "Stanley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__403712_793210",
+          "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+          "prediction": "Lieutenant-General Charles Baring",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.25,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Edward Baring, 1st Baron Revelstoke's father?",
+              "gold_answer": "Henry Baring",
+              "predicted": "Henry Baring",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the father of Henry Baring?",
+              "gold_answer": "Sir Francis Baring, 1st Baronet",
+              "predicted": "Lieutenant-General Charles Baring",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        }
+      ]
+    },
+    "kg_full": {
+      "em": 53.333333333333336,
+      "relaxed_em": 63.33333333333333,
+      "f1": 0.6349999999999999,
+      "latency_ms": 1168.0280447006226,
+      "kg_stats": {
+        "bridge_hits": 6,
+        "context_triples_added": 286,
+        "retrieval_boosted": 30
+      },
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "question": "Who is the spouse of the Green performer?",
+          "prediction": "Little Green",
+          "answer": "Miquette Giraudy",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who performed Green?",
+              "gold_answer": "Steve Hillage",
+              "predicted": "Joni Mitchell",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Joni Mitchell?",
+              "gold_answer": "Miquette Giraudy",
+              "predicted": "Little Green",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__252311_366220",
+          "question": "Who founded the company that distributed the film UHF?",
+          "prediction": "Mike Medavoy",
+          "answer": "Mike Medavoy",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What company distributed the film UHF?",
+              "gold_answer": "Orion Pictures",
+              "predicted": "Orion Pictures",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who founded Orion Pictures?",
+              "gold_answer": "Mike Medavoy",
+              "predicted": "Mike Medavoy",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__701895_752697",
+          "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+          "prediction": "Municipality",
+          "answer": "Tamaulipas",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What administrative territorial entity owns Ciudad Deportiva?",
+              "gold_answer": "Nuevo Laredo",
+              "predicted": "Nuevo Laredo",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative territorial entity is Nuevo Laredo?",
+              "gold_answer": "Tamaulipas",
+              "predicted": "Municipality",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__259228_793698",
+          "question": "Where is Ulrich Walter's employer headquartered?",
+          "prediction": "United States",
+          "answer": "Cologne",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who employs Ulrich Walter?",
+              "gold_answer": "German Aerospace Center",
+              "predicted": "German Aerospace Center",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is German Aerospace Center headquartered?",
+              "gold_answer": "Cologne",
+              "predicted": "United States",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__481349_302087",
+          "question": "Which company owns the manufacturer of Learjet 60?",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who manufactured the Learjet 60?",
+              "gold_answer": "Bombardier Aerospace",
+              "predicted": "Bombardier Aerospace",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which company owns Bombardier Aerospace?",
+              "gold_answer": "Bombardier Inc.",
+              "predicted": "Bombardier Inc",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__697790_864352",
+          "question": "Who is the child of Caroline LeRoy's spouse?",
+          "prediction": "Grace Fletcher Webster",
+          "answer": "Fletcher Webster",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Caroline LeRoy's spouse?",
+              "gold_answer": "Daniel Webster",
+              "predicted": "Daniel Webster",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Daniel Webster?",
+              "gold_answer": "Fletcher Webster",
+              "predicted": "Grace Fletcher Webster",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__207476_625987",
+          "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+          "prediction": "King Louis XIII of France",
+          "answer": "Marie de' Medici",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Philippe, Duke of Orl\u00e9ans's mother?",
+              "gold_answer": "Louis XIII",
+              "predicted": "Anne of Austria",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the grandmother of Anne of Austria?",
+              "gold_answer": "Marie de' Medici",
+              "predicted": "King Louis XIII of France",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__390947_232243",
+          "question": "What is the goal of the group that European Movement Germany is a member of?",
+          "prediction": "promoting European integration",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What group is European Movement Germany a member of?",
+              "gold_answer": "European Movement International",
+              "predicted": "European Movement International",
+              "em": true,
+              "gold_retrieved": false
+            },
+            {
+              "hop": 2,
+              "question": "What is the goal of European Movement International?",
+              "gold_answer": "European integration",
+              "predicted": "promoting European integration",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__354635_174222",
+          "question": "What company succeeded the owner of Empire Sports Network?",
+          "prediction": "Windjammer Communications",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the owner of Empire Sports Network?",
+              "gold_answer": "Adelphia Communications Corporation",
+              "predicted": "Adelphia Communications Corporation",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What company succeeded Adelphia Communications Corporation?",
+              "gold_answer": "Time Warner Cable",
+              "predicted": "Windjammer Communications",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__635187_861533",
+          "question": "What province shares a border with the province where Lago District is located?",
+          "prediction": "Cabo Delgado Province",
+          "answer": "Cabo Delgado Province",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which province is the Lago District located?",
+              "gold_answer": "Niassa Province",
+              "predicted": "Niassa Province",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Which province shares a border with Niassa Province?",
+              "gold_answer": "Cabo Delgado Province",
+              "predicted": "Cabo Delgado Province",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__166824_185403",
+          "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+          "prediction": "Lega Pro Prima Divisione",
+          "answer": "Lega Pro Prima Divisione",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. What team plays in Stadio Ciro Vigorito?",
+              "gold_answer": "Benevento Calcio",
+              "predicted": "Benevento Calcio",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What league does Benevento Calcio play for?",
+              "gold_answer": "Lega Pro Prima Divisione",
+              "predicted": "Lega Pro Prima Divisione",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__698577_851686",
+          "question": "What is a notable work written by the author of The Timothy files?",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of *The Timothy Files*?",
+              "gold_answer": "Lawrence Sanders",
+              "predicted": "Lawrence Sanders",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is a notable work written by Lawrence Sanders?",
+              "gold_answer": "Anderson Tapes",
+              "predicted": "Anderson Tapes",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__362107_652514",
+          "question": "In which borough was Callum McManaman born?",
+          "prediction": "Knowsley",
+          "answer": "Knowsley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Callum McManaman born?",
+              "gold_answer": "Whiston",
+              "predicted": "Whiston",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which borough is Whiston located?",
+              "gold_answer": "Knowsley",
+              "predicted": "Knowsley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__402530_774333",
+          "question": "What other county does the county where Imperial is located share a border with?",
+          "prediction": "Crockett County",
+          "answer": "Crockett County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Imperial located?",
+              "gold_answer": "Pecos County",
+              "predicted": "Pecos County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What other county shares a border with Pecos County?",
+              "gold_answer": "Crockett County",
+              "predicted": "Crockett County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__195917_575657",
+          "question": "In what county is William W. Blair's birthplace located?",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was William W. Blair born?",
+              "gold_answer": "Holley",
+              "predicted": "Holley, New York",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county is Holley, New York located in?",
+              "gold_answer": "Orleans County",
+              "predicted": "Orleans County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__683835_709167",
+          "question": "What award did the author of The Red Tree receive?",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of The Red Tree?",
+              "gold_answer": "Shaun Tan",
+              "predicted": "Shaun Tan",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What award did Shaun Tan receive?",
+              "gold_answer": "Academy Award for Best Animated Short Film",
+              "predicted": "Academy Award for Best Animated Short Film",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__197470_271394",
+          "question": "Where was Tyler MacDuff's child educated?",
+          "prediction": "Pasadena",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tyler MacDuff's child educated?",
+              "gold_answer": "Dana MacDuff",
+              "predicted": "Blair International Baccalaureate School",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is Blair International Baccalaureate School located?",
+              "gold_answer": "Blair High School",
+              "predicted": "Pasadena",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__458131_174974",
+          "question": "Who is the spouse of the Rabbit Hole's producer?",
+          "prediction": "Nicole Kidman",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which company produced the play \"Rabbit Hole\"?",
+              "gold_answer": "Nicole Kidman",
+              "predicted": "Blossom Films",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Blossom Films?",
+              "gold_answer": "Keith Urban",
+              "predicted": "Nicole Kidman",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__299142_347613",
+          "question": "Who is the child of Sigrid Eskilsdotter's child?",
+          "prediction": "Christina Gyllenstierna",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Sigrid Eskilsdotter's child?",
+              "gold_answer": "Christina Gyllenstierna",
+              "predicted": "Christina Gyllenstierna",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Christina Gyllenstierna?",
+              "gold_answer": "Svante Stensson Sture",
+              "predicted": "Christina Gyllenstierna",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__528263_865831",
+          "question": "In which county is Kimbrough Memorial Stadium located?",
+          "prediction": "Randall County",
+          "answer": "Randall County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Kimbrough Memorial Stadium located?",
+              "gold_answer": "Canyon",
+              "predicted": "Canyon",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Canyon located?",
+              "gold_answer": "Randall County",
+              "predicted": "Randall County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__569582_304416",
+          "question": "What record label is the performer of Almost Made Ya signed to?",
+          "prediction": "Derrty Entertainment",
+          "answer": "Derrty Entertainment",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed the song \"Almost Made Ya\"?",
+              "gold_answer": "Ali & Gipp",
+              "predicted": "Ali & Gipp",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label is Ali & Gipp signed to?",
+              "gold_answer": "Derrty Entertainment",
+              "predicted": "Derrty Entertainment",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__505860_650613",
+          "question": "Where was the author of Hannibal and Scipio educated at?",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is the author of Hannibal and Scipio?",
+              "gold_answer": "Thomas Nabbes",
+              "predicted": "Thomas Nabbes",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where was Thomas Nabbes educated?",
+              "gold_answer": "Exeter College",
+              "predicted": "Exeter College, Oxford",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__821197_368148",
+          "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+          "prediction": "Charles County",
+          "answer": "Charles County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where is Southern Maryland Electric Cooperative headquartered?",
+              "gold_answer": "Hughesville",
+              "predicted": "Hughesville",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "In which county is Hughesville located?",
+              "gold_answer": "Charles County",
+              "predicted": "Charles County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__554167_451128",
+          "question": "Who is the child of the Victim of Romance performer?",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who performed in the Victim of Romance?",
+              "gold_answer": "Michelle Phillips",
+              "predicted": "Michelle Phillips",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Michelle Phillips?",
+              "gold_answer": "Chynna Phillips",
+              "predicted": "Chynna Phillips",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__702496_430061",
+          "question": "What county was Tim Dubois born in?",
+          "prediction": "McDonald County",
+          "answer": "McDonald County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Where was Tim Dubois born?",
+              "gold_answer": "Southwest City",
+              "predicted": "Southwest City, Missouri",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What county was Southwest City, Missouri located in?",
+              "gold_answer": "McDonald County",
+              "predicted": "McDonald County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__549146_223121",
+          "question": "What record label did the person who is part of The Bruce Lee Band start?",
+          "prediction": "Dill Records",
+          "answer": "Asian Man Records",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.4,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is part of The Bruce Lee Band?",
+              "gold_answer": "Mike Park",
+              "predicted": "Mike Park",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label did Mike Park start?",
+              "gold_answer": "Asian Man Records",
+              "predicted": "Dill Records",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__647996_551681",
+          "question": "What is another notable work made by the author of Miss Sara Sampson?",
+          "prediction": "Gotthold Ephraim Lessing",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Question: What is another notable work made by the author of Miss Sara Sampson?",
+              "gold_answer": "Gotthold Ephraim Lessing",
+              "predicted": "Gotthold Ephraim Lessing",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the author of Miss Sara Sampson?",
+              "gold_answer": "Emilia Galotti",
+              "predicted": "Gotthold Ephraim Lessing",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__673655_316668",
+          "question": "What instrument is played by the person from The Blackout All-Stars?",
+          "prediction": "Conga",
+          "answer": "conga",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Which band are The Blackout All-Stars?",
+              "gold_answer": "Ray Barretto",
+              "predicted": "Latin supergroup",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What instrument is played by the person from Latin supergroup?",
+              "gold_answer": "conga",
+              "predicted": "Conga",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__574419_270105",
+          "question": "What is the seat of the county where Van Hook Township is located?",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. In which county is Van Hook Township located?",
+              "gold_answer": "Mountrail County",
+              "predicted": "Mountrail County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the seat of Mountrail County?",
+              "gold_answer": "Stanley",
+              "predicted": "Stanley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__403712_793210",
+          "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+          "prediction": "Lieutenant-General Charles Baring",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.25,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "1. Who is Edward Baring, 1st Baron Revelstoke's father?",
+              "gold_answer": "Henry Baring",
+              "predicted": "Henry Baring",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the father of Henry Baring?",
+              "gold_answer": "Sir Francis Baring, 1st Baronet",
+              "predicted": "Lieutenant-General Charles Baring",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        }
+      ]
+    },
+    "kg_full_gold_decomp": {
+      "em": 33.33333333333333,
+      "relaxed_em": 46.666666666666664,
+      "f1": 0.43976190476190474,
+      "latency_ms": 1180.5942853291829,
+      "kg_stats": {
+        "bridge_hits": 5,
+        "context_triples_added": 285,
+        "retrieval_boosted": 30
+      },
+      "per_question": [
+        {
+          "id": "2hop__460946_294723",
+          "question": "Who is the spouse of the Green performer?",
+          "prediction": "Little Green",
+          "answer": "Miquette Giraudy",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who performed Green?",
+              "gold_answer": "Steve Hillage",
+              "predicted": "Joni Mitchell",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Joni Mitchell?",
+              "gold_answer": "Miquette Giraudy",
+              "predicted": "Little Green",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__252311_366220",
+          "question": "Who founded the company that distributed the film UHF?",
+          "prediction": "Yankovic and Levey",
+          "answer": "Mike Medavoy",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who distributed UHF?",
+              "gold_answer": "Orion Pictures",
+              "predicted": "Yankovic and Levey",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who founded Yankovic and Levey?",
+              "gold_answer": "Mike Medavoy",
+              "predicted": "Yankovic and Levey",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__701895_752697",
+          "question": "What administrative territorial entity is the owner of Ciudad Deportiva located?",
+          "prediction": "Tamaulipas",
+          "answer": "Tamaulipas",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who owns Ciudad Deportiva?",
+              "gold_answer": "Nuevo Laredo",
+              "predicted": "Nuevo Laredo",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative region is Nuevo Laredo located in?",
+              "gold_answer": "Tamaulipas",
+              "predicted": "Tamaulipas",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__259228_793698",
+          "question": "Where is Ulrich Walter's employer headquartered?",
+          "prediction": "United States",
+          "answer": "Cologne",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who employs Ulrich Walter?",
+              "gold_answer": "German Aerospace Center",
+              "predicted": "German Aerospace Center",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where is German Aerospace Center headquartered?",
+              "gold_answer": "Cologne",
+              "predicted": "United States",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__481349_302087",
+          "question": "Which company owns the manufacturer of Learjet 60?",
+          "prediction": "Bombardier Inc",
+          "answer": "Bombardier Inc.",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who manufactured Learjet 60?",
+              "gold_answer": "Bombardier Aerospace",
+              "predicted": "Bombardier Aerospace",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who owns Bombardier Aerospace?",
+              "gold_answer": "Bombardier Inc.",
+              "predicted": "Bombardier Inc",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__697790_864352",
+          "question": "Who is the child of Caroline LeRoy's spouse?",
+          "prediction": "Caroline LeRoy",
+          "answer": "Fletcher Webster",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who is the spouse of Caroline LeRoy?",
+              "gold_answer": "Daniel Webster",
+              "predicted": "Herman LeRoy",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Herman LeRoy?",
+              "gold_answer": "Fletcher Webster",
+              "predicted": "Caroline LeRoy",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__207476_625987",
+          "question": "Who is the grandmother of Philippe, Duke of Orl\u00e9ans?",
+          "prediction": "Marie de' Medici",
+          "answer": "Marie de' Medici",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who is the father of Philippe, Duke of Orl\u00e9ans?",
+              "gold_answer": "Louis XIII",
+              "predicted": "Louis XIII of France",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the mother of Louis XIII of France of France?",
+              "gold_answer": "Marie de' Medici",
+              "predicted": "Marie de' Medici",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__390947_232243",
+          "question": "What is the goal of the group that European Movement Germany is a member of?",
+          "prediction": "Constitutional Movement",
+          "answer": "European integration",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "What is the member of of European Movement Germany?",
+              "gold_answer": "European Movement International",
+              "predicted": "Not provided",
+              "em": false,
+              "gold_retrieved": false
+            },
+            {
+              "hop": 2,
+              "question": "What is the movement of Not provided?",
+              "gold_answer": "European integration",
+              "predicted": "Constitutional Movement",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__354635_174222",
+          "question": "What company succeeded the owner of Empire Sports Network?",
+          "prediction": "owner",
+          "answer": "Time Warner Cable",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who owns Empire Sports Network?",
+              "gold_answer": "Adelphia Communications Corporation",
+              "predicted": "Adelphia Communications Corporation",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the followed by of Adelphia Communications Corporation?",
+              "gold_answer": "Time Warner Cable",
+              "predicted": "owner",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__635187_861533",
+          "question": "What province shares a border with the province where Lago District is located?",
+          "prediction": "Mozambique",
+          "answer": "Cabo Delgado Province",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "What administrative region is Lago District located in?",
+              "gold_answer": "Niassa Province",
+              "predicted": "Niassa Province",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What borders Niassa Province?",
+              "gold_answer": "Cabo Delgado Province",
+              "predicted": "Mozambique",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__166824_185403",
+          "question": "What league does the team that plays in Stadio Ciro Vigorito play for?",
+          "prediction": "Lega Pro Prima Divisione",
+          "answer": "Lega Pro Prima Divisione",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "What is the occupant of Stadio Ciro Vigorito?",
+              "gold_answer": "Benevento Calcio",
+              "predicted": "Benevento Calcio",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the league of Benevento Calcio?",
+              "gold_answer": "Lega Pro Prima Divisione",
+              "predicted": "Lega Pro Prima Divisione",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__698577_851686",
+          "question": "What is a notable work written by the author of The Timothy files?",
+          "prediction": "Anderson Tapes",
+          "answer": "Anderson Tapes",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who is the author of The Timothy Files?",
+              "gold_answer": "Lawrence Sanders",
+              "predicted": "Lawrence Sanders",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is a notable work by Lawrence Sanders?",
+              "gold_answer": "Anderson Tapes",
+              "predicted": "Anderson Tapes",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__362107_652514",
+          "question": "In which borough was Callum McManaman born?",
+          "prediction": "England",
+          "answer": "Knowsley",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Where was Callum McManaman born?",
+              "gold_answer": "Whiston",
+              "predicted": "Whiston",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative region is Whiston located in?",
+              "gold_answer": "Knowsley",
+              "predicted": "England",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__402530_774333",
+          "question": "What other county does the county where Imperial is located share a border with?",
+          "prediction": "Texas",
+          "answer": "Crockett County",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "What administrative region is Imperial located in?",
+              "gold_answer": "Pecos County",
+              "predicted": "Pecos County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What borders Pecos County?",
+              "gold_answer": "Crockett County",
+              "predicted": "Texas",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__195917_575657",
+          "question": "In what county is William W. Blair's birthplace located?",
+          "prediction": "Orleans County",
+          "answer": "Orleans County",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Where was William W. Blair born?",
+              "gold_answer": "Holley",
+              "predicted": "Holley, New York",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative region is Holley, New York located in?",
+              "gold_answer": "Orleans County",
+              "predicted": "Orleans County",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__683835_709167",
+          "question": "What award did the author of The Red Tree receive?",
+          "prediction": "Academy Award for Best Animated Short Film",
+          "answer": "Academy Award for Best Animated Short Film",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who is the author of The Red Tree?",
+              "gold_answer": "Shaun Tan",
+              "predicted": "Shaun Tan",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What award did Shaun Tan receive?",
+              "gold_answer": "Academy Award for Best Animated Short Film",
+              "predicted": "Academy Award for Best Animated Short Film",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__197470_271394",
+          "question": "Where was Tyler MacDuff's child educated?",
+          "prediction": "Blair International Baccalaureate School",
+          "answer": "Blair High School",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.5714285714285715,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who is the child of Tyler MacDuff?",
+              "gold_answer": "Dana MacDuff",
+              "predicted": "Dana MacDuff",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where was Dana MacDuff educated?",
+              "gold_answer": "Blair High School",
+              "predicted": "Blair International Baccalaureate School",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__458131_174974",
+          "question": "Who is the spouse of the Rabbit Hole's producer?",
+          "prediction": "No applicable fact",
+          "answer": "Keith Urban",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who produced Rabbit Hole?",
+              "gold_answer": "Nicole Kidman",
+              "predicted": "Lionsgate",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the spouse of Lionsgate?",
+              "gold_answer": "Keith Urban",
+              "predicted": "No applicable fact",
+              "em": false,
+              "gold_retrieved": false
+            }
+          ]
+        },
+        {
+          "id": "2hop__299142_347613",
+          "question": "Who is the child of Sigrid Eskilsdotter's child?",
+          "prediction": "Christina Gyllenstierna",
+          "answer": "Svante Stensson Sture",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who is the child of Sigrid Eskilsdotter?",
+              "gold_answer": "Christina Gyllenstierna",
+              "predicted": "Christina Gyllenstierna",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Christina Gyllenstierna?",
+              "gold_answer": "Svante Stensson Sture",
+              "predicted": "Christina Gyllenstierna",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__528263_865831",
+          "question": "In which county is Kimbrough Memorial Stadium located?",
+          "prediction": "Texas",
+          "answer": "Randall County",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.5,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "What administrative region is Kimbrough Memorial Stadium located in?",
+              "gold_answer": "Canyon",
+              "predicted": "Canyon",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative region is Canyon located in?",
+              "gold_answer": "Randall County",
+              "predicted": "Texas",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__569582_304416",
+          "question": "What record label is the performer of Almost Made Ya signed to?",
+          "prediction": "Derrty Entertainment and Universal Records",
+          "answer": "Derrty Entertainment",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.5714285714285715,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who performed Almost Made Ya?",
+              "gold_answer": "Ali & Gipp",
+              "predicted": "Ali & Gipp",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label is Ali & Gipp signed to?",
+              "gold_answer": "Derrty Entertainment",
+              "predicted": "Derrty Entertainment and Universal Records",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__505860_650613",
+          "question": "Where was the author of Hannibal and Scipio educated at?",
+          "prediction": "Exeter College, Oxford",
+          "answer": "Exeter College",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.8,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who is the author of Hannibal and Scipio?",
+              "gold_answer": "Thomas Nabbes",
+              "predicted": "Thomas Nabbes",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Where was Thomas Nabbes educated?",
+              "gold_answer": "Exeter College",
+              "predicted": "Exeter College, Oxford",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__821197_368148",
+          "question": "In which county is Southern Maryland Electric Cooperative headquartered?",
+          "prediction": "Maryland",
+          "answer": "Charles County",
+          "em": false,
+          "relaxed_em": true,
+          "f1": 0.5,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Where is Southern Maryland Electric Cooperative headquartered?",
+              "gold_answer": "Hughesville",
+              "predicted": "Hughesville",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative region is Hughesville located in?",
+              "gold_answer": "Charles County",
+              "predicted": "Maryland",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__554167_451128",
+          "question": "Who is the child of the Victim of Romance performer?",
+          "prediction": "Chynna Phillips",
+          "answer": "Chynna Phillips",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who performed Victim of Romance?",
+              "gold_answer": "Michelle Phillips",
+              "predicted": "Michelle Phillips",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the child of Michelle Phillips?",
+              "gold_answer": "Chynna Phillips",
+              "predicted": "Chynna Phillips",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__702496_430061",
+          "question": "What county was Tim Dubois born in?",
+          "prediction": "Minsk Region is not directly related to Southwest City",
+          "answer": "McDonald County",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Where was Tim DuBois born?",
+              "gold_answer": "Southwest City",
+              "predicted": "Southwest City, Missouri",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What administrative region is Southwest City, Missouri located in?",
+              "gold_answer": "McDonald County",
+              "predicted": "Minsk Region is not directly related to Southwest City",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__549146_223121",
+          "question": "What record label did the person who is part of The Bruce Lee Band start?",
+          "prediction": "Asian Man Records",
+          "answer": "Asian Man Records",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who is a member of The Bruce Lee Band?",
+              "gold_answer": "Mike Park",
+              "predicted": "Mike Park",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What record label is Mike Park signed to?",
+              "gold_answer": "Asian Man Records",
+              "predicted": "Asian Man Records",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__647996_551681",
+          "question": "What is another notable work made by the author of Miss Sara Sampson?",
+          "prediction": "Miss Sara Sampson",
+          "answer": "Emilia Galotti",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who is the author of Miss Sara Sampson?",
+              "gold_answer": "Gotthold Ephraim Lessing",
+              "predicted": "Gotthold Ephraim Lessing",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is a notable work by Gotthold Ephraim Lessing?",
+              "gold_answer": "Emilia Galotti",
+              "predicted": "Miss Sara Sampson",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__673655_316668",
+          "question": "What instrument is played by the person from The Blackout All-Stars?",
+          "prediction": "Saxophone",
+          "answer": "conga",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who is a member of The Blackout All-Stars?",
+              "gold_answer": "Ray Barretto",
+              "predicted": "Grover Washington, Jr",
+              "em": false,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What instrument does Grover Washington, Jr play?",
+              "gold_answer": "conga",
+              "predicted": "Saxophone",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__574419_270105",
+          "question": "What is the seat of the county where Van Hook Township is located?",
+          "prediction": "Stanley",
+          "answer": "Stanley",
+          "em": true,
+          "relaxed_em": true,
+          "f1": 1.0,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "What administrative region is Van Hook Township located in?",
+              "gold_answer": "Mountrail County",
+              "predicted": "Mountrail County",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "What is the capital of Mountrail County?",
+              "gold_answer": "Stanley",
+              "predicted": "Stanley",
+              "em": true,
+              "gold_retrieved": true
+            }
+          ]
+        },
+        {
+          "id": "2hop__403712_793210",
+          "question": "Who is the father of Edward Baring, 1st Baron Revelstoke's father?",
+          "prediction": "Lieutenant-General Charles Baring",
+          "answer": "Sir Francis Baring, 1st Baronet",
+          "em": false,
+          "relaxed_em": false,
+          "f1": 0.25,
+          "hops": [
+            {
+              "hop": 1,
+              "question": "Who is the father of Edward Baring, 1st Baron Revelstoke?",
+              "gold_answer": "Henry Baring",
+              "predicted": "Henry Baring",
+              "em": true,
+              "gold_retrieved": true
+            },
+            {
+              "hop": 2,
+              "question": "Who is the father of Henry Baring?",
+              "gold_answer": "Sir Francis Baring, 1st Baronet",
+              "predicted": "Lieutenant-General Charles Baring",
+              "em": false,
+              "gold_retrieved": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

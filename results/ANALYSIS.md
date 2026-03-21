@@ -574,3 +574,61 @@ on all 1,252 MuSiQue 2-hop questions, competitive with published SOTA using a mo
 With gold decompositions, 45.9% EM exceeds StepChain's 43.9%.
 The pipeline architecture generalizes to 3-4 hop (gold decomp: 63.3% on 3-hop)
 but auto-decomposition quality remains the key frontier.
+
+## v7 Results: Frontier Model Scaling (Claude Sonnet & Opus)
+
+**Date**: 2026-02-26
+**Question**: Does system-level decomposition help frontier models, or only small ones?
+
+### Setup
+
+Same MuSiQue 30 questions, same pipeline. Qwen 7B decomposes for all configs.
+Only the extractor changes: Qwen 7B, Claude Sonnet 4.6, Claude Opus 4.6.
+Claude accessed via OAuth (Claude Code credentials).
+
+### Results
+
+| Extractor | Params | Single-Pass EM | Single-Pass relEM | System EM (auto) | System relEM | System EM (gold) | System Gain |
+|-----------|--------|----------------|-------------------|------------------|--------------|------------------|-------------|
+| Qwen 2.5 7B | 7B | 13.3% | 16.7% | 60.0% | 70.0% | 60.0% | **+46.7%** |
+| Claude Sonnet 4.6 | frontier | 20.0% | 43.3% | 60.0% | 73.3% | 63.3% | **+40.0%** |
+| Claude Opus 4.6 | frontier | 30.0% | 43.3% | 76.7% | 83.3% | 80.0% | **+46.7%** |
+
+### Per-Hop Analysis
+
+| Extractor (auto decomp) | Hop 1 EM | Hop 2 EM | Final EM |
+|--------------------------|----------|----------|----------|
+| Qwen 7B | 73.3% | 60.0% | 60.0% |
+| Sonnet 4.6 | 70.0% | 60.0% | 60.0% |
+| Opus 4.6 | 73.3% | 76.7% | 76.7% |
+
+### Key Findings
+
+1. **System benefit is constant across scales**: ~40-47% EM gain regardless of model size.
+   System architecture is an ORTHOGONAL axis of improvement, not a crutch for small models.
+
+2. **Qwen 7B + system ties Sonnet + system**: Both at 60.0% EM. A 7B local model
+   with the right architecture matches a frontier API model with the same architecture.
+
+3. **Opus + system = 76.7%**: Highest result in all experiments. Model quality
+   matters WITHIN the system — but not instead of it.
+
+4. **Opus without system (30%) < Qwen WITH system (60%)**: System architecture on
+   one side outweighs model capability on the other. The coin metaphor is empirically validated.
+
+5. **Opus advantage comes from hop 2**: 76.7% hop 2 EM vs 60.0% for Qwen/Sonnet.
+   Frontier models contribute better error recovery at harder extraction steps.
+
+6. **Auto-decomposition gap stays tiny**: 3.3% for both Sonnet and Opus.
+   The Qwen decomposer works across all extractor scales.
+
+7. **Single-pass scales slowly**: 13.3% → 20.0% → 30.0% across model sizes.
+   Even Opus leaves 46.7 percentage points on the table without system architecture.
+
+### Implications for the Paper
+
+This is the paper's strongest evidence for the "orthogonal axis" claim:
+- System gains don't diminish with model scale
+- A 7B model with system architecture outperforms the most capable models without it
+- The optimal configuration uses BOTH: best model + system architecture
+- This reframes the path to capable AI: invest in systems at every model scale
