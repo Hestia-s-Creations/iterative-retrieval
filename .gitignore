@@ -1,3 +1,12 @@
+# Build artifacts
+paper/main.aux
+paper/main.bbl
+paper/main.blg
+paper/main.log
+paper/main.out
+paper/main.pdf
+paper/main.synctex.gz
+paper/figures/*.png
 __pycache__/
 *.pyc
 .env
